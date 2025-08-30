@@ -128,3 +128,34 @@ You aren't required to understand hashing or encryption and that's why your tech
 [Encryption](https://en.wikipedia.org/wiki/Encryption)
 
 All of us here at Super*Duper*Drive wish you good luck with the project!
+
+
+<br/>
+
+
+## Description:
+
+The project is a web application that edits file storage, manages notes, and manages passwords.
+
+## Files Used
+
+_None_
+
+
+## Date created
+
+**8/29/2025**
+
+## Udacity Mentors Who Have Answered Questions In _Knowledge_ To Help With Project
+
+- 
+
+## Credits
+###### References used while making project
+
+“MLA Works Cited: Electronic Sources (Web Publications).” _MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University_, owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 29 Aug. 2025.
+
+SudKul. “Nd035-C1-Spring-Boot-Basics-Project-Starter.” _GitHub_, Udacity, Jan. 2025, github.com/udacity/nd035-c1-spring-boot-basics-project-starter. Accessed 29 Aug. 2025.
+
+“Udacity Git Commit Message Style Guide.” _Udacity Nanodegree Style Guide_, udacity.github.io/git-styleguide/. Accessed 29 Aug. 2025.
+
