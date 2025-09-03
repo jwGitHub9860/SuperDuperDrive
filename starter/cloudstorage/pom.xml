@@ -19,6 +19,13 @@
     </properties>
 
     <dependencies>
+        <!-- Defines "org.slf4j" Package --> <!-- Allows "HashService.java" to Use "org.slf4j" Package -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.36</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
