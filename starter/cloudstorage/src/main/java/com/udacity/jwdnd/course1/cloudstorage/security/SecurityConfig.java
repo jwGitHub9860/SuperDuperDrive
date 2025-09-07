@@ -36,7 +36,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        // Configures Authentication Provider (e.g., userDetailsService)
+        // Injects Custom Authentication Provider into "AuthenticationManagerBuilder" in Spring Security configuration; Allows Username & Password to be Compared
         auth.authenticationProvider(this.authenticationService);
     }
 }
