@@ -15,6 +15,10 @@ package com.udacity.jwdnd.course1.cloudstorage;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final AuthenticationService authenticationService;
 
+    public SecurityConfig(AuthenticationService authenticationService) {
+        this.authenticationService = authenticationService;
+    }
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
