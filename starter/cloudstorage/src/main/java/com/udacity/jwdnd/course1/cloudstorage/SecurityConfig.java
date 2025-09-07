@@ -8,7 +8,10 @@ package com.udacity.jwdnd.course1.cloudstorage;
 
 // allows configuration to be loaded into "ApplicationContext" & used throughout application; indicates class contains Spring configuration settings
 @Configuration
+
+// finds configuration & applies for global WebSecurity of application; provides Spring MVC integration
 @EnableWebSecurity
+
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
