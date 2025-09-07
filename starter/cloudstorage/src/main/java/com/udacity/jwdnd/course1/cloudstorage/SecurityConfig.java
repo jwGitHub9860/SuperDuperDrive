@@ -6,7 +6,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 package com.udacity.jwdnd.course1.cloudstorage;
 
-// allows configuration to be loaded into "ApplicationContext" & used throughout application; indicates class contains Spring configuration settings
+// allows Spring configuration to be loaded into "ApplicationContext" & used throughout application
 @Configuration
 
 // finds configuration & applies for global WebSecurity of application; provides Spring MVC integration
