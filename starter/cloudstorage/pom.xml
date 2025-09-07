@@ -5,17 +5,17 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.5</version>
+        <version>3.3.5</version><!-- DIFFERENT -->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.udacity.jwdnd.course1</groupId>
-    <artifactId>cloudstorage</artifactId>
+    <groupId>com.udacity.jwdnd.course1</groupId><!-- DIFFERENT -->
+    <artifactId>cloudstorage</artifactId><!-- DIFFERENT -->
     <version>0.0.1-SNAPSHOT</version>
-    <name>cloudstorage</name>
-    <description>Final Project for Udacity's Spring Boot Basics course.</description>
+    <name>cloudstorage</name><!-- DIFFERENT -->
+    <description>Final Project for Udacity's Spring Boot Basics course.</description><!-- DIFFERENT -->
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>21</java.version><!-- DIFFERENT -->
     </properties>
 
     <dependencies>
@@ -69,18 +69,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
+            <exclusions><!-- ABSENT -->
+                <exclusion><!-- ABSENT -->
+                    <groupId>org.junit.vintage</groupId><!-- ABSENT -->
+                    <artifactId>junit-vintage-engine</artifactId><!-- ABSENT -->
+                </exclusion><!-- ABSENT -->
+            </exclusions><!-- ABSENT -->
         </dependency>
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- ALL ABSENT -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -102,6 +103,7 @@
 			<version>5.9.2</version>
 			<scope>test</scope>
 		</dependency>
+        <!-- ALL ABSENT -->
 	</dependencies>
 
     <build>
