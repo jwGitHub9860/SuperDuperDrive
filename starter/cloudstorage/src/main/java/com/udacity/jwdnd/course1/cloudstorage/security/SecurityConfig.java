@@ -21,6 +21,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        // allows FREE ACCESS to sign-up page, CSS files, and JavaScript files, any OTHER Request Must Be authenticated (i.e., user must be logged in to access)
         http
             .authorizeRequests()
                 .antMatchers("/signup", "/css/**", "/js/**").permitAll()
