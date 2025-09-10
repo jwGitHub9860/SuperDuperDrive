@@ -9,6 +9,8 @@ public class HomeController {
 
     @GetMapping
     public String getHomePage(Model model) {
+        model.addAttribute("files", this.fileService.getFilesForUser(currentUserId));
+        model.addAttribute("notes", this.noteService.getNotesForUser(currentUserId));
         return "home";
     }
 }
