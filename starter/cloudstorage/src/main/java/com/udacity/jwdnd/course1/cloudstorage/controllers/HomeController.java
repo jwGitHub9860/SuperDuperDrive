@@ -6,6 +6,9 @@ package com.udacity.jwdnd.course1.cloudstorage.controllers;
 @Controller
 @RequestMapping("/home")
 public class HomeController {
+    private final FileService fileService;
+    private final NoteService noteService;
+    private final CredentialService credentialService;
 
     @GetMapping
     public String getHomePage(Model model) {
