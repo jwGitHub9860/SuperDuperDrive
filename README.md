@@ -153,11 +153,19 @@ _None_
 ## Credits
 ###### References used while making project
 
-Boon, Isaac Tan. “ What Do They Mean by This? I Was Unsure about the Instructions for Super Duper Drive.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/349430. Accessed 6 Sep. 2025.
+“AuthenticationService.” _HYLAND_, support.hyland.com/r/Alfresco/Alfresco-Content-Services/23.4/Alfresco-Content-Services/Develop/Reference/Java-Foundation-API/AuthenticationService. Accessed 7 Sep. 2025.
 
-Dimitrov, Evgeni, et al. “Spring Security Custom Authentication - AuthenticationProvider vs UserDetailsService.” _Stack Overflow_, 25 July 2015, stackoverflow.com/questions/31630818/spring-security-custom-authentication-authenticationprovider-vs-userdetailsser. Accessed 7 Sep. 2025.
+Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructions for Super Duper Drive.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/349430. Accessed 6 Sep. 2025.
+
+“Class AuthenticationService.” _Authenticationservice (Charm 0.0.1 API)_, 14 June 2015, docs.gluonhq.com/javadoc/0.0.1/com/gluonhq/charm/connect/service/AuthenticationService.html. Accessed 7 Sep. 2025.
+
+“Class AuthenticationService.” _Oracle Entitlements Server for Java API Reference: Class AuthenticationService_, docs.oracle.com/cd/E12890_01/ales/docs32/javadocs/javaapi/com/bea/security/AuthenticationService.html. Accessed 7 Sep. 2025.
+
+Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvider vs UserDetailsService.” _Stack Overflow_, 25 July 2015, stackoverflow.com/questions/31630818/spring-security-custom-authentication-authenticationprovider-vs-userdetailsser. Accessed 7 Sep. 2025.
 
 Kremer, Thomas. “Spring Boot Web Security Application, WebSecurityConfigurerAdapter Is Deprecated, What Can I Use Instead to Make My Websecurityconfig Class Work?” _Stack Overflow_, 30 Sept. 2023, stackoverflow.com/questions/77161239/spring-boot-web-security-application-websecurityconfigureradapter-is-deprecated. Accessed 3 Sep. 2025.
+
+L, Keith. “Controllers.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/358225. Accessed 9 Sep. 2025.
 
 “MLA Works Cited: Electronic Sources (Web Publications).” _MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University_, owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 29 Aug. 2025.
 
@@ -171,3 +179,4 @@ SudKul. “Nd035-C1-Spring-Boot-Basics-Project-Starter.” _GitHub_, Udacity, Ja
 
 “Udacity Git Commit Message Style Guide.” _Udacity Nanodegree Style Guide_, udacity.github.io/git-styleguide/. Accessed 29 Aug. 2025.
 
+“Username/Password Authentication.” _Username/Password Authentication :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/passwords/index.html. Accessed 7 Sep. 2025.
