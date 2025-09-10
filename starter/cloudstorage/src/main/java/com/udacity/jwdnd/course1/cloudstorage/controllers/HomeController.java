@@ -9,6 +9,12 @@ public class HomeController {
     private final FileService fileService;
     private final NoteService noteService;
     private final CredentialService credentialService;
+    
+    public HomeController(FileService fileService, NoteService noteService, CredentialService credentialService) {
+        this.fileService = fileService;
+        this.noteService = noteService;
+        this.credentialService = credentialService;
+    }
 
     @GetMapping
     public String getHomePage(Model model) {
