@@ -8,7 +8,7 @@ package com.udacity.jwdnd.course1.cloudstorage.controllers;
 public class HomeController {
 
     @GetMapping
-    public String homeView() {
+    public String getHomePage() {
         return "home";
     }
 }
