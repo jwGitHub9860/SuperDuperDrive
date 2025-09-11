@@ -11,10 +11,11 @@ public class HomeController {
     private final CredentialService credentialService;
     private final UserService userService;
     
-    public HomeController(FileService fileService, NoteService noteService, CredentialService credentialService) {
+    public HomeController(FileService fileService, NoteService noteService, CredentialService credentialService, UserService userService) {
         this.fileService = fileService;
         this.noteService = noteService;
         this.credentialService = credentialService;
+        this.userService = userService;
     }
 
     @GetMapping
