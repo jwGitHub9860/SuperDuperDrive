@@ -153,6 +153,8 @@ _None_
 ## Credits
 ###### References used while making project
 
+“@Controller vs. @RestController Annotation in Spring.” _GeeksforGeeks_, GeeksforGeeks, 3 Sept. 2025, www.geeksforgeeks.org/springboot/controller-vs-restcontroller-annotation-in-spring/. Accessed 12 Sep. 2025.
+
 “AuthenticationService.” _HYLAND_, support.hyland.com/r/Alfresco/Alfresco-Content-Services/23.4/Alfresco-Content-Services/Develop/Reference/Java-Foundation-API/AuthenticationService. Accessed 7 Sep. 2025.
 
 Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructions for Super Duper Drive.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/349430. Accessed 6 Sep. 2025.
