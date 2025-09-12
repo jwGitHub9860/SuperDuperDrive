@@ -173,6 +173,8 @@ L, Keith. “Controllers.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/q
 
 Singh, Amandeep. “Spring Security in Spring Boot 2.x Using Websecurityconfigureradapter.” _Medium_, Medium, 8 Mar. 2025, lazy-programmer.medium.com/spring-security-in-spring-boot-2-x-using-websecurityconfigureradapter-15b0b5878c0d. Accessed 8 Sep. 2025.
 
+“Spring Boot - File Handling.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/spring-boot-file-handling/. Accessed 11 Sep. 2025.
+
 “Spring Security - Authentication Providers.” _GeeksforGeeks_, GeeksforGeeks, 28 Apr. 2025, www.geeksforgeeks.org/java/spring-security-authentication-providers/. Accessed 7 Sep. 2025.
 
 Stein-Kousathana, Eleftheria. “Spring Security without the WebSecurityConfigurerAdapter.” _Spring Blog_, 21 Feb. 2022, spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter. Accessed 3 Sep. 2025.
@@ -180,5 +182,7 @@ Stein-Kousathana, Eleftheria. “Spring Security without the WebSecurityConfigur
 SudKul. “Nd035-C1-Spring-Boot-Basics-Project-Starter.” _GitHub_, Udacity, Jan. 2025, github.com/udacity/nd035-c1-spring-boot-basics-project-starter. Accessed 29 Aug. 2025.
 
 “Udacity Git Commit Message Style Guide.” _Udacity Nanodegree Style Guide_, udacity.github.io/git-styleguide/. Accessed 29 Aug. 2025.
+
+“Uploading Files.” _Getting Started | Uploading Files_, spring.io/guides/gs/uploading-files. Accessed 11 Sep. 2025.
 
 “Username/Password Authentication.” _Username/Password Authentication :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/passwords/index.html. Accessed 7 Sep. 2025.
