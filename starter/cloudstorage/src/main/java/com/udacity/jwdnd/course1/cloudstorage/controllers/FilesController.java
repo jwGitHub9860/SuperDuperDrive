@@ -24,4 +24,9 @@ public class FilesController {
     public FilesController(UserService userService) {
         this.userService = userService;
     }
+
+    public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload) {
+        // Sets up file path
+        String filePath = System.getProperty("user.dir") + "/Uploads" + File.separator + fileUpload.getOriginalFilename();
+    }
 }
