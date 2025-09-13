@@ -163,9 +163,13 @@ Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructio
 
 “Class AuthenticationService.” _Oracle Entitlements Server for Java API Reference: Class AuthenticationService_, docs.oracle.com/cd/E12890_01/ales/docs32/javadocs/javaapi/com/bea/security/AuthenticationService.html. Accessed 7 Sep. 2025.
 
+“Delete a File Using Java.” _GeeksforGeeks_, GeeksforGeeks, 10 Jan. 2025, www.geeksforgeeks.org/java/delete-file-using-java/. Accessed 12 Sep. 2025.
+
 Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvider vs UserDetailsService.” _Stack Overflow_, 25 July 2015, stackoverflow.com/questions/31630818/spring-security-custom-authentication-authenticationprovider-vs-userdetailsser. Accessed 7 Sep. 2025.
 
 “Interface UserInfo.” _UserInfo (Oracle Access Manager Extensibility Java API Reference)_, 1 Mar. 2013, docs.oracle.com/cd/E37115_01/apirefs.1112/e27137/oracle/security/am/engines/common/identity/provider/UserInfo.html. Accessed 9 Sep. 2025.
+
+“Java Delete Files.” _W3Schools Online Web Tutorials_, www.w3schools.com/java/java_files_delete.asp. Accessed 11 Sep. 2025.
 
 Kremer, Thomas. “Spring Boot Web Security Application, WebSecurityConfigurerAdapter Is Deprecated, What Can I Use Instead to Make My Websecurityconfig Class Work?” _Stack Overflow_, 30 Sept. 2023, stackoverflow.com/questions/77161239/spring-boot-web-security-application-websecurityconfigureradapter-is-deprecated. Accessed 3 Sep. 2025.
 
