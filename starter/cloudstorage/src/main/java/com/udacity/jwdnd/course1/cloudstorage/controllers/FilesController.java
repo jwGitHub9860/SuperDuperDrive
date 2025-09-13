@@ -37,4 +37,6 @@ public class FilesController {
 
             fout.close();
             fileUploadStatus = "File uploaded successfully!";
+        } catch (Exception e) {
+    }
 }
