@@ -54,5 +54,6 @@ public class FilesController {
     public ResponseEntity downloadFile(@PathVariable String filename) throws FileNotFoundException {
         // Checks if file exists
         String fileUploadPath = System.getProperty("user.dir") + "/Uploads";
+        String[] filenames = getFiles();
     }
 }
