@@ -39,5 +39,8 @@ public class FilesController {
             fileUploadStatus = "File uploaded successfully!";
         } catch (Exception e) {
             e.printStackTrace();
+            fileUploadStatus = "File upload failed!";
+        }
+        return fileUploadStatus;
     }
 }
