@@ -50,4 +50,6 @@ public class FilesController {
         String[] filenames = directory.list();
         return filenames;
     }
+
+    public ResponseEntity downloadFile(@PathVariable String filename) throws FileNotFoundException {}
 }
