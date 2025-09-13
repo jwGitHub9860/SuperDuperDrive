@@ -17,3 +17,5 @@ package com.udacity.jwdnd.course1.cloudstorage.controllers;
 
 @Controller
 @RequestMapping("/files")
+
+public class FilesController {}
