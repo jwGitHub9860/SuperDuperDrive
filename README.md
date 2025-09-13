@@ -157,11 +157,15 @@ _None_
 
 “AuthenticationService.” _HYLAND_, support.hyland.com/r/Alfresco/Alfresco-Content-Services/23.4/Alfresco-Content-Services/Develop/Reference/Java-Foundation-API/AuthenticationService. Accessed 7 Sep. 2025.
 
+B, Zachary. “Testing Delete.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/813835. Accessed 12 Sep. 2025.
+
 Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructions for Super Duper Drive.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/349430. Accessed 6 Sep. 2025.
 
 “Class AuthenticationService.” _Authenticationservice (Charm 0.0.1 API)_, 14 June 2015, docs.gluonhq.com/javadoc/0.0.1/com/gluonhq/charm/connect/service/AuthenticationService.html. Accessed 7 Sep. 2025.
 
 “Class AuthenticationService.” _Oracle Entitlements Server for Java API Reference: Class AuthenticationService_, docs.oracle.com/cd/E12890_01/ales/docs32/javadocs/javaapi/com/bea/security/AuthenticationService.html. Accessed 7 Sep. 2025.
+
+D, Dao Anh. “I Can’t Run the Sample Test Case.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/880822. Accessed 12 Sep. 2025.
 
 “Delete a File Using Java.” _GeeksforGeeks_, GeeksforGeeks, 10 Jan. 2025, www.geeksforgeeks.org/java/delete-file-using-java/. Accessed 12 Sep. 2025.
 
@@ -170,6 +174,8 @@ Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvi
 “Interface UserInfo.” _UserInfo (Oracle Access Manager Extensibility Java API Reference)_, 1 Mar. 2013, docs.oracle.com/cd/E37115_01/apirefs.1112/e27137/oracle/security/am/engines/common/identity/provider/UserInfo.html. Accessed 9 Sep. 2025.
 
 “Java Delete Files.” _W3Schools Online Web Tutorials_, www.w3schools.com/java/java_files_delete.asp. Accessed 11 Sep. 2025.
+
+K, Christian. “Please I Need Quick Guide, Please Answer Now.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/811826#812044. Accessed 12 Sep. 2025.
 
 Kremer, Thomas. “Spring Boot Web Security Application, WebSecurityConfigurerAdapter Is Deprecated, What Can I Use Instead to Make My Websecurityconfig Class Work?” _Stack Overflow_, 30 Sept. 2023, stackoverflow.com/questions/77161239/spring-boot-web-security-application-websecurityconfigureradapter-is-deprecated. Accessed 3 Sep. 2025.
 
