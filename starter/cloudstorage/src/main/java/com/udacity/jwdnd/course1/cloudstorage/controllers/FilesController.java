@@ -43,4 +43,6 @@ public class FilesController {
         }
         return fileUploadStatus;
     }
+
+    public String[] getFiles() {}
 }
