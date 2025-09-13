@@ -46,5 +46,6 @@ public class FilesController {
 
     public String[] getFiles() {
         String filePath = System.getProperty("user.dir") + "/Uploads";
+        File directory = new File(filePath);
     }
 }
