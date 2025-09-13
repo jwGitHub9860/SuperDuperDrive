@@ -44,5 +44,7 @@ public class FilesController {
         return fileUploadStatus;
     }
 
-    public String[] getFiles() {}
+    public String[] getFiles() {
+        String filePath = System.getProperty("user.dir") + "/Uploads";
+    }
 }
