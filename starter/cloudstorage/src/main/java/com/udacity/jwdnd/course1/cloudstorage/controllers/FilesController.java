@@ -36,4 +36,5 @@ public class FilesController {
             fout.write(fileUpload.getBytes());
 
             fout.close();
+            fileUploadStatus = "File uploaded successfully!";
 }
