@@ -34,4 +34,6 @@ public class FilesController {
         try {
             FileOutputStream outputStream = new FileOutputStream(filePath);
             fout.write(fileUpload.getBytes());
+
+            fout.close();
 }
