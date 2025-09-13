@@ -56,6 +56,8 @@ public class FilesController {
         String fileUploadPath = System.getProperty("user.dir") + "/Uploads";
         String[] filenames = getFiles();
         boolean fileExists = Arrays.asList(filenames).contains(filename);
-        if (!fileExists) {}
+        if (!fileExists) {
+            return ResponseEntity("File not found", HttpStatus.NOT_FOUND);
+        }
     }
 }
