@@ -20,4 +20,8 @@ package com.udacity.jwdnd.course1.cloudstorage.controllers;
 
 public class FilesController {
     private final UserService userService;
+
+    public FilesController(UserService userService) {
+        this.userService = userService;
+    }
 }
