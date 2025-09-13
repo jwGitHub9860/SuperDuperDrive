@@ -74,4 +74,6 @@ public class FilesController {
                 .header(HttpHeaders.CONTENT_DISPOSITION, headerValue)
                 .body(resource);
     }
+
+    public void deleteFile(@PathVariable String filename) {}
 }
