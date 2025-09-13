@@ -64,5 +64,6 @@ public class FilesController {
         String downloadFilePath = fileUploadPath + File.separator + filename;
 
         File file = new File(downloadFilePath);
+        InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
     }
 }
