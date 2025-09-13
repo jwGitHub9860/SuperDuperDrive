@@ -29,5 +29,8 @@ public class FilesController {
         // Sets up file path
         String filePath = System.getProperty("user.dir") + "/Uploads" + File.separator + fileUpload.getOriginalFilename();
         String fileUploadStatus;
+        
+        // Checks if File Uploaded Successfully
+        try {
     }
 }
