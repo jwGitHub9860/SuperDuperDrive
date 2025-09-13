@@ -77,5 +77,6 @@ public class FilesController {
 
     public void deleteFile(@PathVariable String filename) {
         String filePath = System.getProperty("user.dir") + "/Uploads" + File.separator + filename;
+        File file = new File(filePath);
     }
 }
