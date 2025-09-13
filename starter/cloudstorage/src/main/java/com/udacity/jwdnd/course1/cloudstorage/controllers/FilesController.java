@@ -65,5 +65,6 @@ public class FilesController {
 
         File file = new File(downloadFilePath);
         InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
+        HttpHeaders headers = new HttpHeaders();
     }
 }
