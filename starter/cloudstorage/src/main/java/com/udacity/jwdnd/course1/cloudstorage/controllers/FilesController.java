@@ -32,5 +32,6 @@ public class FilesController {
         
         // Checks if File Uploaded Successfully
         try {
+            FileOutputStream outputStream = new FileOutputStream(filePath);
     }
 }
