@@ -23,7 +23,7 @@ public class FilesController {
         this.userService = userService;
     }
 
-    @GetMapping
+    @RequestMapping("/files")
     public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload) {
         // Sets up file path
         String filePath = System.getProperty("user.dir") + "/Uploads" + File.separator + fileUpload.getOriginalFilename();
@@ -43,7 +43,7 @@ public class FilesController {
         return fileUploadStatus;
     }
 
-    @GetMapping
+    @RequestMapping("/files")
     public String[] getFiles() {
         String filePath = System.getProperty("user.dir") + "/Uploads";
         File directory = new File(filePath);
@@ -51,7 +51,7 @@ public class FilesController {
         return filenames;
     }
 
-    @GetMapping
+    @RequestMapping("/files")
     public ResponseEntity downloadFile(@PathVariable String filename) throws FileNotFoundException {
         // Checks if file exists
         String fileUploadPath = System.getProperty("user.dir") + "/Uploads";
@@ -76,7 +76,7 @@ public class FilesController {
                 .body(resource);
     }
 
-    @GetMapping
+    @RequestMapping("/files")
     public void deleteFile(@PathVariable String filename) {
         String filePath = System.getProperty("user.dir") + "/Uploads" + File.separator + filename;
         File file = new File(filePath);
