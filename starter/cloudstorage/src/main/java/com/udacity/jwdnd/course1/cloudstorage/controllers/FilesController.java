@@ -28,5 +28,6 @@ public class FilesController {
     public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload) {
         // Sets up file path
         String filePath = System.getProperty("user.dir") + "/Uploads" + File.separator + fileUpload.getOriginalFilename();
+        String fileUploadStatus;
     }
 }
