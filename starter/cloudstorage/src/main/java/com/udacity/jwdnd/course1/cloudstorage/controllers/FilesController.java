@@ -61,5 +61,6 @@ public class FilesController {
         }
         
         // Sets up file path where Downloaded File will be located
+        String downloadFilePath = fileUploadPath + File.separator + filename;
     }
 }
