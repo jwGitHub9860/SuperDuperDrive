@@ -51,5 +51,7 @@ public class FilesController {
         return filenames;
     }
 
-    public ResponseEntity downloadFile(@PathVariable String filename) throws FileNotFoundException {}
+    public ResponseEntity downloadFile(@PathVariable String filename) throws FileNotFoundException {
+        // Checks if file exists
+    }
 }
