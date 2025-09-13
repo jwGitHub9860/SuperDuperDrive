@@ -68,5 +68,10 @@ public class FilesController {
         HttpHeaders headers = new HttpHeaders();
         String contentType = "application/octet-stream";
         String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
+        
+        return ResponseEntity.ok()
+                .contentType(MediaType.parseMediaType(contentType))
+                .header(HttpHeaders.CONTENT_DISPOSITION, headerValue)
+                .body(resource);
     }
 }
