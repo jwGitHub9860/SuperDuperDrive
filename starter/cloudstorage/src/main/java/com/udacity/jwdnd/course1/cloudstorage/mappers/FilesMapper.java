@@ -15,6 +15,7 @@ public interface FilesMapper {
     Integer uploadFile(File file);
 
     @Select("SELECT * FROM Files WHERE fileId = #{fileId}")
+    String[] getFiles();
 
     @Delete("DELETE FROM Files WHERE fileId = #{fileId}")
     void deleteFile(Integer fileId);
