@@ -23,7 +23,7 @@ public class FilesController {
         this.userService = userService;
     }
 
-    @RequestMapping("/files")
+    @RequestMapping("/files/upload")
     public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload) {
         // Sets up file path
         String filePath = System.getProperty("user.dir") + "/Uploads" + File.separator + fileUpload.getOriginalFilename();
