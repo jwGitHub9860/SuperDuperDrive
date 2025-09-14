@@ -12,4 +12,4 @@ public interface FilesMapper {
 
     @Insert("INSERT INTO Files (filename, contenttype, filesize, userid, filedata) VALUES(#{filename}, #{contenttype}, #{filesize}, #{userid}, #{filedata})")
     @Options(useGeneratedKeys = true, keyProperty = "fileId")
-    Integer insert(File file);
+    Integer insertFile(File file);
