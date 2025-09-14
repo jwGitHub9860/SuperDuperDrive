@@ -16,3 +16,4 @@ public interface FilesMapper {
 
     @Delete("DELETE FROM Files WHERE fileId = #{fileId}")
     void deleteFile(Integer fileId);
+}
