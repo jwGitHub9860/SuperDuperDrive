@@ -171,6 +171,8 @@ D, Dao Anh. “I Can’t Run the Sample Test Case.” _Knowledge_, Udacity, 2022
 
 Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvider vs UserDetailsService.” _Stack Overflow_, 25 July 2015, stackoverflow.com/questions/31630818/spring-security-custom-authentication-authenticationprovider-vs-userdetailsser. Accessed 7 Sep. 2025.
 
+“Do You Always Need to Separate Services and Controllers?” _Corey Cleary_, www.coreycleary.me/do-you-always-need-to-separate-services-and-controllers. Accessed 13 Sep. 2025.
+
 “Interface UserInfo.” _UserInfo (Oracle Access Manager Extensibility Java API Reference)_, 1 Mar. 2013, docs.oracle.com/cd/E37115_01/apirefs.1112/e27137/oracle/security/am/engines/common/identity/provider/UserInfo.html. Accessed 9 Sep. 2025.
 
 “Java Delete Files.” _W3Schools Online Web Tutorials_, www.w3schools.com/java/java_files_delete.asp. Accessed 11 Sep. 2025.
