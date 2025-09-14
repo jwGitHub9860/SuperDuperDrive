@@ -8,3 +8,4 @@ package com.udacity.jwdnd.course1.cloudstorage.mappers;
 @Mapper
 public interface FilesMapper {
     @Select("SELECT * FROM Files WHERE fileId = #{fileId}")
+    File findFile(Integer fileId);
