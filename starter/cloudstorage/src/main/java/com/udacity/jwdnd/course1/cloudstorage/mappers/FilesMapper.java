@@ -9,3 +9,5 @@ package com.udacity.jwdnd.course1.cloudstorage.mappers;
 public interface FilesMapper {
     @Select("SELECT * FROM Files WHERE fileId = #{fileId}")
     File findFile(Integer fileId);
+
+    @Insert("INSERT INTO Files (filename, contenttype, filesize, userid, filedata) VALUES(#{filename}, #{contenttype}, #{filesize}, #{userid}, #{filedata})")
