@@ -15,3 +15,4 @@ public interface FilesMapper {
     Integer insertFile(File file);
 
     @Delete("DELETE FROM Files WHERE fileId = #{fileId}")
+    void deleteFile(Integer fileId);
