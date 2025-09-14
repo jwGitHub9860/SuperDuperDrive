@@ -17,6 +17,8 @@ public interface FilesMapper {
     @Select("SELECT * FROM Files WHERE fileId = #{fileId}")
     String[] getFiles();
 
+    @Insert("INSERT INTO Files (filename, contenttype, filesize, userid, filedata) VALUES(#{filename}, #{contenttype}, #{filesize}, #{userid}, #{filedata})")
+
     @Delete("DELETE FROM Files WHERE fileId = #{fileId}")
     void deleteFile(Integer fileId);
 }
