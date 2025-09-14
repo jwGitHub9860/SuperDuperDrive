@@ -14,6 +14,8 @@ public interface FilesMapper {
     @Options(useGeneratedKeys = true, keyProperty = "fileId")
     Integer uploadFile(File file);
 
+    @Select("SELECT * FROM Files WHERE fileId = #{fileId}")
+
     @Delete("DELETE FROM Files WHERE fileId = #{fileId}")
     void deleteFile(Integer fileId);
 }
