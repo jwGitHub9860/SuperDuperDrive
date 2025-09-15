@@ -185,6 +185,8 @@ L, Keith. “Controllers.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/q
 
 “MLA Works Cited: Electronic Sources (Web Publications).” _MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University_, owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 29 Aug. 2025.
 
+Obregon, Alexander. “How to Handle File Uploads and Downloads with Spring Boot.” _Medium_, Medium, 17 Apr. 2024, medium.com/@AlexanderObregon/how-to-handle-file-uploads-and-downloads-with-spring-boot-84638463fd6f. Accessed 14 Sep. 2025.
+
 Singh, Amandeep. “Spring Security in Spring Boot 2.x Using Websecurityconfigureradapter.” _Medium_, Medium, 8 Mar. 2025, lazy-programmer.medium.com/spring-security-in-spring-boot-2-x-using-websecurityconfigureradapter-15b0b5878c0d. Accessed 8 Sep. 2025.
 
 “Spring Boot - File Handling.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/spring-boot-file-handling/. Accessed 11 Sep. 2025.
