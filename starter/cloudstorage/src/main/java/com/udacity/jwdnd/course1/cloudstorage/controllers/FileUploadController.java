@@ -17,6 +17,7 @@ package com.udacity.jwdnd.course1.cloudstorage.controllers;
 
 @Controller
 public class FileUploadController {
+    private final FileService fileService;
     private final UserService userService;
 
     public FileUploadController(UserService userService) {
