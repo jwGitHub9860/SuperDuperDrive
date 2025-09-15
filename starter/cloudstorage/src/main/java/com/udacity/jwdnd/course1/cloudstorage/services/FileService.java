@@ -11,4 +11,5 @@ public class FileService {
     private final FileMapper fileMapper;
 
     public FileService(FileMapper fileMapper) {
-        
+        this.fileMapper = fileMapper;
+    }
