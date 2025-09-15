@@ -16,10 +16,10 @@ import org.springframework.web.multipart.MultipartFile;
 package com.udacity.jwdnd.course1.cloudstorage.controllers;
 
 @Controller
-public class FilesController {
+public class FileUploadController {
     private final UserService userService;
 
-    public FilesController(UserService userService) {
+    public FileUploadController(UserService userService) {
         this.userService = userService;
     }
 
