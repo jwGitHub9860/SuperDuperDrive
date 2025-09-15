@@ -5,7 +5,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 package com.udacity.jwdnd.course1.cloudstorage.services;
 
-
 @Service
 public class UserService {
 
