@@ -21,6 +21,7 @@ public class FileUploadController {
     private final UserService userService;
 
     public FileUploadController(UserService userService) {
+        this.fileService = fileService;
         this.userService = userService;
     }
 
