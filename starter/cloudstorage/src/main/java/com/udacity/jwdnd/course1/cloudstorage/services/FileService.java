@@ -14,6 +14,6 @@ public class FileService {
         this.fileMapper = fileMapper;
     }
 
-    public final String getFilename() {
-        return fileMapper.getFilename();
+    public final File getFileByFileName(String filename) {
+        return fileMapper.getFileByFileName(filename);
     }
