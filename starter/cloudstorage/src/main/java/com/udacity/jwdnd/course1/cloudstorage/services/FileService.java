@@ -8,3 +8,6 @@ package com.udacity.jwdnd.course1.cloudstorage.services;
 @Service
 
 public class FileService {
+    private final FileMapper fileMapper;
+
+    
