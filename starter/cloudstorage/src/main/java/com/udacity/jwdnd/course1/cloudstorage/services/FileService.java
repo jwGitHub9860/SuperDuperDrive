@@ -21,3 +21,7 @@ public class FileService {
     public final File getFileByFileName(String filename) {
         return fileMapper.getFileByFileName(filename);
     }
+
+    public final Integer uploadFile(File file) {
+        return fileMapper.uploadFile(file);
+    }
