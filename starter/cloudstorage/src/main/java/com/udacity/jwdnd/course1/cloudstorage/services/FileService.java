@@ -13,3 +13,7 @@ public class FileService {
     public FileService(FileMapper fileMapper) {
         this.fileMapper = fileMapper;
     }
+
+    public final String getFilename() {
+        return fileMapper.getFilename();
+    }
