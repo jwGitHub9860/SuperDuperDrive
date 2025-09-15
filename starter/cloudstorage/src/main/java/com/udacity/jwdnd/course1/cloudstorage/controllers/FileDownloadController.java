@@ -19,4 +19,6 @@ package com.udacity.jwdnd.course1.cloudstorage.controllers;
 public class FileDownloadController {
     private final FileService fileService;
 
-    
+    public FileDownloadController(FileService fileService) {
+        this.fileService = fileService;
+    }
