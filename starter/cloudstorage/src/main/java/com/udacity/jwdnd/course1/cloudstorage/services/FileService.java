@@ -25,3 +25,7 @@ public class FileService {
     public final Integer uploadFile(File file) {
         return fileMapper.uploadFile(file);
     }
+
+    public final File downloadFile(String filename) {
+        return fileMapper.downloadFile(filename);
+    }
