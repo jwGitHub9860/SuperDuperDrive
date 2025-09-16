@@ -33,3 +33,4 @@ public class FileService {
     public final void deleteFile(Integer fileId) {
         fileMapper.deleteFile(fileId);
     }
+}
