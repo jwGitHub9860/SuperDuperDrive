@@ -20,3 +20,5 @@ public class Files {
     public String getContenttype() { return contenttype; }
     public String getFilesize() { return filesize; }
     public byte[] getFiledata() { return filedata; }
+
+    public String setFilename() { return filename; }
