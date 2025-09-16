@@ -23,3 +23,4 @@ public class Files {
 
     public String setFilename() { return filename; }
     public Integer setFileId() { return fileId; }
+    public String setContenttype() { return contenttype; }
