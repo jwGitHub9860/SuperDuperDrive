@@ -26,3 +26,4 @@ public class Files {
     public String setContenttype() { return contenttype; }
     public String setFilesize() { return filesize; }
     public byte[] setFiledata() { return filedata; }
+}
