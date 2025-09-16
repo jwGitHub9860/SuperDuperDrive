@@ -29,3 +29,7 @@ public class FileService {
     public final File downloadFile(String filename) {
         return fileMapper.downloadFile(filename);
     }
+
+    public final void deleteFile(Integer fileId) {
+        fileMapper.deleteFile(fileId);
+    }
