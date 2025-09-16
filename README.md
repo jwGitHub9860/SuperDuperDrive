@@ -177,6 +177,8 @@ Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvi
 
 heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 Oct. 2016, stackoverflow.com/questions/40303916/model-addattribute-parameters. Accessed 16 Sep. 2025.
 
+“Interface Model.” _Spring_, 10 Apr. 2019, docs.spring.io/spring-framework/docs/5.1.6.RELEASE_to_5.2.0.M1/Spring%20Framework%205.2.0.M1/org/springframework/ui/Model.html. Accessed 16 Sep. 2025.
+
 “Interface UserInfo.” _UserInfo (Oracle Access Manager Extensibility Java API Reference)_, 1 Mar. 2013, docs.oracle.com/cd/E37115_01/apirefs.1112/e27137/oracle/security/am/engines/common/identity/provider/UserInfo.html. Accessed 9 Sep. 2025.
 
 “Java Delete Files.” _W3Schools Online Web Tutorials_, www.w3schools.com/java/java_files_delete.asp. Accessed 11 Sep. 2025.
