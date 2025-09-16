@@ -6,3 +6,11 @@ public class Files {
     private final String contenttype;
     private final String filesize;
     private final byte[] filedata;
+
+    public Files(String filename, Integer fileId, String contenttype, String filesize, byte[] filedata) {
+        this.filename = filename;
+        this.fileId = fileId;
+        this.contenttype = contenttype;
+        this.filesize = filesize;
+        this.filedata = filedata;
+    }
