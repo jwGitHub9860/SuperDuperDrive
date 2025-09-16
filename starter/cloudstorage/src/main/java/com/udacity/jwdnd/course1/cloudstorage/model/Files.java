@@ -16,3 +16,4 @@ public class Files {
     }
 
     public String getFilename() { return filename; }
+    public Integer getFileId() { return fileId; }
