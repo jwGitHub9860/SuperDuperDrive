@@ -22,7 +22,7 @@ public class FileService {
         return fileMapper.getFileByFileName(filename);
     }
 
-    public final Integer uploadFile(File file) {
+    public final File uploadFile(File file) {
         return fileMapper.uploadFile(file);
     }
 
