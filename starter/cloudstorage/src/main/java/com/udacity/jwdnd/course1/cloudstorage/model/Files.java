@@ -22,3 +22,4 @@ public class Files {
     public byte[] getFiledata() { return filedata; }
 
     public String setFilename() { return filename; }
+    public Integer setFileId() { return fileId; }
