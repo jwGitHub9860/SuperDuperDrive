@@ -159,6 +159,8 @@ _None_
 
 B, Zachary. “Testing Delete.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/813835. Accessed 12 Sep. 2025.
 
+baeldung. “Spring MVC and the @ModelAttribute Annotation.” _Baeldung_, 27 Feb. 2025, www.baeldung.com/spring-mvc-and-the-modelattribute-annotation. Accessed 16 Sep. 2025.
+
 Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructions for Super Duper Drive.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/349430. Accessed 6 Sep. 2025.
 
 “Class AuthenticationService.” _Authenticationservice (Charm 0.0.1 API)_, 14 June 2015, docs.gluonhq.com/javadoc/0.0.1/com/gluonhq/charm/connect/service/AuthenticationService.html. Accessed 7 Sep. 2025.
@@ -172,6 +174,8 @@ D, Dao Anh. “I Can’t Run the Sample Test Case.” _Knowledge_, Udacity, 2022
 Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvider vs UserDetailsService.” _Stack Overflow_, 25 July 2015, stackoverflow.com/questions/31630818/spring-security-custom-authentication-authenticationprovider-vs-userdetailsser. Accessed 7 Sep. 2025.
 
 “Do You Always Need to Separate Services and Controllers?” _Corey Cleary_, www.coreycleary.me/do-you-always-need-to-separate-services-and-controllers. Accessed 13 Sep. 2025.
+
+heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 Oct. 2016, stackoverflow.com/questions/40303916/model-addattribute-parameters. Accessed 16 Sep. 2025.
 
 “Interface UserInfo.” _UserInfo (Oracle Access Manager Extensibility Java API Reference)_, 1 Mar. 2013, docs.oracle.com/cd/E37115_01/apirefs.1112/e27137/oracle/security/am/engines/common/identity/provider/UserInfo.html. Accessed 9 Sep. 2025.
 
