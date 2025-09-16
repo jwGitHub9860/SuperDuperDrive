@@ -19,3 +19,4 @@ public class Files {
     public Integer getFileId() { return fileId; }
     public String getContenttype() { return contenttype; }
     public String getFilesize() { return filesize; }
+    public byte[] getFiledata() { return filedata; }
