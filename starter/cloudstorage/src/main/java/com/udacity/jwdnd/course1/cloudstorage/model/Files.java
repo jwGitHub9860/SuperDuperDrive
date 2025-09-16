@@ -25,3 +25,4 @@ public class Files {
     public Integer setFileId() { return fileId; }
     public String setContenttype() { return contenttype; }
     public String setFilesize() { return filesize; }
+    public byte[] setFiledata() { return filedata; }
