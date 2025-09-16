@@ -14,19 +14,19 @@ public class FileService {
         this.fileMapper = fileMapper;
     }
 
-    public final File getFileByFileId(Integer fileId) {
+    public final Files getFileByFileId(Integer fileId) {
         return fileMapper.getFileByFileId(fileId);
     }
 
-    public final File getFileByFileName(String filename) {
+    public final Files getFileByFileName(String filename) {
         return fileMapper.getFileByFileName(filename);
     }
 
-    public final File uploadFile(File file) {
+    public final Files uploadFile(Files file) {
         return fileMapper.uploadFile(file);
     }
 
-    public final File downloadFile(String filename) {
+    public final Files downloadFile(String filename) {
         return fileMapper.downloadFile(filename);
     }
 
