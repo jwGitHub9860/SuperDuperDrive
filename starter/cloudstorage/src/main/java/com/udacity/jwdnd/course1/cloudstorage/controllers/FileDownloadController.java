@@ -23,7 +23,7 @@ public class FileDownloadController {
         this.fileService = fileService;
     }
 
-    @RequestMapping("/files")
+    @GetMapping("/download/{filename:.+}")
     public ResponseEntity downloadFile(@PathVariable String filename) throws FileNotFoundException {
         // Checks if file exists
         String fileUploadPath = System.getProperty("user.dir") + "/Uploads";
