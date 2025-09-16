@@ -14,3 +14,5 @@ public class Files {
         this.filesize = filesize;
         this.filedata = filedata;
     }
+
+    public String getFilename() { return filename; }
