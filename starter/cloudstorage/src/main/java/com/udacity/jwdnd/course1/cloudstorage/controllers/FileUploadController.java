@@ -42,6 +42,7 @@ public class FileUploadController {
             e.printStackTrace();
             fileUploadStatus = "File upload failed!";
         }
+        System.out.println(fileUploadStatus);
         return fileUploadStatus;
     }
 
