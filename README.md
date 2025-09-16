@@ -189,6 +189,8 @@ Obregon, Alexander. “How to Handle File Uploads and Downloads with Spring Boot
 
 Singh, Amandeep. “Spring Security in Spring Boot 2.x Using Websecurityconfigureradapter.” _Medium_, Medium, 8 Mar. 2025, lazy-programmer.medium.com/spring-security-in-spring-boot-2-x-using-websecurityconfigureradapter-15b0b5878c0d. Accessed 8 Sep. 2025.
 
+“Spring - @PostMapping and @GetMapping Annotation.” _GeeksforGeeks_, GeeksforGeeks, 4 Jan. 2025, www.geeksforgeeks.org/advance-java/spring-postmapping-and-getmapping-annotation/. Accessed 15 Sep. 2025.
+
 “Spring Boot - File Handling.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/spring-boot-file-handling/. Accessed 11 Sep. 2025.
 
 “Spring Security - Authentication Providers.” _GeeksforGeeks_, GeeksforGeeks, 28 Apr. 2025, www.geeksforgeeks.org/java/spring-security-authentication-providers/. Accessed 7 Sep. 2025.
