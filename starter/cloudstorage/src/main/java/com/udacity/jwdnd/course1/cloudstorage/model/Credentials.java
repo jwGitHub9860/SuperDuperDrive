@@ -28,4 +28,5 @@ public class Credentials {
     public String getDecryptedPassword() { return decryptedPassword; }
 
     public String setUrl() { this.url = url; }
+    public Integer setCredentialId() { this.credentialId = credentialId; }
 }
