@@ -24,7 +24,7 @@ public class User {
     public final String getFirstName() { return firstName; }
     public final String getLastName() { return lastName; }
 
-    public final Integer setUserId() { this.userId = userId; }
+    public final Integer setUserId(Integer userId) { this.userId = userId; }
     public final String setUsername() { this.username = username; }
     public final String setSalt() { this.salt = salt; }
     public final String setPassword() { this.password = password; }
