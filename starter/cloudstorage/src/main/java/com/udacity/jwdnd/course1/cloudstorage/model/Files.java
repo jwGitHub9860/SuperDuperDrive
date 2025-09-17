@@ -25,5 +25,5 @@ public class Files {
     public Integer setFileId() { this.fileId = fileId; }
     public String setContenttype() { this.contenttype = contenttype; }
     public String setFilesize() { this.filesize = filesize; }
-    public byte[] setFiledata() { return filedata; }
+    public byte[] setFiledata() { this.filedata = filedata; }
 }
