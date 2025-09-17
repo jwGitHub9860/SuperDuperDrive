@@ -19,4 +19,5 @@ public class Notes {
     public Integer getUserId() { return userId; }
 
     public String setNoteTitle() { this.noteTitle = noteTitle; }
+    public Integer setNoteId() { this.noteId = noteId; }
 }
