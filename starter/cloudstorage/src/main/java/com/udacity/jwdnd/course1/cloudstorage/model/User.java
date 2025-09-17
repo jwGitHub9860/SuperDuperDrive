@@ -23,11 +23,4 @@ public class User {
     public final String getPassword() { return password; }
     public final String getFirstName() { return firstName; }
     public final String getLastName() { return lastName; }
-
-    public final Integer setUserId(Integer userId) { this.userId = userId; }
-    public final String setUsername() { this.username = username; }
-    public final String setSalt() { this.salt = salt; }
-    public final String setPassword() { this.password = password; }
-    public final String setFirstName() { this.firstName = firstName; }
-    public final String setLastName() { this.lastName = lastName; }
 }
