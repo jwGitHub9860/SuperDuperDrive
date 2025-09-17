@@ -22,4 +22,5 @@ public class Users {
     public final String getSalt() { return salt; }
     public final String getPassword() { return password; }
     public final String getFirstName() { return firstName; }
+    public final String getLastName() { return lastName; }
 }
