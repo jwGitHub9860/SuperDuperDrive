@@ -27,4 +27,5 @@ public class Users {
     public final Integer setUserId() { this.userId = userId; }
     public final String setUsername() { this.username = username; }
     public final String setSalt() { this.salt = salt; }
+    public final String setPassword() { this.password = password; }
 }
