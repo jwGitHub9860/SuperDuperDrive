@@ -25,4 +25,5 @@ public class Users {
     public final String getLastName() { return lastName; }
 
     public final Integer setUserId() { this.userId = userId; }
+    public final String setUsername() { this.username = username; }
 }
