@@ -12,4 +12,6 @@ public class Notes {
         this.noteDescription = noteDescription;
         this.userId = userId;
     }
+
+    public String getNoteTitle() { return noteTitle; }
 }
