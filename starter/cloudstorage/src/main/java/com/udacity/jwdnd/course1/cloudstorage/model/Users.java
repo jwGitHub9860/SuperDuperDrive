@@ -21,4 +21,5 @@ public class Users {
     public final String getUsername() { return username; }
     public final String getSalt() { return salt; }
     public final String getPassword() { return password; }
+    public final String getFirstName() { return firstName; }
 }
