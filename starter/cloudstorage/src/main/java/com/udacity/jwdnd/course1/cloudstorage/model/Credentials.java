@@ -25,4 +25,5 @@ public class Credentials {
     public Integer getUserId() { return userId; }
     public String getKey() { return key; }
     public String getPassword() { return password; }
+    public String getDecryptedPassword() { return decryptedPassword; }
 }
