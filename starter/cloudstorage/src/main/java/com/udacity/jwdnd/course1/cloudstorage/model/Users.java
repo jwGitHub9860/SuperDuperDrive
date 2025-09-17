@@ -29,4 +29,5 @@ public class Users {
     public final String setSalt() { this.salt = salt; }
     public final String setPassword() { this.password = password; }
     public final String setFirstName() { this.firstName = firstName; }
+    public final String setLastName() { this.lastName = lastName; }
 }
