@@ -8,4 +8,14 @@ public class Credentials {
     private final String key;
     private final String password;
     private final String decryptedPassword;
+
+    public Credentials(String url, Integer credentialId, String username, Integer userId, String key, String password, String decryptedPassword) {
+        this.url = url;
+        this.credentialId = credentialId;
+        this.username = username;
+        this.userId = userId;
+        this.key = key;
+        this.password = password;
+        this.decryptedPassword = decryptedPassword;
+    }
 }
