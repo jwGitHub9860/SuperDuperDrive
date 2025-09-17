@@ -26,4 +26,6 @@ public class Credentials {
     public String getKey() { return key; }
     public String getPassword() { return password; }
     public String getDecryptedPassword() { return decryptedPassword; }
+
+    public String setUrl() { this.url = url; }
 }
