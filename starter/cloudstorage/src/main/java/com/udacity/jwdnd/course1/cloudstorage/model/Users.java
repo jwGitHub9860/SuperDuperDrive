@@ -20,4 +20,5 @@ public class Users {
     public final Integer getUserId() { return userId; }
     public final String getUsername() { return username; }
     public final String getSalt() { return salt; }
+    public final String getPassword() { return password; }
 }
