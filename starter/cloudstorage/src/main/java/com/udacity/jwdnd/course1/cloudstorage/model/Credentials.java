@@ -22,4 +22,5 @@ public class Credentials {
     public String getUrl() { return url; }
     public Integer getCredentialId() { return credentialId; }
     public String getUsername() { return username; }
+    public Integer getUserId() { return userId; }
 }
