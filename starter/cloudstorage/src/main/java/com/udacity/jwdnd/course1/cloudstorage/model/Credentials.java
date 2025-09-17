@@ -23,4 +23,5 @@ public class Credentials {
     public Integer getCredentialId() { return credentialId; }
     public String getUsername() { return username; }
     public Integer getUserId() { return userId; }
+    public String getKey() { return key; }
 }
