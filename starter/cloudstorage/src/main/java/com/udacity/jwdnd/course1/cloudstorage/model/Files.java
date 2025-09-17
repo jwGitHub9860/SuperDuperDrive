@@ -15,15 +15,15 @@ public class Files {
         this.filedata = filedata;
     }
 
-    public String getFilename() { return filename; }
-    public Integer getFileId() { return fileId; }
-    public String getContenttype() { return contentType; }
-    public String getFilesize() { return filesize; }
-    public byte[] getFiledata() { return filedata; }
+    public final String getFilename() { return filename; }
+    public final Integer getFileId() { return fileId; }
+    public final String getContenttype() { return contentType; }
+    public final String getFilesize() { return filesize; }
+    public final byte[] getFiledata() { return filedata; }
 
-    public String setFilename() { this.filename = filename; }
-    public Integer setFileId() { this.fileId = fileId; }
-    public String setContenttype() { this.contentType = contentType; }
-    public String setFilesize() { this.filesize = filesize; }
-    public byte[] setFiledata() { this.filedata = filedata; }
+    public final String setFilename() { this.filename = filename; }
+    public final Integer setFileId() { this.fileId = fileId; }
+    public final String setContenttype() { this.contentType = contentType; }
+    public final String setFilesize() { this.filesize = filesize; }
+    public final byte[] setFiledata() { this.filedata = filedata; }
 }

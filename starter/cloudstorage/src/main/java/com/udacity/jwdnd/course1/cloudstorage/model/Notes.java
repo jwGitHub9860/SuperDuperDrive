@@ -13,13 +13,13 @@ public class Notes {
         this.userId = userId;
     }
 
-    public String getNoteTitle() { return noteTitle; }
-    public Integer getNoteId() { return noteId; }
-    public String getNoteDescription() { return noteDescription; }
-    public Integer getUserId() { return userId; }
+    public final String getNoteTitle() { return noteTitle; }
+    public final Integer getNoteId() { return noteId; }
+    public final String getNoteDescription() { return noteDescription; }
+    public final Integer getUserId() { return userId; }
 
-    public String setNoteTitle() { this.noteTitle = noteTitle; }
-    public Integer setNoteId() { this.noteId = noteId; }
-    public String setNoteDescription() { this.noteDescription = noteDescription; }
-    public Integer setUserId() { this.userId = userId; }
+    public final String setNoteTitle() { this.noteTitle = noteTitle; }
+    public final Integer setNoteId() { this.noteId = noteId; }
+    public final String setNoteDescription() { this.noteDescription = noteDescription; }
+    public final Integer setUserId() { this.userId = userId; }
 }
