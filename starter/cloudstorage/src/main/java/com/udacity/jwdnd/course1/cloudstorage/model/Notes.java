@@ -21,4 +21,5 @@ public class Notes {
     public String setNoteTitle() { this.noteTitle = noteTitle; }
     public Integer setNoteId() { this.noteId = noteId; }
     public String setNoteDescription() { this.noteDescription = noteDescription; }
+    public Integer setUserId() { this.userId = userId; }
 }
