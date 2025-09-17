@@ -18,4 +18,6 @@ public class Credentials {
         this.password = password;
         this.decryptedPassword = decryptedPassword;
     }
+
+    public String getUrl() { return url; }
 }
