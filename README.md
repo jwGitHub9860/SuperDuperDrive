@@ -167,6 +167,10 @@ Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructio
 
 “Class AuthenticationService.” _Oracle Entitlements Server for Java API Reference: Class AuthenticationService_, docs.oracle.com/cd/E12890_01/ales/docs32/javadocs/javaapi/com/bea/security/AuthenticationService.html. Accessed 7 Sep. 2025.
 
+“Class SecureRandom.” _SecureRandom (Java Platform SE 8 )_, 15 July 2025, docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html. Accessed 17 Sep. 2025.
+
+“Class SecureRandomFactoryBean.” _SecureRandomFactoryBean (Spring-Security-Docs 6.5.5 API)_, docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/core/token/SecureRandomFactoryBean.html. Accessed 17 Sep. 2025.
+
 “Class User.” _User (Spring-Security-Docs 6.5.5 API)_, docs.spring.io/spring-security/reference/api/java/org/springframework/security/core/userdetails/User.html. Accessed 17 Sep. 2025.
 
 D, Dao Anh. “I Can’t Run the Sample Test Case.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/880822. Accessed 12 Sep. 2025.
@@ -194,6 +198,8 @@ L, Keith. “Controllers.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/q
 “MLA Works Cited: Electronic Sources (Web Publications).” _MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University_, owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 29 Aug. 2025.
 
 Obregon, Alexander. “How to Handle File Uploads and Downloads with Spring Boot.” _Medium_, Medium, 17 Apr. 2024, medium.com/@AlexanderObregon/how-to-handle-file-uploads-and-downloads-with-spring-boot-84638463fd6f. Accessed 14 Sep. 2025.
+
+“Random vs Secure Random Numbers in Java.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/random-vs-secure-random-numbers-java/. Accessed 17 Sep. 2025.
 
 Singh, Amandeep. “Spring Security in Spring Boot 2.x Using Websecurityconfigureradapter.” _Medium_, Medium, 8 Mar. 2025, lazy-programmer.medium.com/spring-security-in-spring-boot-2-x-using-websecurityconfigureradapter-15b0b5878c0d. Accessed 8 Sep. 2025.
 
