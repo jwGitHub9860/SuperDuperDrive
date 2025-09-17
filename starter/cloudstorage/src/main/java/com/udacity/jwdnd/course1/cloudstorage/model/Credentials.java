@@ -30,4 +30,5 @@ public class Credentials {
     public String setUrl() { this.url = url; }
     public Integer setCredentialId() { this.credentialId = credentialId; }
     public final String setUsername() { this.username = username; }
+    public final Integer setUserId() { this.userId = userId; }
 }
