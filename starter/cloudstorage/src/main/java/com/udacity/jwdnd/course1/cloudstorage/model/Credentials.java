@@ -19,16 +19,16 @@ public class Credentials {
         this.decryptedPassword = decryptedPassword;
     }
 
-    public String getUrl() { return url; }
-    public Integer getCredentialId() { return credentialId; }
-    public String getUsername() { return username; }
-    public Integer getUserId() { return userId; }
-    public String getKey() { return key; }
-    public String getPassword() { return password; }
-    public String getDecryptedPassword() { return decryptedPassword; }
+    public final String getUrl() { return url; }
+    public final Integer getCredentialId() { return credentialId; }
+    public final String getUsername() { return username; }
+    public final Integer getUserId() { return userId; }
+    public final String getKey() { return key; }
+    public final String getPassword() { return password; }
+    public final String getDecryptedPassword() { return decryptedPassword; }
 
-    public String setUrl() { this.url = url; }
-    public Integer setCredentialId() { this.credentialId = credentialId; }
+    public final String setUrl() { this.url = url; }
+    public final Integer setCredentialId() { this.credentialId = credentialId; }
     public final String setUsername() { this.username = username; }
     public final Integer setUserId() { this.userId = userId; }
     public final String setKey() { this.key = key; }
