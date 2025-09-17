@@ -23,7 +23,7 @@ public class Files {
 
     public String setFilename() { this.filename = filename; }
     public Integer setFileId() { this.fileId = fileId; }
-    public String setContenttype() { return contenttype; }
+    public String setContenttype() { this.contenttype = contenttype; }
     public String setFilesize() { return filesize; }
     public byte[] setFiledata() { return filedata; }
 }
