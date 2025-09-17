@@ -167,6 +167,8 @@ Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructio
 
 “Class AuthenticationService.” _Oracle Entitlements Server for Java API Reference: Class AuthenticationService_, docs.oracle.com/cd/E12890_01/ales/docs32/javadocs/javaapi/com/bea/security/AuthenticationService.html. Accessed 7 Sep. 2025.
 
+“Class User.” _User (Spring-Security-Docs 6.5.5 API)_, docs.spring.io/spring-security/reference/api/java/org/springframework/security/core/userdetails/User.html. Accessed 17 Sep. 2025.
+
 D, Dao Anh. “I Can’t Run the Sample Test Case.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/880822. Accessed 12 Sep. 2025.
 
 “Delete a File Using Java.” _GeeksforGeeks_, GeeksforGeeks, 10 Jan. 2025, www.geeksforgeeks.org/java/delete-file-using-java/. Accessed 12 Sep. 2025.
