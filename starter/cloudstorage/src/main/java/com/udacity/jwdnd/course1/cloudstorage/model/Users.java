@@ -1,4 +1,7 @@
+import java.io.Serializable;
+
 import org.springframework.security.core.userdetails.User;
+import org.springframework.context.annotation.Scope;
 
 package com.udacity.jwdnd.course1.cloudstorage.model;
 
