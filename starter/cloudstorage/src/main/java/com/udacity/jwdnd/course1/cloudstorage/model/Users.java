@@ -23,4 +23,6 @@ public class Users {
     public final String getPassword() { return password; }
     public final String getFirstName() { return firstName; }
     public final String getLastName() { return lastName; }
+
+    public final Integer setUserId() { this.userId = userId; }
 }
