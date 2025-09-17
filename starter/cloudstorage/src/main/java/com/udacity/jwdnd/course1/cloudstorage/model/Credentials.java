@@ -32,4 +32,5 @@ public class Credentials {
     public final String setUsername() { this.username = username; }
     public final Integer setUserId() { this.userId = userId; }
     public final String setKey() { this.key = key; }
+    public final String setPassword() { this.password = password; }
 }
