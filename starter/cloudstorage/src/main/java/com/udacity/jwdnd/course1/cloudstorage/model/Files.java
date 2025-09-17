@@ -21,7 +21,7 @@ public class Files {
     public String getFilesize() { return filesize; }
     public byte[] getFiledata() { return filedata; }
 
-    public String setFilename() { return filename; }
+    public String setFilename() { this.filename = filename; }
     public Integer setFileId() { return fileId; }
     public String setContenttype() { return contenttype; }
     public String setFilesize() { return filesize; }
