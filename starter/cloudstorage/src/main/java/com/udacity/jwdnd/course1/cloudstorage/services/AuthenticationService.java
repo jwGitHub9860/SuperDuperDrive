@@ -4,6 +4,8 @@ import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.User;
 
+import com.udacity.jwdnd.course1.cloudstorage.mappers.UserMapper;
+
 @Service
 
 public class AuthenticationService implements AuthenticationProvider {
