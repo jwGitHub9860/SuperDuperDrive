@@ -23,6 +23,8 @@ import com.udacity.jwdnd.course1.cloudstorage.services.UserService;
 @Controller
 public class FileUploadController {
     private final FileService fileService;
+    private final NoteService noteService;
+    private final CredentialService credentialService;
     private final UserService userService;
 
     public FileUploadController(UserService userService) {
