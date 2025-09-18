@@ -27,6 +27,7 @@ public class FileUploadController {
     private final NoteService noteService;
     private final CredentialService credentialService;
     private final UserService userService;
+    private final Users users;
 
     public FileUploadController(UserService userService) {
         this.fileService = fileService;
