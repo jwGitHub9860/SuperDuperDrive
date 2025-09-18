@@ -1,3 +1,5 @@
+import org.springframework.security.core.userdetails.User;
+
 package com.udacity.jwdnd.course1.cloudstorage.services;
 
 @Service
