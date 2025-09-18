@@ -26,6 +26,7 @@ public class UserService {
     public int createUser(User user) {
         SecureRandom random = new SecureRandom();
         String encodedPassword = passwordEncoder.encode(user.getPassword());
+        byte[] salt = new byte[16];
         User newUser = new User(null, user.getUsername(), encodedPassword, user.getFirstName(), user.getLastName());
         return userMapper.insert(newUser);
     }
