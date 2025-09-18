@@ -20,5 +20,6 @@ public class AuthenticationService implements AuthenticationProvider {
         
         User user = userMapper.getUser(username);
         if (user != null) {
+            String encodedSalt = user.getSalt();
             
 }
