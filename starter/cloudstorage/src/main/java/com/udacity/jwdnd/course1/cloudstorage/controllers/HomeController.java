@@ -4,7 +4,7 @@ import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.udacity.jwdnd.course1.cloudstorage.services.AuthenticationService;
+import com.udacity.jwdnd.course1.cloudstorage.services.FileService;
 
 @Controller
 @RequestMapping("/home")
