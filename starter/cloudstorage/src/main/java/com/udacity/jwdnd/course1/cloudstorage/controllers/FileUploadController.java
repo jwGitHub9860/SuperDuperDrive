@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.udacity.jwdnd.course1.cloudstorage.services.FileService;
+import com.udacity.jwdnd.course1.cloudstorage.services.UserService;
 
 @Controller
 public class FileUploadController {
