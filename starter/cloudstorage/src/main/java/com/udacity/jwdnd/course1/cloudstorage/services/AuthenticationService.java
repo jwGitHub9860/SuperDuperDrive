@@ -6,5 +6,8 @@ public class AuthenticationService {
     private final UserMapper userMapper;
     private final HashService hashService;
 
-    
+    public AuthenticationService(UserMapper userMapper, HashService hashService) {
+        this.userMapper = userMapper;
+        this.hashService = hashService;
+    }
 }
