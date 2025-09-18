@@ -31,6 +31,8 @@ public class FileUploadController {
 
     public FileUploadController(UserService userService) {
         this.fileService = fileService;
+        this.noteService = noteService;
+        this.credentialService = credentialService;
         this.userService = userService;
     }
 
