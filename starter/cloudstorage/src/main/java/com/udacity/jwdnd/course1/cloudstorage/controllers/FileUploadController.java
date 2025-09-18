@@ -1,3 +1,5 @@
+package com.udacity.jwdnd.course1.cloudstorage.controllers;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,8 +14,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
-package com.udacity.jwdnd.course1.cloudstorage.controllers;
 
 @Controller
 public class FileUploadController {

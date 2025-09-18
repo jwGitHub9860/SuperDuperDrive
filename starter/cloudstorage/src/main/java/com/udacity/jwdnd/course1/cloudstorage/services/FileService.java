@@ -1,9 +1,9 @@
+package com.udacity.jwdnd.course1.cloudstorage.services;
+
 import com.udacity.jwdnd.course1.cloudstorage.mapper.FileMapperMapper;
 import com.udacity.jwdnd.course1.cloudstorage.model.FileMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
-package com.udacity.jwdnd.course1.cloudstorage.services;
 
 @Service
 
