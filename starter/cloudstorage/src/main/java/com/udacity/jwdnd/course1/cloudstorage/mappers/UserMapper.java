@@ -1,6 +1,6 @@
 package com.udacity.jwdnd.course1.cloudstorage.mappers;
 
-import com.udacity.jwdnd.course1.cloudstorage.model.Users;
+import com.udacity.jwdnd.course1.cloudstorage.model.User;
 import org.apache.ibatis.annotations.*;
 
 @Mapper
