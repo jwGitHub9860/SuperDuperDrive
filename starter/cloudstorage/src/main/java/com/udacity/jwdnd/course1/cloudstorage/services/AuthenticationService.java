@@ -27,4 +27,5 @@ public class AuthenticationService implements AuthenticationProvider {
             }
         }
         return null;
+    }
 }
