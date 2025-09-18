@@ -19,4 +19,6 @@ public class AuthenticationService implements AuthenticationProvider {
         String password = authentication.getCredentials().toString();
         
         User user = userMapper.getUser(username);
+        if (user != null) {
+            
 }
