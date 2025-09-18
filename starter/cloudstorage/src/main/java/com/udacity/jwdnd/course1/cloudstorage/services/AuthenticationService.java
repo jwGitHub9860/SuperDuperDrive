@@ -10,4 +10,7 @@ public class AuthenticationService implements AuthenticationProvider {
         this.userMapper = userMapper;
         this.hashService = hashService;
     }
+
+    public Authentication authenticate(Authentication authentication) throws AuthenticationException {
+        
 }
