@@ -1,8 +1,8 @@
+package com.udacity.jwdnd.course1.cloudstorage.services;
+
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.User;
-
-package com.udacity.jwdnd.course1.cloudstorage.services;
 
 @Service
 
