@@ -5,6 +5,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.userdetails.User;
 
 import com.udacity.jwdnd.course1.cloudstorage.mappers.UserMapper;
+import com.udacity.jwdnd.course1.cloudstorage.services.HashService;
 
 @Service
 
