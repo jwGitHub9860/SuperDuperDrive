@@ -11,7 +11,6 @@ import com.udacity.jwdnd.course1.cloudstorage.mappers.UserMapper;
 import com.udacity.jwdnd.course1.cloudstorage.services.HashService;
 
 @Service
-
 public class AuthenticationService implements AuthenticationProvider {
     private final UserMapper userMapper;
     private final HashService hashService;
