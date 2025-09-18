@@ -1,6 +1,7 @@
 package com.udacity.jwdnd.course1.cloudstorage.services;
 
 import java.security.SecureRandom;
+import java.util.Base64;
 
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.stereotype.Service;
