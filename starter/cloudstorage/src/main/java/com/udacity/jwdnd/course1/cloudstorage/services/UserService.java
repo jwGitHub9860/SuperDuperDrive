@@ -10,7 +10,7 @@ package com.udacity.jwdnd.course1.cloudstorage.services;
 
 @Service
 public class UserService {
-
+    private final HashService hashService;
     private final UserMapper userMapper;
     private final BCryptPasswordEncoder passwordEncoder;
 
