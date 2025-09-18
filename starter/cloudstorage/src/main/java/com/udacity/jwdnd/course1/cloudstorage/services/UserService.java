@@ -23,17 +23,17 @@ public class UserService {
         return userMapper.getUser(username) == null;
     }
 
-    public int createUser(User user) {
+    public int createUser(Users user) {
         SecureRandom random = new SecureRandom();
         String encodedPassword = passwordEncoder.encode(user.getPassword());
         byte[] salt = new byte[16];
         random.nextBytes(salt);
         String encodedSalt = Base64.getEncoder().encodeToString(salt);
-        User newUser = new User(null, user.getUsername(), encodedPassword, user.getFirstName(), user.getLastName());
+        Users newUser = new Users(null, user.getUsername(), encodedPassword, user.getFirstName(), user.getLastName());
         return userMapper.insert(newUser);
     }
 
-    public User getUser(String username) {
+    public Users getUser(String username) {
         return userMapper.getUser(username);
     }
 }
