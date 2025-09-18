@@ -28,4 +28,6 @@ public class AuthenticationService implements AuthenticationProvider {
         }
         return null;
     }
+
+    public boolean supports(Class<?> authentication) {}
 }
