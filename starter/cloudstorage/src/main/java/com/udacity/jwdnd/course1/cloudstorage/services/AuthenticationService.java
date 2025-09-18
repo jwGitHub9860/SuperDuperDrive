@@ -29,5 +29,7 @@ public class AuthenticationService implements AuthenticationProvider {
         return null;
     }
 
-    public boolean supports(Class<?> authentication) {}
+    public boolean supports(Class<?> authentication) {
+        return authentication.equals(UsernamePasswordAuthenticationToken.class);
+    }
 }
