@@ -14,7 +14,8 @@ public class UserService {
     private final UserMapper userMapper;
     private final BCryptPasswordEncoder passwordEncoder;
 
-    public UserService(UserMapper userMapper, BCryptPasswordEncoder passwordEncoder) {
+    public UserService(HashService hashService, UserMapper userMapper, BCryptPasswordEncoder passwordEncoder) {
+        this.hashService = hashService;
         this.userMapper = userMapper;
         this.passwordEncoder = passwordEncoder;
     }
