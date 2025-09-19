@@ -4,4 +4,6 @@ package com.udacity.jwdnd.course1.cloudstorage.mappers;
 public interface NoteMapper {
     @Select("SELECT * FROM Notes WHERE noteId = #{noteId}")
     getNoteByNoteId(Integer noteId);
+
+    @Select("SELECT * FROM Notes WHERE noteTitle = #{noteTitle}")
 }
