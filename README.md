@@ -187,6 +187,8 @@ Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvi
 
 “Do You Always Need to Separate Services and Controllers?” _Corey Cleary_, www.coreycleary.me/do-you-always-need-to-separate-services-and-controllers. Accessed 13 Sep. 2025.
 
+“Download Spring-Context JAR File with All Dependencies.” _JAR Search and Dependency Download from the Maven Repository_, jar-download.com/artifacts/org.springframework/spring-context/org.apache.commons.net.ftp.FTPClient. Accessed 18 Sep. 2025.
+
 heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 Oct. 2016, stackoverflow.com/questions/40303916/model-addattribute-parameters. Accessed 16 Sep. 2025.
 
 “Interface Model.” _Spring_, 10 Apr. 2019, docs.spring.io/spring-framework/docs/5.1.6.RELEASE_to_5.2.0.M1/Spring%20Framework%205.2.0.M1/org/springframework/ui/Model.html. Accessed 16 Sep. 2025.
