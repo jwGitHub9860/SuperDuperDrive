@@ -53,6 +53,8 @@ public class FileDownloadController {
         HttpHeaders headers = new HttpHeaders();
         String contentType = "application/octet-stream";
         String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
+
+        redirectAttributes.addFlashAttribute("message", "File downloaded successfully!");
         
         return ResponseEntity.ok()
                 .contentType(MediaType.parseMediaType(contentType))
