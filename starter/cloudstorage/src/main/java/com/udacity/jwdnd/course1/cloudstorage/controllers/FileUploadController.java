@@ -54,6 +54,7 @@ public class FileUploadController {
             fileUploadStatus = "File upload failed!";
         }
         Users users = this.userService.getUser(authentication.getName()).getUserId();
+        model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         System.out.println(fileUploadStatus);
         return fileUploadStatus;
     }
