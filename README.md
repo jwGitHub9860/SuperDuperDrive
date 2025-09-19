@@ -153,6 +153,8 @@ _None_
 ## Credits
 ###### References used while making project
 
+abc32112, and dectarin. “How Do I Find the Library Containing Org.Springframework.Stereotype.Service?” Edited by Vertexwahn, _Stack Overflow_, 8 Aug. 2014, stackoverflow.com/questions/25206487/how-do-i-find-the-library-containing-org-springframework-stereotype-service. Accessed 18 Sep. 2025.
+
 “Class UsernamePasswordAuthenticationToken.” _Usernamepasswordauthenticationtoken (Spring Security 4.0.4.Release API)_, 25 Feb. 2016, docs.spring.io/spring-security/site/docs/4.0.x/apidocs/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.html. Accessed 18 Sep. 2025.
 
 “@Controller vs. @RestController Annotation in Spring.” _GeeksforGeeks_, GeeksforGeeks, 3 Sept. 2025, www.geeksforgeeks.org/springboot/controller-vs-restcontroller-annotation-in-spring/. Accessed 12 Sep. 2025.
