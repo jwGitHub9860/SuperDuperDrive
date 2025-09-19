@@ -37,7 +37,7 @@ public class FileUploadController {
     }
 
     @PostMapping("/upload")
-    public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload) {
+    public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload, Model model) {
         // Sets up file path
         String filePath = System.getProperty("user.dir") + "/Uploads" + File.separator + fileUpload.getOriginalFilename();
         String fileUploadStatus;
