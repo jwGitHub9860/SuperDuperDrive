@@ -59,14 +59,6 @@ public class FileUploadController {
     }
 
     @RequestMapping("/files")
-    public String[] getFiles() {
-        String filePath = System.getProperty("user.dir") + "/Uploads";
-        File directory = new File(filePath);
-        String[] filenames = directory.list();
-        return filenames;
-    }
-
-    @RequestMapping("/files")
     public void deleteFile(@PathVariable String filename) {
         String filePath = System.getProperty("user.dir") + "/Uploads" + File.separator + filename;
         File file = new File(filePath);

@@ -22,6 +22,14 @@ public class FileService {
         return fileMapper.getFileByFileName(filename);
     }
 
+    @RequestMapping("/files")
+    public String[] getFiles() {
+        String filePath = System.getProperty("user.dir") + "/Uploads";
+        File directory = new File(filePath);
+        String[] filenames = directory.list();
+        return filenames;
+    }
+
     public final Files uploadFile(Files file) {
         return fileMapper.uploadFile(file);
     }
