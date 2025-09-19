@@ -27,7 +27,7 @@ public class FileDownloadController {
     private final CredentialService credentialService;
     private final UserService userService;
 
-    public FileDownloadController(FileService fileService) {
+    public FileDownloadController(FileService fileService, NoteService noteService, CredentialService credentialService, UserService userService) {
         this.fileService = fileService;
     }
 
