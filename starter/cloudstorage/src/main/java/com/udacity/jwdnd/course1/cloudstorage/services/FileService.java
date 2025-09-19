@@ -6,7 +6,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import com.udacity.jwdnd.course1.cloudstorage.mappers.FileMapper;
 
 @Service
-
 public class FileService {
     private final FileMapper fileMapper;
 
