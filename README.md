@@ -209,6 +209,8 @@ Obregon, Alexander. “How to Handle File Uploads and Downloads with Spring Boot
 
 Ozler, Hakan. “Java @Override Annotation.” _Baeldung_, 7 Apr. 2025, www.baeldung.com/java-override. Accessed 17 Sep. 2025.
 
+Phate, et al. “What Is Responseentity for and Why Should I Keep It?” _Stack Overflow_, 10 Apr. 2020, stackoverflow.com/questions/61138943/what-is-responseentity-for-and-why-should-i-keep-it. Accessed 19 Sep. 2025.
+
 “Random vs Secure Random Numbers in Java.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/random-vs-secure-random-numbers-java/. Accessed 17 Sep. 2025.
 
 “Servlet Authentication Architecture.” _Servlet Authentication Architecture :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/architecture.html#:~:text=SecurityContextHolder%20%2D%20The%20SecurityContextHolder%20is%20where,Spring%20Security’s%20Filters%20perform%20authentication. Accessed 16 Sep. 2025.
