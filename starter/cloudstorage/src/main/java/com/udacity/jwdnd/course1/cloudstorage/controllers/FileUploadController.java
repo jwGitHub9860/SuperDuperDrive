@@ -49,10 +49,10 @@ public class FileUploadController {
             fout.write(fileUpload.getBytes());
 
             fout.close();
-            fileUploadStatus = "File uploaded successfully!";
+            redirectAttributes.addFlashAttribute("upload_message", "File uploaded successfully!");
         } catch (Exception e) {
             e.printStackTrace();
-            fileUploadStatus = "File upload failed!";
+            redirectAttributes.addFlashAttribute("upload_message", "File upload failed!");
         }
         Users users = this.userService.getUser(authentication.getName()).getUserId();
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
