@@ -26,6 +26,7 @@
             <version>1.7.36</version>
         </dependency>
 
+        <!-- Defines "org.springframework.stereotype.Service" Package --> <!-- Allows "FileService.java", "HashService.java", "UserService.java", "HomeController.java" to Use Package --> <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
