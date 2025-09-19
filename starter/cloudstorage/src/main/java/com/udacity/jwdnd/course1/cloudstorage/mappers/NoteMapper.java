@@ -10,4 +10,6 @@ public interface NoteMapper {
 
     @Select("SELECT * FROM Notes WHERE userId = #{userId}")
     getNoteByUserId(Integer userId);
+
+    @Delete("DELETE FROM Notes WHERE noteId = #{noteId}")
 }
