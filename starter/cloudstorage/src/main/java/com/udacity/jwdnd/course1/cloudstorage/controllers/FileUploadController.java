@@ -29,7 +29,7 @@ public class FileUploadController {
     private final UserService userService;
     private final Users users;
 
-    public FileUploadController(UserService userService) {
+    public FileUploadController(FileService fileService, NoteService noteService, CredentialService credentialService, UserService userService) {
         this.fileService = fileService;
         this.noteService = noteService;
         this.credentialService = credentialService;
