@@ -22,7 +22,7 @@ public class FileService {
     }
 
     public String[] getFiles() {
-        return filenames;
+        return fileMapper.getFileByUserId(userId);
     }
 
     public final Files uploadFile(Files file) {
