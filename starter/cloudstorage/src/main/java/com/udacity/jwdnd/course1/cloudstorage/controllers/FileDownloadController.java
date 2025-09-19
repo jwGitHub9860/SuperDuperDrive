@@ -29,6 +29,9 @@ public class FileDownloadController {
 
     public FileDownloadController(FileService fileService, NoteService noteService, CredentialService credentialService, UserService userService) {
         this.fileService = fileService;
+        this.noteService = noteService;
+        this.credentialService = credentialService;
+        this.userService = userService;
     }
 
     @GetMapping("/download/{filename:.+}")
