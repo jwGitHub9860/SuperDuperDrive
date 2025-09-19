@@ -6,4 +6,5 @@ public interface NoteMapper {
     getNoteByNoteId(Integer noteId);
 
     @Select("SELECT * FROM Notes WHERE noteTitle = #{noteTitle}")
+    getNoteByNoteTitle(String noteTitle);
 }
