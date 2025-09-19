@@ -53,6 +53,7 @@ public class FileUploadController {
             e.printStackTrace();
             fileUploadStatus = "File upload failed!";
         }
+        Users users = this.userService.getUser(authentication.getName()).getUserId();
         System.out.println(fileUploadStatus);
         return fileUploadStatus;
     }
