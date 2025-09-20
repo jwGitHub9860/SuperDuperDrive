@@ -68,5 +68,7 @@ public class FileUploadController {
         } else {
             System.out.println("Failed to delete the file");
         }
+
+        Users users = this.userService.getUser(authentication.getName()).getUserId();
     }
 }
