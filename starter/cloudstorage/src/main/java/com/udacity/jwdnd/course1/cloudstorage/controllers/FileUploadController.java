@@ -52,7 +52,7 @@ public class FileUploadController {
             e.printStackTrace();
             redirectAttributes.addFlashAttribute("upload_message", "File upload failed!");
         }
-        Users users = this.userService.getUser(authentication.getName()).getUserId();
+        Users users = this.userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         
         // Takes User Back to Home Page
@@ -69,7 +69,7 @@ public class FileUploadController {
             System.out.println("Failed to delete the file");
         }
 
-        Users users = this.userService.getUser(authentication.getName()).getUserId();
+        Users users = this.userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
     }
 }
