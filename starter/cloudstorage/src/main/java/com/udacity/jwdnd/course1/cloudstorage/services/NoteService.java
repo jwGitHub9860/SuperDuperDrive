@@ -9,4 +9,8 @@ public class NoteService {
     public NoteService(NoteMapper noteMapper) {
         this.noteMapper = noteMapper;
     }
+
+    public Notes getNoteByNoteId(Integer noteId) {
+        return noteMapper.getNoteByNoteId(noteId);
+    }
 }
