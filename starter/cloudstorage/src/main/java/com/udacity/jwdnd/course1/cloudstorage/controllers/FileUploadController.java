@@ -70,5 +70,6 @@ public class FileUploadController {
         }
 
         Users users = this.userService.getUser(authentication.getName()).getUserId();
+        model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
     }
 }
