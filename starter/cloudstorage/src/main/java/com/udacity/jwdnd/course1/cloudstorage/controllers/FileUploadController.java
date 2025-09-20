@@ -60,7 +60,7 @@ public class FileUploadController {
     }
 
     @RequestMapping("/files")
-    public void deleteFile(@PathVariable String filename) {
+    public void deleteFile(@PathVariable String filename, Authentication authentication) {
         String filePath = System.getProperty("user.dir") + "/Uploads" + File.separator + filename;
         File file = new File(filePath);
         if (file.delete()) {
