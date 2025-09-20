@@ -55,6 +55,7 @@ public class FileDownloadController {
         String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
 
         Users users = this.userService.getUser(authentication.getName());
+        model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
 
         redirectAttributes.addFlashAttribute("message", "File downloaded successfully!");
         
