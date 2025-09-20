@@ -11,4 +11,11 @@ public class NoteController {
     private final NoteService noteService;
     private final CredentialService credentialService;
     private final UserService userService;
+
+    public NoteController(FileService fileService, NoteService noteService, CredentialService credentialService, UserService userService) {
+        this.fileService = fileService;
+        this.noteService = noteService;
+        this.credentialService = credentialService;
+        this.userService = userService;
+    }
 }
