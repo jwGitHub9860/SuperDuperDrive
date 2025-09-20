@@ -1,4 +1,6 @@
 package com.udacity.jwdnd.course1.cloudstorage.mappers;
 
 @Mapper
-public interface CredentialsMapper {}
+public interface CredentialsMapper {
+    Credentials getCredentialByCredentialId(Integer credentialId);
+}
