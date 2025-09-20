@@ -47,13 +47,15 @@ public class FileUploadController {
             fout.write(fileUpload.getBytes());
 
             fout.close();
+            
+            Users users = this.userService.getUser(authentication.getName());
+            model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
+            
             redirectAttributes.addFlashAttribute("upload_message", "File uploaded successfully!");
         } catch (Exception e) {
             e.printStackTrace();
             redirectAttributes.addFlashAttribute("upload_message", "File upload failed!");
         }
-        Users users = this.userService.getUser(authentication.getName());
-        model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         
         // Takes User Back to Home Page
         return "redirect:/home";
