@@ -22,6 +22,10 @@ public class NoteService {
         return noteMapper.getNoteByUserId(userId);
     }
 
+    public Notes createNote(String noteTitle, String noteDescription, Integer userId) {
+        return noteMapper.createNote(noteTitle, noteDescription, userId);
+    }
+
     public Notes editNote(String noteTitle, String noteDescription, Integer noteId) {
         return noteMapper.editNote(noteTitle, noteDescription, noteId);
     }
