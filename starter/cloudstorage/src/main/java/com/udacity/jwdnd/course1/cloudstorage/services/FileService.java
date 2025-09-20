@@ -23,7 +23,7 @@ public class FileService {
         return fileMapper.getFileByFileName(filename);
     }
 
-    public String[] getFileByUserId(Integer userId) {
+    public List<Files> getFileByUserId(Integer userId) {
         return fileMapper.getFileByUserId(userId);
     }
 
