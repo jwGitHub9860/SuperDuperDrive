@@ -17,4 +17,8 @@ public class NoteService {
     public Notes getNoteByNoteTitle(String noteTitle) {
         return noteMapper.getNoteByNoteTitle(noteTitle);
     }
+
+    public Notes getNoteByUserId(Integer userId) {
+        return noteMapper.getNoteByUserId(userId);
+    }
 }
