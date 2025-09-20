@@ -27,4 +27,6 @@ public interface FileMapper {
 
     @Delete("DELETE FROM Files WHERE fileId = #{fileId}")
     void deleteFile(Integer fileId);
+
+    @Update("UPDATE Files SET filedata = #{filedata} WHERE fileId = #{fileId}")
 }
