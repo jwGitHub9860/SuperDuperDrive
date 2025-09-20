@@ -21,4 +21,8 @@ public class NoteService {
     public Notes getNoteByUserId(Integer userId) {
         return noteMapper.getNoteByUserId(userId);
     }
+
+    public Notes editNote(String noteTitle, String noteDescription, Integer noteId) {
+        return noteMapper.editNote(noteTitle, noteDescription, noteId);
+    }
 }
