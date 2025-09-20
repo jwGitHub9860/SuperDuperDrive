@@ -205,11 +205,15 @@ L, Keith. “Controllers.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/q
 
 “MLA Works Cited: Electronic Sources (Web Publications).” _MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University_, owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 29 Aug. 2025.
 
+“MongoDB-Specific Data Manipulation Methods.” _MongoDB-Specific Data Manipulation Methods :: Spring Data MongoDB_, docs.spring.io/spring-data/mongodb/reference/mongodb/repositories/modifying-methods.html. Accessed 19 Sep. 2025.
+
 Obregon, Alexander. “How to Handle File Uploads and Downloads with Spring Boot.” _Medium_, Medium, 17 Apr. 2024, medium.com/@AlexanderObregon/how-to-handle-file-uploads-and-downloads-with-spring-boot-84638463fd6f. Accessed 14 Sep. 2025.
 
 Ozler, Hakan. “Java @Override Annotation.” _Baeldung_, 7 Apr. 2025, www.baeldung.com/java-override. Accessed 17 Sep. 2025.
 
 Phate, et al. “What Is Responseentity for and Why Should I Keep It?” _Stack Overflow_, 10 Apr. 2020, stackoverflow.com/questions/61138943/what-is-responseentity-for-and-why-should-i-keep-it. Accessed 19 Sep. 2025.
+
+Pollack, Mark, et al. _Spring Data Mongodb - Reference Documentation_, 12 May 2023, docs.spring.io/spring-data/mongodb/docs/4.0.6/reference/html/. Accessed 19 Sep. 2025.
 
 “Random vs Secure Random Numbers in Java.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/random-vs-secure-random-numbers-java/. Accessed 17 Sep. 2025.
 
