@@ -163,6 +163,8 @@ abc32112, and dectarin. “How Do I Find the Library Containing Org.Springframew
 
 B, Zachary. “Testing Delete.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/813835. Accessed 12 Sep. 2025.
 
+baeldung. “Convert Long to String in Java.” _Baeldung_, 4 Oct. 2021, www.baeldung.com/java-long-to-string. Accessed 21 Sep. 2025.
+
 baeldung. “Spring MVC and the @ModelAttribute Annotation.” _Baeldung_, 27 Feb. 2025, www.baeldung.com/spring-mvc-and-the-modelattribute-annotation. Accessed 16 Sep. 2025.
 
 Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructions for Super Duper Drive.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/349430. Accessed 6 Sep. 2025.
@@ -192,6 +194,8 @@ Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvi
 heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 Oct. 2016, stackoverflow.com/questions/40303916/model-addattribute-parameters. Accessed 16 Sep. 2025.
 
 “Interface Model.” _Spring_, 10 Apr. 2019, docs.spring.io/spring-framework/docs/5.1.6.RELEASE_to_5.2.0.M1/Spring%20Framework%205.2.0.M1/org/springframework/ui/Model.html. Accessed 16 Sep. 2025.
+
+“Interface Multipartfile.” _MultipartFile (Spring Framework 6.2.11 API)_, docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/multipart/MultipartFile.html#getOriginalFilename(). Accessed 20 Sep. 2025.
 
 “Interface UserInfo.” _UserInfo (Oracle Access Manager Extensibility Java API Reference)_, 1 Mar. 2013, docs.oracle.com/cd/E37115_01/apirefs.1112/e27137/oracle/security/am/engines/common/identity/provider/UserInfo.html. Accessed 9 Sep. 2025.
 
