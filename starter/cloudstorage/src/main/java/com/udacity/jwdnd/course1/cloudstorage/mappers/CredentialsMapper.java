@@ -11,6 +11,8 @@ public interface CredentialsMapper {
     @Select("SELECT * FROM Credentials WHERE userId = #{userId}")
     Credentials getCredentialByUserId(Integer userId);
 
+    @Insert("INSERT INTO Credentials (url, username, key, password, credentialId) VALUES(#{url}, #{username}, #{key}, #{password}, #{credentialId})")
+
     @Update("UPDATE Credentials SET url = #{url}, username = #{username}, key = #{key}, password = #{password} WHERE credentialId = #{credentialId}")
     Credentials editCredential(String url, String username, String key, String password, Integer credentialId);
 
