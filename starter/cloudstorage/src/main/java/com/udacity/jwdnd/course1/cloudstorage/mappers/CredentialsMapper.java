@@ -8,6 +8,7 @@ public interface CredentialsMapper {
     @Select("SELECT * FROM Credentials WHERE credentialName = #{credentialName}")
     Credentials getCredentialByCredentialName(String credentialName);
 
+    @Select("SELECT * FROM Credentials WHERE userId = #{userId}")
     Credentials getCredentialByUserId(Integer userId);
 
     Credentials editCredential(String url, String username, String key, String password, Integer credentialId);
