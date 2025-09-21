@@ -2,6 +2,7 @@ package com.udacity.jwdnd.course1.cloudstorage.mappers;
 
 @Mapper
 public interface CredentialsMapper {
+    @Select("SELECT * FROM CREDENTIALS WHERE credentialid = #{credentialId}")
     Credentials getCredentialByCredentialId(Integer credentialId);
 
     Credentials getCredentialByCredentialName(String credentialName);
