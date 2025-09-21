@@ -14,6 +14,7 @@ public class Files {
         this.contentType = contentType;
         this.filesize = filesize;
         this.filedata = filedata;
+        this.userId = userId;
     }
 
     public final String getFilename() { return filename; }
