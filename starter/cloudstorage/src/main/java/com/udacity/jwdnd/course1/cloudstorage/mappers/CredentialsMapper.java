@@ -7,4 +7,6 @@ public interface CredentialsMapper {
     Credentials getCredentialByCredentialName(String credentialName);
 
     Credentials getCredentialByUserId(Integer userId);
+
+    Credentials editCredential(String url, String username, String key, String password, Integer credentialId);
 }
