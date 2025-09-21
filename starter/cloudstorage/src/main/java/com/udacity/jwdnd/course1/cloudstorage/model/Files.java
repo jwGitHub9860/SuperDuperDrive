@@ -29,4 +29,5 @@ public class Files {
     public final String setContenttype() { this.contentType = contentType; }
     public final String setFilesize() { this.filesize = filesize; }
     public final byte[] setFiledata() { this.filedata = filedata; }
+    public final Integer setUserId(Integer userId) { this.userId = userId; }
 }
