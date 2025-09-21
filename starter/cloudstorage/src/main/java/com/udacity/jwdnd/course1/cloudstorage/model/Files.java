@@ -6,6 +6,7 @@ public class Files {
     private final String contentType;
     private final String filesize;
     private final byte[] filedata;
+    private final Integer userId;
 
     public Files(String filename, Integer fileId, String contentType, String filesize, byte[] filedata) {
         this.filename = filename;
