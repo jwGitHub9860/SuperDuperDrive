@@ -5,4 +5,6 @@ public interface CredentialsMapper {
     Credentials getCredentialByCredentialId(Integer credentialId);
 
     Credentials getCredentialByCredentialName(String credentialName);
+
+    Credentials getCredentialByUserId(Integer userId);
 }
