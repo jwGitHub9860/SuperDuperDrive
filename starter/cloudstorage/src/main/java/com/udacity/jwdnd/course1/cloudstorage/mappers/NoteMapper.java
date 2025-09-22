@@ -1,5 +1,7 @@
 package com.udacity.jwdnd.course1.cloudstorage.mappers;
 
+import org.apache.ibatis.annotations.*;
+
 @Mapper
 public interface NoteMapper {
     @Select("SELECT * FROM Notes WHERE noteId = #{noteId}")
