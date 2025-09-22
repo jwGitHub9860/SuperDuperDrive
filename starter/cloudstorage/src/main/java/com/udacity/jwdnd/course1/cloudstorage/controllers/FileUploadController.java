@@ -46,8 +46,10 @@ public class FileUploadController {
         
         // Checks if File Uploaded Successfully
         try {
-            if(chosenFile.getFilename().equals(fileItem.getOriginalFileName())) {
-                redirectAttributes.addFlashAttribute("duplicate_message", "File has duplicate name!");
+            for(Files fileItem : uploadedFiles) {
+                if(chosenFile.getFilename().equals(fileItem.getOriginalFileName())) {
+                    redirectAttributes.addFlashAttribute("duplicate_message", "File has duplicate name!");
+                }
             }
             
             Users users = this.userService.getUser(authentication.getName());
