@@ -7,20 +7,20 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.udacity.jwdnd.course1.cloudstorage.services.FileService;
 import com.udacity.jwdnd.course1.cloudstorage.services.NoteService;
-import com.udacity.jwdnd.course1.cloudstorage.services.CredentialService;
+import com.udacity.jwdnd.course1.cloudstorage.services.CredentialsService;
 import com.udacity.jwdnd.course1.cloudstorage.services.UserService;
 
 @Controller
 public class NoteController {
     private final FileService fileService;
     private final NoteService noteService;
-    private final CredentialService credentialService;
+    private final CredentialsService credentialsService;
     private final UserService userService;
 
-    public NoteController(FileService fileService, NoteService noteService, CredentialService credentialService, UserService userService) {
+    public NoteController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {
         this.fileService = fileService;
         this.noteService = noteService;
-        this.credentialService = credentialService;
+        this.credentialsService = credentialsService;
         this.userService = userService;
     }
 

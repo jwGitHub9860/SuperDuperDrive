@@ -22,21 +22,21 @@ import com.udacity.jwdnd.course1.cloudstorage.model.Files;
 import com.udacity.jwdnd.course1.cloudstorage.model.Users;
 import com.udacity.jwdnd.course1.cloudstorage.services.FileService;
 import com.udacity.jwdnd.course1.cloudstorage.services.NoteService;
-import com.udacity.jwdnd.course1.cloudstorage.services.CredentialService;
+import com.udacity.jwdnd.course1.cloudstorage.services.CredentialsService;
 import com.udacity.jwdnd.course1.cloudstorage.services.UserService;
 
 @Controller
 public class FileUploadController {
     private final FileService fileService;
     private final NoteService noteService;
-    private final CredentialService credentialService;
+    private final CredentialsService credentialsService;
     private final UserService userService;
     private List<Files> uploadedFiles = new ArrayList<Files>();
 
-    public FileUploadController(FileService fileService, NoteService noteService, CredentialService credentialService, UserService userService) {
+    public FileUploadController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {
         this.fileService = fileService;
         this.noteService = noteService;
-        this.credentialService = credentialService;
+        this.credentialsService = credentialsService;
         this.userService = userService;
     }
 
