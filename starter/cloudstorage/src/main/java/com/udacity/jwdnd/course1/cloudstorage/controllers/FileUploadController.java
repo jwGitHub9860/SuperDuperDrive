@@ -54,6 +54,8 @@ public class FileUploadController {
                     redirect.addFlashAttribute("empty_message", "File is empty!");
                 }
             }
+
+            uploadedFiles.add(chosenFile);
             
             Users users = this.userService.getUser(authentication.getName());
             model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
