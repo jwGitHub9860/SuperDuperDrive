@@ -61,6 +61,7 @@ public class FileUploadController {
             
             model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
             
+            System.out.println("File Upload Successful!");
             redirectAttributes.addFlashAttribute("upload_message", "File uploaded successfully!");
         } catch (Exception e) {
             e.printStackTrace();
