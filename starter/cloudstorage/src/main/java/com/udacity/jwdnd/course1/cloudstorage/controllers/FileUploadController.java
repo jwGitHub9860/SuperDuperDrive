@@ -43,7 +43,7 @@ public class FileUploadController {
     @PostMapping("/upload")
     public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = this.userService.getUser(authentication.getName());
-        Files chosenFile = new Files(fileUpload.getOriginalFileName(), null, fileUpload.getContentType(), Long.toString(fileUpload.getSize()), fileUpload.getBytes(), fileUpload.getUserId());
+        Files chosenFile = new Files(fileUpload.getOriginalFileName(), null, fileUpload.getContentType(), Long.toString(fileUpload.getSize()), fileUpload.getBytes(), users.getUserId());
         
         // Checks if File Uploaded Successfully
         try {
