@@ -18,4 +18,6 @@ public class CredentialsController {
         this.credentialsService = credentialsService;
         this.userService = userService;
     }
+
+    public String enterCredentials(@RequestParam("chooseCredentials") MultipartFile webpageCredentials, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {}
 }
