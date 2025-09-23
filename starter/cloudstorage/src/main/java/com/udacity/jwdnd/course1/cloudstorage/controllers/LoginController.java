@@ -18,4 +18,6 @@ public class LoginController {
         this.credentialsService = credentialsService;
         this.userService = userService;
     }
+
+    @RequestMapping("/login")
 }
