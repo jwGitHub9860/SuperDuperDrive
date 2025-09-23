@@ -12,5 +12,10 @@ public class CredentialsController {
     private final CredentialsService credentialsService;
     private final UserService userService;
 
-    public CredentialsController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {}
+    public CredentialsController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {
+        this.fileService = fileService;
+        this.noteService = noteService;
+        this.credentialsService = credentialsService;
+        this.userService = userService;
+    }
 }
