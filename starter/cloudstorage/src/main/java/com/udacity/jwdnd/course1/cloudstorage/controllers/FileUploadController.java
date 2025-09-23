@@ -75,7 +75,6 @@ public class FileUploadController {
 
     @RequestMapping("/files")
     public void deleteFile(@PathVariable String filename, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
-        String filePath = System.getProperty("user.dir") + "/Uploads" + File.separator + filename;
         File file = new File(filePath);
         if (file.delete()) {
             System.out.println("File deleted successfully");
