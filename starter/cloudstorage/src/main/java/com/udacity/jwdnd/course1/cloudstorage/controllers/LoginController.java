@@ -20,4 +20,5 @@ public class LoginController {
     }
 
     @RequestMapping("/login")
+    public String loginToWebsite(@RequestParam("userCredentials") MultipartFile loginCredentials, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {}
 }
