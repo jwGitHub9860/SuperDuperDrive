@@ -57,6 +57,7 @@ public class FileUploadController {
                 }
             }
 
+            fileService.uploadFile(chosenFile);
             uploadedFiles.add(chosenFile);
             
             model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
