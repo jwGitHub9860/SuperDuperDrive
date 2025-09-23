@@ -11,4 +11,6 @@ public class LoginController {
     private final NoteService noteService;
     private final CredentialsService credentialsService;
     private final UserService userService;
+
+    public LoginController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {}
 }
