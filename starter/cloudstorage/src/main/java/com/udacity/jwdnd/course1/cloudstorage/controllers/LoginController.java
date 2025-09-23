@@ -6,3 +6,4 @@ import com.udacity.jwdnd.course1.cloudstorage.controllers.CredentialsService;
 import com.udacity.jwdnd.course1.cloudstorage.controllers.UserService;
 
 @Controller
+public class LoginController {}
