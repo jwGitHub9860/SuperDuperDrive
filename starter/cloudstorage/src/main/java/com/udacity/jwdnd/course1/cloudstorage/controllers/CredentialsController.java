@@ -11,4 +11,6 @@ public class CredentialsController {
     private final NoteService noteService;
     private final CredentialsService credentialsService;
     private final UserService userService;
+
+    public CredentialsController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {}
 }
