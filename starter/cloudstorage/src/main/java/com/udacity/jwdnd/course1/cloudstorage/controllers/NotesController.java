@@ -28,5 +28,6 @@ public class NoteController {
         Notes newNote = new Notes(createNote.getOriginalFileName(), null, createNote.getContentType(), createNote.getUserId());
 
         Users users = userService.getUser(authentication.getName());
+        model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
     }
 }
