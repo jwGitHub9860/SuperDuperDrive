@@ -83,6 +83,7 @@ public class FileUploadController {
             if (fileItem.getFilename().equals(filename)) {
                 boolean fileExists = true;
                 System.out.println("File deleted successfully");
+                redirectAttributes.addFlashAttribute("file_existence_status_message", "File exists!");
             }
         }
 
