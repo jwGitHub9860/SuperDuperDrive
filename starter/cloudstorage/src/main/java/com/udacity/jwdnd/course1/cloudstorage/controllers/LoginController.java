@@ -26,5 +26,7 @@ public class LoginController {
     }
 
     @RequestMapping("/login")
-    public String getLoginPage(@RequestParam("userCredentials") MultipartFile loginCredentials, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {}
+    public String getLoginPage(@RequestParam("userCredentials") MultipartFile loginCredentials, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        Users users = userService.getUser(authentication.getName());
+    }
 }
