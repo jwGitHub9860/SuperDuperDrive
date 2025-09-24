@@ -39,23 +39,7 @@ public class FileDownloadController {
 
     @GetMapping("/download/{filename:.+}")
     public ResponseEntity downloadFile(@PathVariable String filename, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
-        File file = new File(downloadFilePath);
-        // Checks if file exists
-        String fileUploadPath = System.getProperty("user.dir") + "/Uploads";
-        String[] filenames = getFiles();
-        boolean fileExists = Arrays.asList(filenames).contains(filename);
-        if (!fileExists) {
-            return ResponseEntity("File not found", HttpStatus.NOT_FOUND);
-        }
-        
-        // Sets up file path where Downloaded File will be located
-        String downloadFilePath = fileUploadPath + File.separator + filename;
-
-        
-        InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
-        HttpHeaders headers = new HttpHeaders();
-        String contentType = "application/octet-stream";
-        String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
+        fileService.downloadFile(filename);
 
         Users users = this.userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
