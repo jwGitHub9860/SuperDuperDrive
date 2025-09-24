@@ -81,6 +81,7 @@ public class FileUploadController {
         // Checks if "chosenFile" Exists
         for(String fileItem : uploadedFiles) {
             if (fileItem.getFilename().equals(filename)) {
+                boolean fileExists = true;
                 System.out.println("File deleted successfully");
             }
         }
