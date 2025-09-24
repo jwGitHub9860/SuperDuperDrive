@@ -86,7 +86,7 @@ public class FileUploadController {
             }
         }
 
-        else {
+        if(!fileExists) {
             System.out.println("Failed to delete the file");
         }
 
