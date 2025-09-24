@@ -78,18 +78,7 @@ public class FileUploadController {
         boolean fileExists = false;
         Files chosenFile = fileService.getFileByFileName(filename);
 
-        // Checks if "chosenFile" Exists
-        for(String fileItem : uploadedFiles) {
-            if (fileItem.getFilename().equals(filename)) {
-                boolean fileExists = true;
-                System.out.println("File deleted successfully");
-                redirectAttributes.addFlashAttribute("file_existence_status_message", "File exists!");
-            }
-        }
-
-        if(!fileExists) {
-            System.out.println("Failed to delete the file");
-        }
+        fileService.deleteFile(chosenFile.getFileId());
 
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
