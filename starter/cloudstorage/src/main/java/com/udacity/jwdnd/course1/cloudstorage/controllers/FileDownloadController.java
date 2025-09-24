@@ -39,6 +39,7 @@ public class FileDownloadController {
 
     @GetMapping("/download/{filename:.+}")
     public ResponseEntity downloadFile(@PathVariable String filename, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
+        File file = new File(downloadFilePath);
         // Checks if file exists
         String fileUploadPath = System.getProperty("user.dir") + "/Uploads";
         String[] filenames = getFiles();
@@ -50,7 +51,7 @@ public class FileDownloadController {
         // Sets up file path where Downloaded File will be located
         String downloadFilePath = fileUploadPath + File.separator + filename;
 
-        File file = new File(downloadFilePath);
+        
         InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
         HttpHeaders headers = new HttpHeaders();
         String contentType = "application/octet-stream";
