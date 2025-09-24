@@ -41,7 +41,7 @@ public class FileDownloadController {
     public ResponseEntity downloadFile(@PathVariable String filename, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
         fileService.downloadFile(filename);
 
-        Users users = this.userService.getUser(authentication.getName());
+        Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
 
         redirectAttributes.addFlashAttribute("message", "File downloaded successfully!");

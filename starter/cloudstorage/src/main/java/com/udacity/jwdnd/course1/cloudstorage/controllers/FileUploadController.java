@@ -42,7 +42,7 @@ public class FileUploadController {
 
     @PostMapping("/upload")
     public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
-        Users users = this.userService.getUser(authentication.getName());
+        Users users = userService.getUser(authentication.getName());
         Files chosenFile = new Files(fileUpload.getOriginalFileName(), null, fileUpload.getContentType(), Long.toString(fileUpload.getSize()), fileUpload.getBytes(), users.getUserId());
         
         // Checks if File Uploaded Successfully
@@ -91,7 +91,7 @@ public class FileUploadController {
             System.out.println("Failed to delete the file");
         }
 
-        Users users = this.userService.getUser(authentication.getName());
+        Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
     }
 }
