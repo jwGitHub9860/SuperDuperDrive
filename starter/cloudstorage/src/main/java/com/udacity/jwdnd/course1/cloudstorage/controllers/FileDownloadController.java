@@ -46,9 +46,6 @@ public class FileDownloadController {
 
         redirectAttributes.addFlashAttribute("message", "File downloaded successfully!");
         
-        return ResponseEntity.ok()
-                .contentType(MediaType.parseMediaType(contentType))
-                .header(HttpHeaders.CONTENT_DISPOSITION, headerValue)
-                .body(resource);
+        return "redirect:/home";
     }
 }
