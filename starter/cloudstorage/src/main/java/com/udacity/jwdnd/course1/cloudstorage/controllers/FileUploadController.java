@@ -79,10 +79,12 @@ public class FileUploadController {
         Files chosenFile = fileService.getFileByFileName(filename);
 
         // Checks if "chosenFile" Exists
-        if (file.delete()) {
-            System.out.println("File deleted successfully");
-        } else {
-            System.out.println("Failed to delete the file");
+        for(String fileItem : uploadedFiles) {
+            if (file.delete()) {
+                System.out.println("File deleted successfully");
+            } else {
+                System.out.println("Failed to delete the file");
+            }
         }
 
         Users users = this.userService.getUser(authentication.getName());
