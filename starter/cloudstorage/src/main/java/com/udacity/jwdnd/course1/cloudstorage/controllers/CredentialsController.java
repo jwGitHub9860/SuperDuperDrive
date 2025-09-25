@@ -54,5 +54,6 @@ public class CredentialsController {
     public void deleteCredential(@RequestParam("chooseCredential") MultipartFile chosenCredential, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
+        model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
     }
 }
