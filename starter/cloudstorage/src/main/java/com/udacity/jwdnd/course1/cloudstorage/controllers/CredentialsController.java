@@ -59,5 +59,8 @@ public class CredentialsController {
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("delete_credential_status", "Credential delete successful!");
+
+        // Takes User Back to Home Page
+        return "redirect:/home";
     }
 }
