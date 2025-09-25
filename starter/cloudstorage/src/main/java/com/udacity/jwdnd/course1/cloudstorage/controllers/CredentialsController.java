@@ -51,5 +51,7 @@ public class CredentialsController {
         return "redirect:/home";
     }
 
-    public void deleteCredential(@RequestParam("chooseCredential") MultipartFile chosenCredential, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {}
+    public void deleteCredential(@RequestParam("chooseCredential") MultipartFile chosenCredential, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        Users users = userService.getUser(authentication.getName());
+    }
 }
