@@ -37,4 +37,6 @@ public class CredentialsController {
         // Take User Back to Home Page
         return "redirect:/home";
     }
+
+    public String editCredential(@RequestParam("chooseCredential") MultipartFile chosenCredential, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {}
 }
