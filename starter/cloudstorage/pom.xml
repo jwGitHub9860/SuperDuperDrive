@@ -19,11 +19,11 @@
     </properties>
 
     <dependencies>
-        <!-- Defines "org.slf4j" Package --> <!-- Allows "HashService.java" to Use "org.slf4j" Package -->
+        <!-- Defines "org.slf4j" Package --> <!-- Allows "HashService.java" to Use "org.slf4j" Package --> <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.36</version>
+            <version>2.1.0-alpha1</version>
         </dependency>
 
         <!-- Defines "org.springframework.stereotype.Service" Package --> <!-- Allows "FileService.java", "HashService.java", "UserService.java", "HomeController.java" to Use Package --> <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
