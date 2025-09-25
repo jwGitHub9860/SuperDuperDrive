@@ -25,5 +25,7 @@ public class CredentialsController {
         this.userService = userService;
     }
 
-    public String addCredentials(@RequestParam("chooseCredentials") MultipartFile webpageCredentials, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {}
+    public String addCredentials(@RequestParam("chooseCredentials") MultipartFile webpageCredentials, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        Users users = userService.getUser(authentication.getName());
+    }
 }
