@@ -34,6 +34,7 @@ public class CredentialsController {
         model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("credentials_status", "Credentials added successfully!");
 
+        // Take User Back to Home Page
         return "redirect:/home";
     }
 }
