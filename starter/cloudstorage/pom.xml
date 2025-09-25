@@ -98,6 +98,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
+            <version>4.35.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
