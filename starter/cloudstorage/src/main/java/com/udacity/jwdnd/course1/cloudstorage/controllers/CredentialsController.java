@@ -56,5 +56,6 @@ public class CredentialsController {
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
+        redirectAttributes.addFlashAttribute("delete_credential_status", "Credential delete successful!");
     }
 }
