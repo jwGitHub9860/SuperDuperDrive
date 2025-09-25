@@ -50,4 +50,6 @@ public class CredentialsController {
         // Takes User Back to Home Page
         return "redirect:/home";
     }
+
+    public void deleteCredential(@RequestParam("chooseCredential") MultipartFile chosenCredential, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {}
 }
