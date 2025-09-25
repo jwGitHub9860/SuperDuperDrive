@@ -44,5 +44,8 @@ public class CredentialsController {
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("edit_credential_status", "Credential edited successfully!");
+
+        // Takes User Back to Home Page
+        return "redirect:/home";
     }
 }
