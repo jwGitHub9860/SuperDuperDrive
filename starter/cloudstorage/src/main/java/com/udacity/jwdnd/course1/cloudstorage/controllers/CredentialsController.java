@@ -33,5 +33,7 @@ public class CredentialsController {
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("credentials_status", "Credentials added successfully!");
+
+        return "redirect:/home";
     }
 }
