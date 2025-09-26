@@ -41,5 +41,6 @@ public class NoteController {
 
     public String editNote(@RequestParam("choosenNote") MultipartFile chosenNote, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = new userService.getUser(authentication.getName());
+        model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
     }
 }
