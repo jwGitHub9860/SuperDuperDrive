@@ -20,7 +20,7 @@ public class Files {
     public final String getFilename() { return filename; }
     public final Integer getFileId() { return fileId; }
     public final String getContentType() { return contentType; }
-    public final String getFilesize() { return filesize; }
+    public final String getFileSize() { return filesize; }
     public final byte[] getFiledata() { return filedata; }
     public final Integer getUserId() { return userId; }
 
