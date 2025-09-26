@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.udacity.jwdnd.course1.cloudstorage.mappers.FileMapper;
+import com.udacity.jwdnd.course1.cloudstorage.model.Files;
 
 @Service
 public class FileService {
