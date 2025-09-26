@@ -45,5 +45,7 @@ public class NoteController {
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("edit_note_status", "Note edited successfully!");
+
+        return "redirect:/home";
     }
 }
