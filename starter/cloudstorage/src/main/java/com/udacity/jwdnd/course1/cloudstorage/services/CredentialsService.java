@@ -1,6 +1,6 @@
 package com.udacity.jwdnd.course1.cloudstorage.services;
 
-import org.springframework.web.bind.annotation.*;
+import org.springframework.stereotype.Service;
 
 import com.udacity.jwdnd.course1.cloudstorage.mappers.CredentialsMapper;
 import com.udacity.jwdnd.course1.cloudstorage.model.Credentials;
