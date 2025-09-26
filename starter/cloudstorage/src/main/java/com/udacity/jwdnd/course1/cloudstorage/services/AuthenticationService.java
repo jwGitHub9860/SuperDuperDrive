@@ -8,6 +8,7 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
 
 import com.udacity.jwdnd.course1.cloudstorage.mappers.UserMapper;
+import com.udacity.jwdnd.course1.cloudstorage.model.Users;
 import com.udacity.jwdnd.course1.cloudstorage.services.HashService;
 
 @Service
