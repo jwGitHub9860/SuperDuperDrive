@@ -1,6 +1,7 @@
 package com.udacity.jwdnd.course1.cloudstorage.services;
 
 import com.udacity.jwdnd.course1.cloudstorage.mappers.NoteMapper;
+import com.udacity.jwdnd.course1.cloudstorage.model.Notes;
 
 @Service
 public class NoteService {
