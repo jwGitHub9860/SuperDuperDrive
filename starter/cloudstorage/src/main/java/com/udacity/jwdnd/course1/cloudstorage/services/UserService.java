@@ -7,7 +7,7 @@ import org.springframework.core.io.ByteArrayResource;
 import org.springframework.stereotype.Service;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import com.udacity.jwdnd.course1.cloudstorage.mapper.UserMapper;
+import com.udacity.jwdnd.course1.cloudstorage.mappers.UserMapper;
 import com.udacity.jwdnd.course1.cloudstorage.model.Users;
 import com.udacity.jwdnd.course1.cloudstorage.services.HashService;
 
