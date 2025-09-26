@@ -29,5 +29,5 @@ public interface FileMapper {
     void deleteFile(Integer fileId);
 
     @Update("UPDATE Files SET filedata = #{filedata} WHERE fileId = #{fileId}")
-    void saveFile(Integer fileId, byte[] filedata)
+    void saveFile(Integer fileId, byte[] filedata);
 }
