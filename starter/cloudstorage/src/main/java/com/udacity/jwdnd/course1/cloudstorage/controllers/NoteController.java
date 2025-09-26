@@ -40,6 +40,8 @@ public class NoteController {
     }
 
     public String editNote(@RequestParam("choosenNote") MultipartFile chosenNote, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        noteService.editNote(chosenNote.setFilename(noteService.getNoteTitle()), chosenNote.getNoteDescription(), chosenNote.noteService.getNoteId());
+
         Users users = new userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
