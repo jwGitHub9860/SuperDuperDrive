@@ -39,5 +39,7 @@ public class NoteController {
         return "redirect:/home";
     }
 
-    public String editNote(@RequestParam("choosenNote") MultipartFile chosenNote, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {}
+    public String editNote(@RequestParam("choosenNote") MultipartFile chosenNote, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        Users users = new userService.getUser(authentication.getName());
+    }
 }
