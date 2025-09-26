@@ -6,6 +6,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
+import com.udacity.jwdnd.course1.cloudstorage.services.AuthenticationService;
+
 // allows Spring configuration to be loaded into "ApplicationContext" & used throughout application
 @Configuration
 
