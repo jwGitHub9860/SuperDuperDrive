@@ -28,7 +28,7 @@ public class NoteService {
     }
 
     public void editNote(String noteTitle, String noteDescription, Integer noteId) {
-        return noteMapper.editNote(noteTitle, noteDescription, noteId);
+        noteMapper.editNote(noteTitle, noteDescription, noteId);
     }
 
     public void deleteNoteByNoteId(Integer noteId) {
