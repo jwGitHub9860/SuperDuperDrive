@@ -18,8 +18,8 @@ public class Notes {
     public final String getNoteDescription() { return noteDescription; }
     public final Integer getUserId() { return userId; }
 
-    public final String setNoteTitle() { this.noteTitle = noteTitle; }
+    /*public final String setNoteTitle() { this.noteTitle = noteTitle; }
     public final Integer setNoteId() { this.noteId = noteId; }
     public final String setNoteDescription() { this.noteDescription = noteDescription; }
-    public final Integer setUserId() { this.userId = userId; }
+    public final Integer setUserId() { this.userId = userId; }*/
 }

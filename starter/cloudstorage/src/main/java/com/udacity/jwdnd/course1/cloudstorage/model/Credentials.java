@@ -27,11 +27,11 @@ public class Credentials {
     public final String getPassword() { return password; }
     public final String getDecryptedPassword() { return decryptedPassword; }
 
-    public final String setUrl() { this.url = url; }
+    /*public final String setUrl() { this.url = url; }
     public final Integer setCredentialId() { this.credentialId = credentialId; }
     public final String setUsername() { this.username = username; }
     public final Integer setUserId() { this.userId = userId; }
     public final String setKey() { this.key = key; }
     public final String setPassword() { this.password = password; }
-    public final String setDecryptedPassword() { this.decryptedPassword = decryptedPassword; }
+    public final String setDecryptedPassword() { this.decryptedPassword = decryptedPassword; }*/
 }

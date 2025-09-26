@@ -24,10 +24,10 @@ public class Files {
     public final byte[] getFiledata() { return filedata; }
     public final Integer getUserId() { return userId; }
 
-    public final void setFilename(String filename) { this.filename = filename; }
+    /*public final void setFilename(String filename) { this.filename = filename; }
     public final void setFileId(Integer fileId) { this.fileId = fileId; }
     public final void setContenttype(String contentType) { this.contentType = contentType; }
     public final void setFilesize(String filesize) { this.filesize = filesize; }
     public final void setFiledata(byte[] filedata) { this.filedata = filedata; }
-    public final void setUserId(Integer userId) { this.userId = userId; }
+    public final void setUserId(Integer userId) { this.userId = userId; }*/
 }
