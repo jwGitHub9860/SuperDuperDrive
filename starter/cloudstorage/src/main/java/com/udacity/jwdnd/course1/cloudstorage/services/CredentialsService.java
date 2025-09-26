@@ -9,7 +9,7 @@ import com.udacity.jwdnd.course1.cloudstorage.model.Credentials;
 public class CredentialsService {
     private final CredentialsMapper credentialsMapper;
 
-    public CredentialsMapper(CredentialsMapper credentialsMapper) {
+    public CredentialsService(CredentialsMapper credentialsMapper) {
         this.credentialsMapper = credentialsMapper;
     }
 
