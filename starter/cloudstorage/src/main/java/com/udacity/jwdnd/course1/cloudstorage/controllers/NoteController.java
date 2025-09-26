@@ -29,7 +29,7 @@ public class NoteController {
     }
 
     public String addNote(@RequestParam("addNote") MultipartFile createNote, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
-        Notes newNote = new Notes(createNote.getOriginalFileName(), null, createNote.getContentType(), createNote.getUserId());
+        Notes newNote = new Notes(createNote.getName(), null, createNote.getContentType(), createNote.getUserId());
 
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
