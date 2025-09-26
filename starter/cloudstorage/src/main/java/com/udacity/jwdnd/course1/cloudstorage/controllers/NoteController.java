@@ -36,4 +36,6 @@ public class NoteController {
 
         return "redirect:/home";
     }
+
+    public String editNote(@RequestParam("choosenNote") MultipartFile chosenNote, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {}
 }
