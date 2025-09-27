@@ -39,7 +39,7 @@ public class FileDownloadController {
     }
 
     @GetMapping("/download/{filename:.+}")
-    public String downloadFile(@PathVariable String filename, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
+    public String downloadFile(@PathVariable String filename, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
         fileService.downloadFile(filename);
 
         Users users = userService.getUser(authentication.getName());
