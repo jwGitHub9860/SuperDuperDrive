@@ -25,7 +25,7 @@ public interface FileMapper {
     @Options(useGeneratedKeys = true, keyProperty = "fileId")
     Files downloadFile(String filename);
 
-    @Delete("DELETE FROM Files WHERE fileId = #{fileId}")
+    @Delete("DELETE FROM Files WHERE filename = #{filename}")
     void deleteFile(Integer fileId);
 
     @Update("UPDATE Files SET filedata = #{filedata} WHERE fileId = #{fileId}")
