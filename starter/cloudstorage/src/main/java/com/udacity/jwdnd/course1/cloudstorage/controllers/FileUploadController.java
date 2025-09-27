@@ -80,7 +80,7 @@ public class FileUploadController {
     public void deleteFile(@PathVariable String filename, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Files chosenFile = fileService.getFileByFileName(filename);
 
-        fileService.deleteFile(chosenFile.getFileId());
+        fileService.deleteFile(filename);
 
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
