@@ -78,8 +78,6 @@ public class FileUploadController {
 
     @RequestMapping("/files")
     public void deleteFile(@PathVariable String filename, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
-        Files chosenFile = fileService.getFileByFileName(filename);
-
         fileService.deleteFile(filename);
 
         Users users = userService.getUser(authentication.getName());
