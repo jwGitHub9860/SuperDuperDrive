@@ -29,9 +29,9 @@ public class NoteController {
     }
 
     public String addNote(@RequestParam("addNote") MultipartFile createNote, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
-        Notes newNote = new Notes(createNote.getName(), null, createNote.getContentType(), users.getUserId());
-
         Users users = userService.getUser(authentication.getName());
+        Notes newNote = new Notes(createNote.getName(), null, createNote.getContentType(), users.getUserId());
+        
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
@@ -41,10 +41,10 @@ public class NoteController {
     }
 
     public String editNote(@RequestParam("choosenNote") MultipartFile chosenNote, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        Users users = new userService.getUser(authentication.getName());
         Notes chosenNoteForm = new Notes(chosenNote.getOriginalFilename(), null, chosenNote.getBytes(), users.getUserId());
         noteService.editNote(chosenNote.setFilename(noteService.getNoteTitle()), chosenNote.getNoteDescription(), chosenNote.noteService.getNoteId());
-
-        Users users = new userService.getUser(authentication.getName());
+        
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
