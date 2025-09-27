@@ -31,7 +31,7 @@ public class HomeController {
     public String getHomePage(Model model, Authentication authentication) {
         UserService currentUserId = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(currentUserId));
-        model.addAttribute("notes", this.noteService.getNotesForUser(currentUserId));
+        model.addAttribute("notes", this.noteService.getNoteByUserId(currentUserId));
         model.addAttribute("credentials", this.credentialsService.getCredentialsForUser(currentUserId));
         return "home";
     }
