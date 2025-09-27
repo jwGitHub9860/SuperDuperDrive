@@ -31,9 +31,9 @@ public class HomeController {
     @GetMapping
     public String getHomePage(Model model, Authentication authentication) {
         Users currentUserId = userService.getUser(authentication.getName());
-        model.addAttribute("files", this.fileService.getFileByUserId(currentUserId));
-        model.addAttribute("notes", this.noteService.getNoteByUserId(currentUserId));
-        model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(currentUserId));
+        model.addAttribute("files", this.fileService.getFileByUserId(currentUserId.getUserId()));
+        model.addAttribute("notes", this.noteService.getNoteByUserId(currentUserId.getUserId()));
+        model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(currentUserId.getUserId()));
         return "home";
     }
 }
