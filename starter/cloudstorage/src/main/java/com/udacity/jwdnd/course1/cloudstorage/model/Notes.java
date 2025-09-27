@@ -22,4 +22,6 @@ public class Notes {
     public final Integer setNoteId() { this.noteId = noteId; }
     public final String setNoteDescription() { this.noteDescription = noteDescription; }
     public final Integer setUserId() { this.userId = userId; }*/
+
+    public final String convertByteToString(byte[] givenByte) { return new String(givenByte); }
 }
