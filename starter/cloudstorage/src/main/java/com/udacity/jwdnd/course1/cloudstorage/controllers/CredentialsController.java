@@ -28,6 +28,7 @@ public class CredentialsController {
         this.userService = userService;
     }
 
+    @GetMapping
     public String addCredentials(@RequestParam("chooseCredentials") MultipartFile webpageCredentials, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         credentialsService.createCredential(webpageCredentials.getUrl(), webpageCredentials.getUsername(), webpageCredentials.getKey(), webpageCredentials.getPassword(), webpageCredentials.getCredentialId());
         
@@ -41,6 +42,7 @@ public class CredentialsController {
         return "redirect:/home";
     }
 
+    @GetMapping
     public String editCredential(@RequestParam("chooseCredential") MultipartFile chosenCredential, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         credentialsService.editCredential(chosenCredential.getUrl(), chosenCredential.getUsername(), chosenCredential.getKey(), chosenCredential.getPassword(), chosenCredential.getCredentialId());
 
@@ -54,6 +56,7 @@ public class CredentialsController {
         return "redirect:/home";
     }
 
+    @GetMapping
     public void deleteCredential(@RequestParam("chooseCredential") MultipartFile chosenCredential, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         credentialsService.deleteCredential(chosenCredential.getCredentialId());
         
