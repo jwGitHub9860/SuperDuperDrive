@@ -201,6 +201,8 @@ heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 O
 
 “Java Delete Files.” _W3Schools Online Web Tutorials_, www.w3schools.com/java/java_files_delete.asp. Accessed 11 Sep. 2025.
 
+“Java Program to Convert Byte Array to String.” _GeeksforGeeks_, 23 July 2025, www.geeksforgeeks.org/java/java-program-to-convert-byte-array-to-string/. Accessed 26 Sep. 2025.
+
 K, Christian. “Please I Need Quick Guide, Please Answer Now.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/811826#812044. Accessed 12 Sep. 2025.
 
 Kremer, Thomas. “Spring Boot Web Security Application, WebSecurityConfigurerAdapter Is Deprecated, What Can I Use Instead to Make My Websecurityconfig Class Work?” _Stack Overflow_, 30 Sept. 2023, stackoverflow.com/questions/77161239/spring-boot-web-security-application-websecurityconfigureradapter-is-deprecated. Accessed 3 Sep. 2025.
