@@ -28,7 +28,7 @@ public class NoteController {
         this.userService = userService;
     }
 
-    public String addNote(@RequestParam("addNote") MultipartFile createNote, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+    public String addNote(@RequestParam("addNote") String createNoteTitle, @RequestParam("addNote") Integer createNoteId, @RequestParam("addNote") String createNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         Notes newNote = new Notes(createNote.getName(), null, createNote.getContentType(), users.getUserId());
         
