@@ -1,5 +1,6 @@
 package com.udacity.jwdnd.course1.cloudstorage.services;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.udacity.jwdnd.course1.cloudstorage.mappers.CredentialsMapper;
