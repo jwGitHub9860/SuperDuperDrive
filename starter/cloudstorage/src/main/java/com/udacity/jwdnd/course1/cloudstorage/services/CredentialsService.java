@@ -18,8 +18,8 @@ public class CredentialsService {
         return credentialsMapper.getCredentialsByCredentialId(credentialId);
     }
 
-    public Credentials getCredentialByCredentialName(String credentialName) {
-        return credentialsMapper.getCredentialByCredentialName(credentialName);
+    public Credentials getCredentialsByCredentialName(String credentialName) {
+        return credentialsMapper.getCredentialsByCredentialName(credentialName);
     }
 
     public Credentials getCredentialByUserId(Integer userId) {

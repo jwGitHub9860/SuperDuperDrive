@@ -10,7 +10,7 @@ public interface CredentialsMapper {
     Credentials getCredentialsByCredentialId(Integer credentialId);
 
     @Select("SELECT * FROM Credentials WHERE credentialName = #{credentialName}")
-    Credentials getCredentialByCredentialName(String credentialName);
+    Credentials getCredentialsByCredentialName(String credentialName);
 
     @Select("SELECT * FROM Credentials WHERE userId = #{userId}")
     Credentials getCredentialByUserId(Integer userId);
