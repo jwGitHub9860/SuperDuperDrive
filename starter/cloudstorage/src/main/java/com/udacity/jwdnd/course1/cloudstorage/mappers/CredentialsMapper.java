@@ -20,7 +20,7 @@ public interface CredentialsMapper {
     int createCredentials(String url, String username, String key, String password, Integer credentialId);
 
     @Update("UPDATE Credentials SET url = #{url}, username = #{username}, key = #{key}, password = #{password} WHERE credentialId = #{credentialId}")
-    Credentials editCredential(String url, String username, String key, String password, Integer credentialId);
+    Credentials editCredentials(String url, String username, String key, String password, Integer credentialId);
 
     @Delete("DELETE FROM Credentials WHERE credentialId = #{credentialId}")
     void deleteCredential(String credentialName);

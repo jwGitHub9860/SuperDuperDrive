@@ -46,8 +46,8 @@ public class CredentialsController {
     }
 
     @GetMapping
-    public String editCredential(@RequestParam("chooseCredential") MultipartFile chosenCredential, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
-        credentialsService.editCredential(chosenCredential.getUrl(), chosenCredential.getUsername(), chosenCredential.getKey(), chosenCredential.getPassword(), chosenCredential.getCredentialId());
+    public String editCredentials(@RequestParam("chooseCredential") MultipartFile chosenCredential, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        credentialsService.editCredentials(chosenCredential.getUrl(), chosenCredential.getUsername(), chosenCredential.getKey(), chosenCredential.getPassword(), chosenCredential.getCredentialId());
 
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));

@@ -30,8 +30,8 @@ public class CredentialsService {
         return credentialsMapper.createCredentials(url, username, key, password, credentialId);
     }
 
-    public Credentials editCredential(String url, String username, String key, String password, Integer credentialId) {
-        return credentialsMapper.editCredential(url, username, key, password, credentialId);
+    public Credentials editCredentials(String url, String username, String key, String password, Integer credentialId) {
+        return credentialsMapper.editCredentials(url, username, key, password, credentialId);
     }
 
     public void deleteCredential(String credentialName) {
