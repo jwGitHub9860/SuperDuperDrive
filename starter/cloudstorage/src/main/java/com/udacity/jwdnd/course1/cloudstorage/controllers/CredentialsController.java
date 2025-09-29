@@ -38,7 +38,7 @@ public class CredentialsController {
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
-        model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
+        model.addAttribute("credentials", this.credentialsService.getCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("credentials_status", "Credentials added successfully!");
 
         // Take User Back to Home Page
@@ -52,7 +52,7 @@ public class CredentialsController {
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
-        model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
+        model.addAttribute("credentials", this.credentialsService.getCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("edit_credential_status", "Credential edited successfully!");
 
         // Takes User Back to Home Page
@@ -66,7 +66,7 @@ public class CredentialsController {
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
-        model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
+        model.addAttribute("credentials", this.credentialsService.getCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("delete_credential_status", "Credential delete successful!");
     }
 }
