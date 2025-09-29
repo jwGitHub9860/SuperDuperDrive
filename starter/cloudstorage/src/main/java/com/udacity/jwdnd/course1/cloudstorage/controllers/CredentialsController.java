@@ -33,7 +33,7 @@ public class CredentialsController {
 
     @GetMapping
     public String addCredentials(@RequestParam("addCredentials") String addCredentialsUrl, @RequestParam("addCredentials") String addCredentialsId, @RequestParam("addCredentials") String addCredentialsUsername, @RequestParam("addCredentials") String addCredentialsKey, @RequestParam("addCredentials") String addCredentialsPassword, @RequestParam("addCredentials") String addCredentialsDecryptedPassword, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
-        credentialsService.createCredential(webpageCredentials.getUrl(), webpageCredentials.getUsername(), webpageCredentials.getKey(), webpageCredentials.getPassword(), webpageCredentials.getCredentialId());
+        credentialsService.createCredentials(webpageCredentials.getUrl(), webpageCredentials.getUsername(), webpageCredentials.getKey(), webpageCredentials.getPassword(), webpageCredentials.getCredentialId());
         
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));

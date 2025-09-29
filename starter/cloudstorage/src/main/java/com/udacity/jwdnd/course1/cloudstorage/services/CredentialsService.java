@@ -26,8 +26,8 @@ public class CredentialsService {
         return credentialsMapper.getCredentialsByUserId(userId);
     }
 
-    public int createCredential(String url, String username, String key, String password, Integer credentialId) {
-        return credentialsMapper.createCredential(url, username, key, password, credentialId);
+    public int createCredentials(String url, String username, String key, String password, Integer credentialId) {
+        return credentialsMapper.createCredentials(url, username, key, password, credentialId);
     }
 
     public Credentials editCredential(String url, String username, String key, String password, Integer credentialId) {
