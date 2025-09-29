@@ -34,5 +34,6 @@ public class LoginController {
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("displayLoginPage", true);
+        return "login";
     }
 }
