@@ -37,6 +37,7 @@ public class NoteController {
         model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("add_note_status", "Note added successfully!");
 
+        // Takes User Back to Home Page
         return "redirect:/home";
     }
 
