@@ -32,7 +32,7 @@ public class HomeController {
         Users currentUserId = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(currentUserId.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(currentUserId.getUserId()));
-        model.addAttribute("credentials", this.credentialsService.getCredentialByUserId(currentUserId.getUserId()));
+        model.addAttribute("credentials", this.credentialsService.getCredentialsByUserId(currentUserId.getUserId()));
         return "home";
     }
 }
