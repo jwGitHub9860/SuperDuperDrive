@@ -14,8 +14,8 @@ public class CredentialsService {
         this.credentialsMapper = credentialsMapper;
     }
 
-    public Credentials getCredentialByCredentialId(Integer credentialId) {
-        return credentialsMapper.getCredentialByCredentialId(credentialId);
+    public Credentials getCredentialsByCredentialId(Integer credentialId) {
+        return credentialsMapper.getCredentialsByCredentialId(credentialId);
     }
 
     public Credentials getCredentialByCredentialName(String credentialName) {
