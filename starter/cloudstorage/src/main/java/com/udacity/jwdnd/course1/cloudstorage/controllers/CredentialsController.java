@@ -60,8 +60,8 @@ public class CredentialsController {
     }
 
     @GetMapping
-    public void deleteCredential(@RequestParam("chooseCredential") MultipartFile chosenCredential, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
-        credentialsService.deleteCredential(chosenCredential.getCredentialId());
+    public void deleteCredentials(@RequestParam("chooseCredential") MultipartFile chosenCredential, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        credentialsService.deleteCredentials(chosenCredential.getCredentialId());
         
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));

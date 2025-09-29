@@ -34,7 +34,7 @@ public class CredentialsService {
         return credentialsMapper.editCredentials(url, username, key, password, credentialId);
     }
 
-    public void deleteCredential(String credentialName) {
-        credentialsMapper.deleteCredential(credentialName);
+    public void deleteCredentials(String credentialName) {
+        credentialsMapper.deleteCredentials(credentialName);
     }
 }

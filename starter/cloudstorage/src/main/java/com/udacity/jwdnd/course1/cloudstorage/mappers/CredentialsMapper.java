@@ -23,5 +23,5 @@ public interface CredentialsMapper {
     Credentials editCredentials(String url, String username, String key, String password, Integer credentialId);
 
     @Delete("DELETE FROM Credentials WHERE credentialId = #{credentialId}")
-    void deleteCredential(String credentialName);
+    void deleteCredentials(String credentialName);
 }
