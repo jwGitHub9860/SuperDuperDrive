@@ -26,6 +26,7 @@ public class NoteController {
         this.userService = userService;
     }
 
+    @GetMapping
     public String addNote(@RequestParam("addNote") String createNoteTitle, @RequestParam("addNote") Integer createNoteId, @RequestParam("addNote") String createNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
@@ -39,6 +40,7 @@ public class NoteController {
         return "redirect:/home";
     }
 
+    @GetMapping
     public String editNote(@RequestParam("chosenNote") String chosenNoteTitle, @RequestParam("chosenNote") Integer chosenNoteId, @RequestParam("chosenNote") String chosenNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         noteService.editNote(chosenNoteTitle, chosenNoteDescription, chosenNoteId);
@@ -52,6 +54,7 @@ public class NoteController {
         return "redirect:/home";
     }
 
+    @GetMapping
     public void deleteNote(@RequestParam String noteTitle, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         noteService.deleteNoteByNoteTitle(noteTitle);
 
