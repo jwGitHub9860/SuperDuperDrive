@@ -165,7 +165,13 @@ B, Zachary. “Testing Delete.” _Knowledge_, Udacity, 2022, knowledge.udacity.
 
 baeldung. “Convert Long to String in Java.” _Baeldung_, 4 Oct. 2021, www.baeldung.com/java-long-to-string. Accessed 21 Sep. 2025.
 
+baeldung. “File Upload with Spring MVC.” _Baeldung_, 11 June 2025, www.baeldung.com/spring-file-upload. Accessed 11 Sep. 2025.
+
+baeldung. “Iteration in Thymeleaf.” _Baeldung_, 25 July 2024, www.baeldung.com/thymeleaf-iteration. Accessed 29 Sep. 2025.
+
 baeldung. “Spring MVC and the @ModelAttribute Annotation.” _Baeldung_, 27 Feb. 2025, www.baeldung.com/spring-mvc-and-the-modelattribute-annotation. Accessed 16 Sep. 2025.
+
+Bezkoder. “Thymeleaf File Upload with Spring Boot.” _BezKoder_, 26 May 2024, www.bezkoder.com/thymeleaf-file-upload/. Accessed 29 Sep. 2025.
 
 Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructions for Super Duper Drive.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/349430. Accessed 6 Sep. 2025.
 
@@ -191,7 +197,11 @@ Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvi
 
 “Download Spring-Context JAR File with All Dependencies.” _JAR Search and Dependency Download from the Maven Repository_, jar-download.com/artifacts/org.springframework/spring-context/org.apache.commons.net.ftp.FTPClient. Accessed 18 Sep. 2025.
 
+Ghobril, Samir, and m59. “What Is Href="#" and Why Is It Used?” Edited by User247702 and Stephen Ostermiller, _Stack Overflow_, 31 Jan. 2011, stackoverflow.com/questions/4855168/what-is-href-and-why-is-it-used. Accessed 29 Sep. 2025.
+
 heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 Oct. 2016, stackoverflow.com/questions/40303916/model-addattribute-parameters. Accessed 16 Sep. 2025.
+
+“HTML - Href Attribute.” _Tutorialspoint_, www.tutorialspoint.com/html/html_href_attribute.htm. Accessed 29 Sep. 2025.
 
 “Interface Model.” _Spring_, 10 Apr. 2019, docs.spring.io/spring-framework/docs/5.1.6.RELEASE_to_5.2.0.M1/Spring%20Framework%205.2.0.M1/org/springframework/ui/Model.html. Accessed 16 Sep. 2025.
 
@@ -223,6 +233,8 @@ Pollack, Mark, et al. _Spring Data Mongodb - Reference Documentation_, 12 May 20
 
 “Random vs Secure Random Numbers in Java.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/random-vs-secure-random-numbers-java/. Accessed 17 Sep. 2025.
 
+“Serving Web Content with Spring MVC.” _Getting Started | Serving Web Content with Spring MVC_, spring.io/guides/gs/serving-web-content. Accessed 29 Sep. 2025.
+
 “Servlet Authentication Architecture.” _Servlet Authentication Architecture :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/architecture.html#:~:text=SecurityContextHolder%20%2D%20The%20SecurityContextHolder%20is%20where,Spring%20Security’s%20Filters%20perform%20authentication. Accessed 16 Sep. 2025.
 
 Singh, Amandeep. “Spring Security in Spring Boot 2.x Using Websecurityconfigureradapter.” _Medium_, Medium, 8 Mar. 2025, lazy-programmer.medium.com/spring-security-in-spring-boot-2-x-using-websecurityconfigureradapter-15b0b5878c0d. Accessed 8 Sep. 2025.
@@ -240,6 +252,8 @@ Stein-Kousathana, Eleftheria. “Spring Security without the WebSecurityConfigur
 SudKul. “Nd035-C1-Spring-Boot-Basics-Project-Starter.” _GitHub_, Udacity, Jan. 2025, github.com/udacity/nd035-c1-spring-boot-basics-project-starter. Accessed 29 Aug. 2025.
 
 “Udacity Git Commit Message Style Guide.” _Udacity Nanodegree Style Guide_, udacity.github.io/git-styleguide/. Accessed 29 Aug. 2025.
+
+“Upload Multiple Files in Spring Boot Using JPA, Thymeleaf, Multipart.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/upload-multiple-files-in-spring-boot-using-jpa-thymeleaf-multipart/. Accessed 28 Sep. 2025.
 
 “Uploading Files.” _Getting Started | Uploading Files_, spring.io/guides/gs/uploading-files. Accessed 11 Sep. 2025.
 
