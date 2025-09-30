@@ -32,7 +32,7 @@ public class CredentialsController {
     }
 
     @GetMapping
-    public String addCredentials(@RequestParam("addCredentials") String addCredentialsUrl, @RequestParam("addCredentials") String addCredentialsId, @RequestParam("addCredentials") String addCredentialsUsername, @RequestParam("addCredentials") String addCredentialsKey, @RequestParam("addCredentials") String addCredentialsPassword, @RequestParam("addCredentials") String addCredentialsDecryptedPassword, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+    public String addCredentials(@RequestParam("addCredentials") String addCredentialsUrl, @RequestParam("addCredentials") Integer addCredentialsId, @RequestParam("addCredentials") String addCredentialsUsername, @RequestParam("addCredentials") String addCredentialsKey, @RequestParam("addCredentials") String addCredentialsPassword, @RequestParam("addCredentials") String addCredentialsDecryptedPassword, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         credentialsService.createCredentials(webpageCredentials.getUrl(), webpageCredentials.getUsername(), webpageCredentials.getKey(), webpageCredentials.getPassword(), webpageCredentials.getCredentialId());
         
         Users users = userService.getUser(authentication.getName());
@@ -48,7 +48,7 @@ public class CredentialsController {
     @GetMapping
     public String editCredentials(@RequestParam("chooseCredential") MultipartFile chosenCredential, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         credentialsService.editCredentials(chosenCredential.getUrl(), chosenCredential.getUsername(), chosenCredential.getKey(), chosenCredential.getPassword(), chosenCredential.getCredentialId());
-
+        
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
