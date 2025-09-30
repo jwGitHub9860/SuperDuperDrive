@@ -47,7 +47,7 @@ public class CredentialsController {
 
     @GetMapping
     public String editCredentials(@RequestParam("chosenCredentials") String chosenCredentialsUrl, @RequestParam("chosenCredentials") String chosenCredentialsUsername, @RequestParam("chosenCredentials") String chosenCredentialsKey, @RequestParam("chosenCredentials") String chosenCredentialsPassword, @RequestParam("chosenCredentials") Integer chosenCredentialsId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
-        credentialsService.editCredentials(chosenCredential.getUrl(), chosenCredential.getUsername(), chosenCredential.getKey(), chosenCredential.getPassword(), chosenCredential.getCredentialId());
+        credentialsService.editCredentials(chosenCredentialsUrl, chosenCredentialsUsername, chosenCredentialsKey, chosenCredentialsPassword, users.getUserId());
 
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
