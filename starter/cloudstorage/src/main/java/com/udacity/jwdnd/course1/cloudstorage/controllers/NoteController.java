@@ -13,6 +13,7 @@ import com.udacity.jwdnd.course1.cloudstorage.services.CredentialsService;
 import com.udacity.jwdnd.course1.cloudstorage.services.UserService;
 
 @Controller
+@RequestMapping("/home")
 public class NoteController {
     private final FileService fileService;
     private final NoteService noteService;
