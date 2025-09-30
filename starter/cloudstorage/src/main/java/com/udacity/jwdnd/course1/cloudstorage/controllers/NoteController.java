@@ -30,7 +30,7 @@ public class NoteController {
 
     public String addNote(@RequestParam("addNote") String createNoteTitle, @RequestParam("addNote") Integer createNoteId, @RequestParam("addNote") String createNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
-        Notes newNote = new Notes(createNote.getName(), null, createNote.getContentType(), users.getUserId());
+        noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
         
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
