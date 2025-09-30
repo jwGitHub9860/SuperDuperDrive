@@ -4,6 +4,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.udacity.jwdnd.course1.cloudstorage.model.Notes;
@@ -51,5 +52,15 @@ public class NoteController {
 
         // Takes User Back to Home Page
         return "redirect:/home";
+    }
+
+    public void deleteNote(@RequestParam String noteTitle, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        noteService.deleteNoteByNoteTitle(noteTitle);
+
+        Users users = userService.getUser(authentication.getName());
+        model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
+        model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
+        model.addAttribute("credentials", this.credentialsService.getCredentialsByUserId(users.getUserId()));
+        redirectAttributes.addFlashAttribute("delete_note_status", "Note deleted successfully!");
     }
 }
