@@ -33,7 +33,7 @@ public class NoteService {
         noteMapper.editNote(noteTitle, noteDescription, noteId);
     }
 
-    public void deleteNoteByNoteId(Integer noteId) {
-        noteMapper.deleteNoteByNoteId(noteId);
+    public void deleteNoteByNoteTitle(String noteTitle) {
+        noteMapper.deleteNoteByNoteTitle(noteTitle);
     }
 }
