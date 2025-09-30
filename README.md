@@ -203,6 +203,8 @@ heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 O
 
 “HTML - Href Attribute.” _Tutorialspoint_, www.tutorialspoint.com/html/html_href_attribute.htm. Accessed 29 Sep. 2025.
 
+“HTML - Target Attribute.” _Tutorialspoint_, www.tutorialspoint.com/html/html_target_attribute.htm. Accessed 29 Sep. 2025.
+
 “Interface Model.” _Spring_, 10 Apr. 2019, docs.spring.io/spring-framework/docs/5.1.6.RELEASE_to_5.2.0.M1/Spring%20Framework%205.2.0.M1/org/springframework/ui/Model.html. Accessed 16 Sep. 2025.
 
 “Interface Multipartfile.” _MultipartFile (Spring Framework 6.2.11 API)_, docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/multipart/MultipartFile.html#getOriginalFilename(). Accessed 20 Sep. 2025.
