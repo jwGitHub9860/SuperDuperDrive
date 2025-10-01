@@ -185,6 +185,8 @@ Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructio
 
 “Class User.” _User (Spring-Security-Docs 6.5.5 API)_, docs.spring.io/spring-security/reference/api/java/org/springframework/security/core/userdetails/User.html. Accessed 17 Sep. 2025.
 
+Cookies, Dev. “The Scope of Beans in Spring Boot: A Comprehensive Guide.” _Medium_, Medium, 6 Nov. 2024, devcookies.medium.com/the-scope-of-beans-in-spring-boot-a-comprehensive-guide-ca4de7c531f3. Accessed 30 Sep. 2025.
+
 D, Dao Anh. “I Can’t Run the Sample Test Case.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/880822. Accessed 12 Sep. 2025.
 
 “Delete a File Using Java.” _GeeksforGeeks_, GeeksforGeeks, 10 Jan. 2025, www.geeksforgeeks.org/java/delete-file-using-java/. Accessed 12 Sep. 2025.
