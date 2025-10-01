@@ -7,6 +7,8 @@ import org.springframework.context.annotation.Scope;
 
 // Create New Bean Instance for each User Session in Web Application
 @Scope("session")
+
+// "Serializable" - Convert "Users" Object into Byte Stream
 public class Users implements Serializable {
     private final Integer userId;
     private final String username;
