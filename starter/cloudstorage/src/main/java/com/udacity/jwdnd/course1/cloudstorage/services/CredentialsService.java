@@ -22,7 +22,7 @@ public class CredentialsService {
         return credentialsMapper.getCredentialsByCredentialName(credentialName);
     }
 
-    public Credentials getCredentialsByUserId(Integer userId) {
+    public List<Credentials> getCredentialsByUserId(Integer userId) {
         return credentialsMapper.getCredentialsByUserId(userId);
     }
 
