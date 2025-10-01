@@ -153,11 +153,9 @@ _None_
 ## Credits
 ###### References used while making project
 
-abc32112, and dectarin. “How Do I Find the Library Containing Org.Springframework.Stereotype.Service?” Edited by Vertexwahn, _Stack Overflow_, 8 Aug. 2014, stackoverflow.com/questions/25206487/how-do-i-find-the-library-containing-org-springframework-stereotype-service. Accessed 18 Sep. 2025.
-
-“Class UsernamePasswordAuthenticationToken.” _Usernamepasswordauthenticationtoken (Spring Security 4.0.4.Release API)_, 25 Feb. 2016, docs.spring.io/spring-security/site/docs/4.0.x/apidocs/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.html. Accessed 18 Sep. 2025.
-
 “@Controller vs. @RestController Annotation in Spring.” _GeeksforGeeks_, GeeksforGeeks, 3 Sept. 2025, www.geeksforgeeks.org/springboot/controller-vs-restcontroller-annotation-in-spring/. Accessed 12 Sep. 2025.
+
+abc32112, and dectarin. “How Do I Find the Library Containing Org.Springframework.Stereotype.Service?” Edited by Vertexwahn, _Stack Overflow_, 8 Aug. 2014, stackoverflow.com/questions/25206487/how-do-i-find-the-library-containing-org-springframework-stereotype-service. Accessed 18 Sep. 2025.
 
 “AuthenticationService.” _HYLAND_, support.hyland.com/r/Alfresco/Alfresco-Content-Services/23.4/Alfresco-Content-Services/Develop/Reference/Java-Foundation-API/AuthenticationService. Accessed 7 Sep. 2025.
 
@@ -184,6 +182,8 @@ Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructio
 “Class SecureRandomFactoryBean.” _SecureRandomFactoryBean (Spring-Security-Docs 6.5.5 API)_, docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/core/token/SecureRandomFactoryBean.html. Accessed 17 Sep. 2025.
 
 “Class User.” _User (Spring-Security-Docs 6.5.5 API)_, docs.spring.io/spring-security/reference/api/java/org/springframework/security/core/userdetails/User.html. Accessed 17 Sep. 2025.
+
+“Class UsernamePasswordAuthenticationToken.” _Usernamepasswordauthenticationtoken (Spring Security 4.0.4.Release API)_, 25 Feb. 2016, docs.spring.io/spring-security/site/docs/4.0.x/apidocs/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.html. Accessed 18 Sep. 2025.
 
 Cookies, Dev. “The Scope of Beans in Spring Boot: A Comprehensive Guide.” _Medium_, Medium, 6 Nov. 2024, devcookies.medium.com/the-scope-of-beans-in-spring-boot-a-comprehensive-guide-ca4de7c531f3. Accessed 30 Sep. 2025.
 
