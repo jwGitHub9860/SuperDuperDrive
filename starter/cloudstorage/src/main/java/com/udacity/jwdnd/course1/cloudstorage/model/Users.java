@@ -5,6 +5,7 @@ import java.io.Serializable;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.context.annotation.Scope;
 
+@Scope("session")
 public class Users {
     private final Integer userId;
     private final String username;
