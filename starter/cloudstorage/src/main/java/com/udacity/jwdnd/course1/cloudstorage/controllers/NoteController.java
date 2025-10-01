@@ -34,7 +34,7 @@ public class NoteController {
         
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
-        model.addAttribute("credentials", this.credentialsService.getCredentialsByUserId(users.getUserId()));
+        model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("add_note_status", "Note added successfully!");
 
         // Takes User Back to Home Page
@@ -48,7 +48,7 @@ public class NoteController {
         
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
-        model.addAttribute("credentials", this.credentialsService.getCredentialsByUserId(users.getUserId()));
+        model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("edit_note_status", "Note edited successfully!");
 
         // Takes User Back to Home Page
@@ -62,7 +62,7 @@ public class NoteController {
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
-        model.addAttribute("credentials", this.credentialsService.getCredentialsByUserId(users.getUserId()));
+        model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("delete_note_status", "Note deleted successfully!");
     }
 }

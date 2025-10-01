@@ -45,7 +45,7 @@ public class FileDownloadController {
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
-        model.addAttribute("credentials", this.credentialsService.getCredentialsByUserId(users.getUserId()));
+        model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("message", "File downloaded successfully!");
         
         // Takes User Back to Home Page
