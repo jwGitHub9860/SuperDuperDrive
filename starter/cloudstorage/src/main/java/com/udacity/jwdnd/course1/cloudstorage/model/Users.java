@@ -2,7 +2,6 @@ package com.udacity.jwdnd.course1.cloudstorage.model;
 
 import java.io.Serializable;
 
-import org.springframework.security.core.userdetails.User;
 import org.springframework.context.annotation.Scope;
 
 // Create New Bean Instance for each User Session in Web Application
