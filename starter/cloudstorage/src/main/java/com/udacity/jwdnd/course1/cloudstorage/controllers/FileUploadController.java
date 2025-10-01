@@ -54,7 +54,7 @@ public class FileUploadController {
             uploadedFiles.add(chosenFile);
             System.out.println("File Upload Successful!");
             
-            model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
+            model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
             model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
             model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));            
             redirectAttributes.addFlashAttribute("upload_message", "File uploaded successfully!");
@@ -72,7 +72,7 @@ public class FileUploadController {
         fileService.deleteFile(filename);
 
         Users users = userService.getUser(authentication.getName());
-        model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
+        model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("delete_file_status", "File deleted successful!");

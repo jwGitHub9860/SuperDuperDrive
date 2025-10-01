@@ -23,8 +23,8 @@ public class FileService {
         return fileMapper.getFileByFileName(filename);
     }
 
-    public List<Files> getFileByUserId(Integer userId) {
-        return fileMapper.getFileByUserId(userId);
+    public List<Files> getAllFilesByUserId(Integer userId) {
+        return fileMapper.getAllFilesByUserId(userId);
     }
 
     public final Files uploadFile(Files file) {

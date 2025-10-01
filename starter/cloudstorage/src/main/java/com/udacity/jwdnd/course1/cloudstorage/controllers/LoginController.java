@@ -30,7 +30,7 @@ public class LoginController {
     @RequestMapping("/login")
     public String getLoginPage(@RequestParam("userCredentials") MultipartFile loginCredentials, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
-        model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
+        model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("displayLoginPage", true);

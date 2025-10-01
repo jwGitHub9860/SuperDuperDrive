@@ -32,7 +32,7 @@ public class NoteController {
         Users users = userService.getUser(authentication.getName());
         noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
         
-        model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
+        model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("add_note_status", "Note added successfully!");
@@ -46,7 +46,7 @@ public class NoteController {
         Users users = userService.getUser(authentication.getName());
         noteService.editNote(chosenNoteTitle, chosenNoteDescription, chosenNoteId);
         
-        model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
+        model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("edit_note_status", "Note edited successfully!");
@@ -60,7 +60,7 @@ public class NoteController {
         noteService.deleteNoteByNoteTitle(noteTitle);
 
         Users users = userService.getUser(authentication.getName());
-        model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
+        model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("delete_note_status", "Note deleted successfully!");
