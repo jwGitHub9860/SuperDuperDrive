@@ -239,6 +239,8 @@ r/javahelp, and _jetrun. “Explain like i’m Five - What Is Serializable?” _
 
 “Random vs Secure Random Numbers in Java.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/random-vs-secure-random-numbers-java/. Accessed 17 Sep. 2025.
 
+“Serialization and Deserialization in Java.” _GeeksforGeeks_, GeeksforGeeks, 2 June 2025, www.geeksforgeeks.org/java/serialization-and-deserialization-in-java/. Accessed 30 Sep. 2025.
+
 “Serving Web Content with Spring MVC.” _Getting Started | Serving Web Content with Spring MVC_, spring.io/guides/gs/serving-web-content. Accessed 29 Sep. 2025.
 
 “Servlet Authentication Architecture.” _Servlet Authentication Architecture :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/architecture.html#:~:text=SecurityContextHolder%20%2D%20The%20SecurityContextHolder%20is%20where,Spring%20Security’s%20Filters%20perform%20authentication. Accessed 16 Sep. 2025.
