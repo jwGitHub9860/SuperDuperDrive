@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Scope;
 
 // Create New Bean Instance for each User Session in Web Application
 @Scope("session")
-public class Users {
+public class Users implements Serializable {
     private final Integer userId;
     private final String username;
     private final String salt;
