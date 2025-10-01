@@ -35,7 +35,7 @@ public class CredentialsController {
         
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
-        model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
+        model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("credentials_status", "Credentials added successfully!");
 
@@ -49,7 +49,7 @@ public class CredentialsController {
         credentialsService.editCredentials(chosenCredentialsUrl, chosenCredentialsUsername, chosenCredentialsKey, chosenCredentialsPassword, users.getUserId());
 
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
-        model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
+        model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("edit_credential_status", "Credential edited successfully!");
 
@@ -63,7 +63,7 @@ public class CredentialsController {
         
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getFileByUserId(users.getUserId()));
-        model.addAttribute("notes", this.noteService.getNoteByUserId(users.getUserId()));
+        model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         redirectAttributes.addFlashAttribute("delete_credential_status", "Credential delete successful!");
     }
