@@ -29,7 +29,6 @@ public class UserService {
 
     public int createUser(Users user) {
         SecureRandom random = new SecureRandom();
-        String encodedPassword = passwordEncoder.encode(user.getPassword());
         byte[] salt = new byte[16];
         random.nextBytes(salt);
         String encodedSalt = Base64.getEncoder().encodeToString(salt);
