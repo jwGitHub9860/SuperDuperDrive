@@ -24,8 +24,8 @@ public class CredentialsService {
         return credentialsMapper.getCredentialsByCredentialName(credentialName);
     }
 
-    public List<Credentials> getCredentialsByUserId(Integer userId) {
-        return credentialsMapper.getCredentialsByUserId(userId);
+    public List<Credentials> getAllCredentialsByUserId(Integer userId) {
+        return credentialsMapper.getAllCredentialsByUserId(userId);
     }
 
     public int createCredentials(String url, String username, String key, String password, Integer credentialId) {
