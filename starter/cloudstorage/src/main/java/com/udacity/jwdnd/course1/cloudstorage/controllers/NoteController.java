@@ -21,6 +21,7 @@ public class NoteController {
     private final NoteService noteService;
     private final CredentialsService credentialsService;
     private final UserService userService;
+    private final List<Notes> createdNotes = new ArrayList<Notes>();
 
     public NoteController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {
         this.fileService = fileService;
