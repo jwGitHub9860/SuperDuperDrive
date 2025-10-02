@@ -37,13 +37,18 @@ public class NoteController {
         Users users = userService.getUser(authentication.getName());
 
         // Checks if New Note is Duplicate
-        for(Notes noteItem : allNotes) {
-            if (createNoteTitle == noteItem.getNoteTitle()) {
-                throw new IllegalArgumentException("Note is duplicate!");
+        try {
+            for(Notes noteItem : allNotes) {
+                if (createNoteTitle == noteItem.getNoteTitle()) {
+                    throw new IllegalArgumentException("Note is duplicate!");
+                }
             }
+            
+            noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
+        } catch (Exception e) {
+            e.printStackTrace();
+            redirectAttributes.addFlashAttribute("add_note_not_duplicate", false);
         }
-        
-        noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
         
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
