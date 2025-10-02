@@ -45,9 +45,12 @@ public class NoteController {
             }
             
             noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
+
+            // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
             redirectAttributes.addFlashAttribute("add_note_not_duplicate", true);
         } catch (Exception e) {
             e.printStackTrace();
+            // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
             redirectAttributes.addFlashAttribute("add_note_not_duplicate", false);
         }
         
