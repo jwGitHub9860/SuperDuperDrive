@@ -15,6 +15,7 @@
                 <form action="#" method="POST">
                     <button type="submit" class="btn btn-secondary float-right">Logout</button>
                 </form>
+                <!-- Messages that Indicate Status of Files, Notes, Credentials, Home Page, and Login Page -->
                 <h1 th:if="${add_note_not_duplicate}">Note added successfully!</h1>
                 <h1 th:unless="${add_note_not_duplicate}">Note is duplicate!</h1>
             </div>
