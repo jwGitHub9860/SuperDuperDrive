@@ -36,6 +36,7 @@ public class NoteController {
     public String addNote(@RequestParam("addNote") String createNoteTitle, @RequestParam("addNote") Integer createNoteId, @RequestParam("addNote") String createNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
 
+        // Checks if New Note is Duplicate
         for(Notes noteItem : allNotes) {
             if (createNoteTitle == noteItem.getNoteTitle()) {
                 throw new IllegalArgumentException("Note is duplicate!");
