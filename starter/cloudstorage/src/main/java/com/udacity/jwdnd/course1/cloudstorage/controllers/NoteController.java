@@ -53,7 +53,7 @@ public class NoteController {
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
-        redirectAttributes.addFlashAttribute("add_note_status", "Note added successfully!");
+        redirectAttributes.addFlashAttribute("add_note_not_duplicate", true);
 
         // Takes User Back to Home Page
         return "redirect:/home";
