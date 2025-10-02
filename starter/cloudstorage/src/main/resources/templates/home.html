@@ -16,7 +16,6 @@
                     <button type="submit" class="btn btn-secondary float-right">Logout</button>
                 </form>
                 <!-- Displays Messages that Indicate Status of Files, Notes, Credentials, Home Page, and Login Page -->
-                <h1 th:if="${add_note_not_duplicate}">Note added successfully!</h1>
                 <h1 th:unless="${add_note_not_duplicate}">Note is duplicate!</h1>
             </div>
             <div id="contentDiv" style="clear: right;">
@@ -121,7 +120,8 @@
                                             </div>
                                             <button id="noteSubmit" type="submit" class="d-none"></button>
                                         </form>
-                                        </div>
+                                        <h1 th:if="${add_note_not_duplicate}">Note added successfully!</h1>
+                                    </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                         <button type="button" class="btn btn-primary" onclick="$('#noteSubmit').click();">Save changes</button>
