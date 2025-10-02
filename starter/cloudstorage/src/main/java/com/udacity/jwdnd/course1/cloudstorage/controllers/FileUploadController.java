@@ -33,6 +33,7 @@ public class FileUploadController {
         this.userService = userService;
     }
 
+    // Connects "home.html" File to "uploadFile()" Method
     @PostMapping("/uploadedFile")
     public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws IOException {
         Users users = userService.getUser(authentication.getName());
