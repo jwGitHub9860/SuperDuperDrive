@@ -68,7 +68,7 @@ public class FileUploadController {
         return "redirect:/home";
     }
 
-    @RequestMapping("/files")
+    @RequestMapping("/files/delete/{fileId}")
     public void deleteFile(@PathVariable String filename, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         fileService.deleteFile(filename);
 
