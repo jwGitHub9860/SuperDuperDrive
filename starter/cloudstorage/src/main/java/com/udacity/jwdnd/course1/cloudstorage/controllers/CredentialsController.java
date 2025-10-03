@@ -36,6 +36,8 @@ public class CredentialsController {
 
     @GetMapping
     public String addCredentials(@RequestParam("addCredentials") String addCredentialsUrl, @RequestParam("addCredentials") Integer addCredentialsId, @RequestParam("addCredentials") String addCredentialsUsername, @RequestParam("addCredentials") String addCredentialsKey, @RequestParam("addCredentials") String addCredentialsPassword, @RequestParam("addCredentials") String addCredentialsDecryptedPassword, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        Users users = userService.getUser(authentication.getName());
+        
         try {
             credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, addCredentialsKey, addCredentialsPassword, addCredentialsId);
         } catch (Exception e) {
@@ -43,7 +45,6 @@ public class CredentialsController {
             redirectAttributes.addFlashAttribute("add_credentials_not_duplicate", false);
         }
         
-        Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
