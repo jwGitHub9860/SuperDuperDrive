@@ -46,6 +46,7 @@ public class CredentialsController {
                 }
             }
             credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, addCredentialsKey, addCredentialsPassword, users.getUserId());
+            allCredentials.add(newCredentials);
             redirectAttributes.addFlashAttribute("add_credentials_not_duplicate", true);
         } catch (Exception e) {
             e.printStackTrace();
