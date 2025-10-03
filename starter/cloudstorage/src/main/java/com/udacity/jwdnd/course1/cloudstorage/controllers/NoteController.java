@@ -35,6 +35,7 @@ public class NoteController {
     @GetMapping
     public String addNote(@RequestParam("addNote") String createNoteTitle, @RequestParam("addNote") Integer createNoteId, @RequestParam("addNote") String createNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
+        Notes newNote = new Notes(createNoteTitle, createNoteId, createNoteDescription, users.getUserId());
 
         // Checks if New Note is Duplicate
         try {
