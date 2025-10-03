@@ -46,6 +46,7 @@ public class NoteController {
             }
             
             noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
+            allNotes.add(newNote);
 
             // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
             redirectAttributes.addFlashAttribute("add_note_not_duplicate", true);
