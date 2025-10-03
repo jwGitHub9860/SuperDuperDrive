@@ -17,6 +17,7 @@
                 </form>
                 <!-- Displays Messages that Indicate Status of Files, Notes, Credentials, Home Page, and Login Page -->
                 <h1 th:unless="${add_note_not_duplicate}">Note is duplicate!</h1>
+                <h1 th:each="msg : ${add_credentials_status}" th:text="${msg}">Credentials added successfully!</h1>
             </div>
             <div id="contentDiv" style="clear: right;">
                 <nav style="clear: right;">
