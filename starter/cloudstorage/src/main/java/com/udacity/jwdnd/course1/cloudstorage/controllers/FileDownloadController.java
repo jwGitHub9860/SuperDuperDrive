@@ -38,9 +38,9 @@ public class FileDownloadController {
         this.userService = userService;
     }
 
-    @GetMapping("/download/{filename:.+}")
-    public String downloadFile(@PathVariable String filename, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
-        fileService.downloadFile(filename);
+    @GetMapping("/download/{fileName:.+}")
+    public String downloadFile(@PathVariable String fileName, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
+        fileService.downloadFile(fileName);
 
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));

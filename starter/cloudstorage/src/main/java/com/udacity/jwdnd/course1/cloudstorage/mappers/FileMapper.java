@@ -11,22 +11,22 @@ public interface FileMapper {
     @Select("SELECT * FROM Files WHERE fileId = #{fileId}")
     Files getFileByFileId(Integer fileId);
     
-    @Select("SELECT * FROM Files WHERE filename = #{filename}")
-    Files getFileByFileName(String filename);
+    @Select("SELECT * FROM Files WHERE fileName = #{fileName}")
+    Files getFileByFileName(String fileName);
 
     @Select("SELECT * FROM Files WHERE userId = #{userId}")
     List<Files> getAllFilesByUserId(Integer userId);
 
-    @Insert("INSERT INTO Files (filename, contenttype, filesize, userid, filedata) VALUES(#{filename}, #{contenttype}, #{filesize}, #{userid}, #{filedata})")
+    @Insert("INSERT INTO Files (fileName, contenttype, filesize, userid, filedata) VALUES(#{fileName}, #{contenttype}, #{filesize}, #{userid}, #{filedata})")
     @Options(useGeneratedKeys = true, keyProperty = "fileId")
     Files uploadFile(Files file);
 
-    @Insert("INSERT INTO Files (filename, contenttype, filesize, userid, filedata) VALUES(#{filename}, #{contenttype}, #{filesize}, #{userid}, #{filedata})")
+    @Insert("INSERT INTO Files (fileName, contenttype, filesize, userid, filedata) VALUES(#{fileName}, #{contenttype}, #{filesize}, #{userid}, #{filedata})")
     @Options(useGeneratedKeys = true, keyProperty = "fileId")
-    Files downloadFile(String filename);
+    Files downloadFile(String fileName);
 
-    @Delete("DELETE FROM Files WHERE filename = #{filename}")
-    void deleteFile(String filename);
+    @Delete("DELETE FROM Files WHERE fileName = #{fileName}")
+    void deleteFile(String fileName);
 
     @Update("UPDATE Files SET filedata = #{filedata} WHERE fileId = #{fileId}")
     void saveFile(Integer fileId, byte[] filedata);

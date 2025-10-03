@@ -19,8 +19,8 @@ public class FileService {
         return fileMapper.getFileByFileId(fileId);
     }
 
-    public final Files getFileByFileName(String filename) {
-        return fileMapper.getFileByFileName(filename);
+    public final Files getFileByFileName(String fileName) {
+        return fileMapper.getFileByFileName(fileName);
     }
 
     public List<Files> getAllFilesByUserId(Integer userId) {
@@ -31,11 +31,11 @@ public class FileService {
         return fileMapper.uploadFile(file);
     }
 
-    public final Files downloadFile(String filename) {
-        return fileMapper.downloadFile(filename);
+    public final Files downloadFile(String fileName) {
+        return fileMapper.downloadFile(fileName);
     }
 
-    public final void deleteFile(String filename) {
-        fileMapper.deleteFile(filename);
+    public final void deleteFile(String fileName) {
+        fileMapper.deleteFile(fileName);
     }
 }
