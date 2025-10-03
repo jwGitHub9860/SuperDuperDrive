@@ -40,6 +40,11 @@ public class CredentialsController {
 
         // Checks if New Credentials are Duplicate
         try {
+            for(Credentials credentialsItem : allCredentials) {
+                if (credentialsItem.getUsername() == addCredentialsUsername) {
+                    throw new IllegalArgumentException("Credentials are duplicate!");
+                }
+            }
             credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, addCredentialsKey, addCredentialsPassword, users.getUserId());
             redirectAttributes.addFlashAttribute("add_credentials_not_duplicate", true);
         } catch (Exception e) {
