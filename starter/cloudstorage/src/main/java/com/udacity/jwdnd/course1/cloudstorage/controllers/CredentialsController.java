@@ -41,7 +41,7 @@ public class CredentialsController {
         // Checks if New Credentials are Duplicate
         try {
             credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, addCredentialsKey, addCredentialsPassword, users.getUserId());
-            redirectAttributes.addFlashAttribute("add_credentials_status", true);
+            redirectAttributes.addFlashAttribute("add_credentials_not_duplicate", true);
         } catch (Exception e) {
             e.printStackTrace();
             redirectAttributes.addFlashAttribute("add_credentials_not_duplicate", false);
