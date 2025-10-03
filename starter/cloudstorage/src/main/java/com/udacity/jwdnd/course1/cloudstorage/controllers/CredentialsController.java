@@ -41,6 +41,7 @@ public class CredentialsController {
         // Checks if New Credentials are Duplicate
         try {
             credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, addCredentialsKey, addCredentialsPassword, users.getUserId());
+            redirectAttributes.addFlashAttribute("add_credentials_status", true);
         } catch (Exception e) {
             e.printStackTrace();
             redirectAttributes.addFlashAttribute("add_credentials_not_duplicate", false);
@@ -49,7 +50,6 @@ public class CredentialsController {
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
-        redirectAttributes.addFlashAttribute("add_credentials_status", true);
 
         // Take User Back to Home Page
         return "redirect:/home";
