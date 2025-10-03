@@ -23,6 +23,7 @@ public class CredentialsController {
     private final NoteService noteService;
     private final CredentialsService credentialsService;
     private final UserService userService;
+    private final List<Credentials> allCredentials = new ArrayList<Credentials>();
 
     public CredentialsController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {
         this.fileService = fileService;
