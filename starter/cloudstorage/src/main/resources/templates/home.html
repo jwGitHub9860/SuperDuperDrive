@@ -16,6 +16,7 @@
                     <button type="submit" class="btn btn-secondary float-right">Logout</button>
                 </form>
                 <!-- Displays Messages that Indicate Status of Files, Notes, Credentials, Home Page, and Login Page -->
+                <h1 if:each="displayHomePage" th:text="${msg}">Home</h1>
                 <h3 th:each="msg : ${add_credentials_status}" th:text="${msg}">Credentials added successfully!</h1>
                 <h3 th:unless="${add_credentials_not_duplicate}">Credentials are duplicate!</h1>
                 <h1 if:each="displayLoginPage">Login</h2>
