@@ -74,7 +74,7 @@ public class NoteController {
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
 
         // Creates Connection between "editNote()" Method & code that Displays Status of Editing Note Successfully inside "home.html" file
-        redirectAttributes.addFlashAttribute("edit_note_status", "Note edited successfully!");
+        redirectAttributes.addFlashAttribute("edit_note_status", true);
 
         // Takes User Back to Home Page
         return "redirect:/home";
