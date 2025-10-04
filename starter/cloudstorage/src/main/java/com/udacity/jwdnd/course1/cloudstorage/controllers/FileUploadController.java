@@ -33,8 +33,8 @@ public class FileUploadController {
         this.userService = userService;
     }
 
-    // Connects "home.html" File to "uploadFile()" Method
-    @PostMapping("/uploadedFile")
+    // Connects code with { id="fileUpload" } in "home.html" File to "uploadFile()" Method
+    @PostMapping("/fileUpload")
     public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws IOException {
         Users users = userService.getUser(authentication.getName());
         Files chosenFile = new Files(fileUpload.getOriginalFilename(), null, fileUpload.getContentType(), Long.toString(fileUpload.getSize()), fileUpload.getBytes(), users.getUserId());
