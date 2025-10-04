@@ -16,15 +16,15 @@
                     <button type="submit" class="btn btn-secondary float-right">Logout</button>
                 </form>
                 <!-- Displays Messages that Indicate Status of Files, Notes, Credentials, Home Page, and Login Page -->
-                <h1 th:each="msg : ${add_credentials_status}" th:text="${msg}">Credentials added successfully!</h1>
-                <h1 th:unless="${add_credentials_not_duplicate}">Credentials are duplicate!</h1>
-                <h2 if:each="displayLoginPage">Login</h2>
-                <h2 if:each="msg: ${displayLoginPage}" th:text="{msg}">Login</h2>
+                <h3 th:each="msg : ${add_credentials_status}" th:text="${msg}">Credentials added successfully!</h1>
+                <h3 th:unless="${add_credentials_not_duplicate}">Credentials are duplicate!</h1>
+                <h1 if:each="displayLoginPage">Login</h2>
+                <h1 if:each="msg: ${displayLoginPage}" th:text="{msg}">Login</h2>
                 <h3 if:each="msg: ${edit_credential_status}" th:text="{msg}">Credential edited successfully!</h3>
-                <h4 if:each="msg: ${delete_credential_status}" th:text="{msg}">Credential delete successful!</h4>
-                <h5 th:each="msg: ${delete_file_status}" th:text="${msg}">File deleted successful!</h5>
-                <h6 if:each="msg: ${duplicate_message}" th:text="${msg}">File has duplicate name!</h6>
-                <h6 if:each="msg: ${empty_message}" th:text="${msg}">File is empty!</h6>
+                <h3 if:each="msg: ${delete_credential_status}" th:text="{msg}">Credential delete successful!</h4>
+                <h3 th:each="msg: ${delete_file_status}" th:text="${msg}">File deleted successful!</h5>
+                <h3 if:each="msg: ${duplicate_message}" th:text="${msg}">File has duplicate name!</h6>
+                <h3 if:each="msg: ${empty_message}" th:text="${msg}">File is empty!</h6>
                 <h3 if:each="msg: ${upload_message_status}" th:text="${msg}">File uploaded successfully!</h3>
                 <h3 if:unless="msg: ${upload_message_status}" th:text="${msg}">File upload failed!</h3>
                 <h3 if:each="msg: ${edit_note_status}" th:text="${msg}">Note edited successfully!</h3>
@@ -134,8 +134,8 @@
                                             <button id="noteSubmit" type="submit" class="d-none"></button>
                                         </form>
                                         <!-- Displays Messages that Indicate Status Notes -->
-                                        <h1 th:if="${add_note_not_duplicate}">Note added successfully!</h1>
-                                        <h1 th:unless="${add_note_not_duplicate}">Note is duplicate!</h1>
+                                        <h3 th:if="${add_note_not_duplicate}">Note added successfully!</h1>
+                                        <h3 th:unless="${add_note_not_duplicate}">Note is duplicate!</h1>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
