@@ -33,6 +33,10 @@ public class HomeController {
         model.addAttribute("files", this.fileService.getAllFilesByUserId(currentUserId.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(currentUserId.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(currentUserId.getUserId()));
+
+        // Creates Connection between "getHomePage()" Method & code that Displays Home Page Status inside "home.html" file
+        redirectAttributes.addFlashAttribute("displayHomePage", true);
+
         return "home";
     }
 }
