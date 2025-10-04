@@ -48,9 +48,13 @@ public class CredentialsController {
             }
             credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, addCredentialsKey, addCredentialsPassword, users.getUserId());
             allCredentials.add(newCredentials);
+
+            // Creates Connection between "addCredentials()" Method & code that Displays Status of Adding Credentials Successfully inside "home.html" file
             redirectAttributes.addFlashAttribute("add_credentials_not_duplicate", true);
         } catch (Exception e) {
             e.printStackTrace();
+
+            // Creates Connection between "addCredentials()" Method & code that Displays Status of Duplicate Credentials inside "home.html" file
             redirectAttributes.addFlashAttribute("add_credentials_not_duplicate", false);
         }
         
@@ -70,6 +74,8 @@ public class CredentialsController {
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
+
+        // Creates Connection between "editCredentials()" Method & code that Displays Status of Editing Credentials Successfully inside "home.html" file
         redirectAttributes.addFlashAttribute("edit_credential_status", "Credential edited successfully!");
 
         // Takes User Back to Home Page
@@ -84,6 +90,8 @@ public class CredentialsController {
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
+
+        // Creates Connection between "deleteCredentials()" Method & code that Displays Status of Deleting Credentials Successfully inside "home.html" file
         redirectAttributes.addFlashAttribute("delete_credential_status", "Credential delete successful!");
     }
 }

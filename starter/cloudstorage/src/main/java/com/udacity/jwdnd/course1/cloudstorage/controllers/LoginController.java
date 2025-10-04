@@ -33,7 +33,10 @@ public class LoginController {
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
+
+        // Creates Connection between "getLoginPage()" Method & code that Displays Login Page Status inside "home.html" file
         redirectAttributes.addFlashAttribute("displayLoginPage", true);
+
         return "login";
     }
 }

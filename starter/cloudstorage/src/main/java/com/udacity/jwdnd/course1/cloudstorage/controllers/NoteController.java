@@ -72,6 +72,8 @@ public class NoteController {
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
+
+        // Creates Connection between "editNote()" Method & code that Displays Status of Editing Note Successfully inside "home.html" file
         redirectAttributes.addFlashAttribute("edit_note_status", "Note edited successfully!");
 
         // Takes User Back to Home Page
@@ -86,6 +88,8 @@ public class NoteController {
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
+
+        // Creates Connection between "deleteNote()" Method & code that Displays Status of Deleting Note Successfully inside "home.html" file
         redirectAttributes.addFlashAttribute("delete_note_status", "Note deleted successfully!");
     }
 }

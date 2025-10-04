@@ -46,6 +46,8 @@ public class FileDownloadController {
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
+
+        // Creates Connection between "downloadFile()" Method & code that Displays File Download Status inside "home.html" file
         redirectAttributes.addFlashAttribute("message", "File downloaded successfully!");
         
         // Takes User Back to Home Page

@@ -57,10 +57,13 @@ public class FileUploadController {
             
             model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
             model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
-            model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));            
+            model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
+            
+            // Creates Connection between "uploadFile()" Method & code that Displays Status of Uploading File Successfully inside "home.html" file
             redirectAttributes.addFlashAttribute("upload_message", "File uploaded successfully!");
         } catch (Exception e) {
             e.printStackTrace();
+            // Creates Connection between "uploadFile()" Method & code that Displays Status of Failing to Upload File inside "home.html" file
             redirectAttributes.addFlashAttribute("upload_message", "File upload failed!");
         }
         
@@ -77,6 +80,8 @@ public class FileUploadController {
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
+
+        // Creates Connection between "deleteFile()" Method & code that Displays Status of Deleting File Successfully inside "home.html" file
         redirectAttributes.addFlashAttribute("delete_file_status", "File deleted successful!");
     }
 }
