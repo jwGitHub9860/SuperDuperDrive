@@ -29,6 +29,7 @@
                 <h3 if:unless="msg: ${upload_message_status}" th:text="${msg}">File upload failed!</h3>
                 <h3 if:each="msg: ${edit_note_status}" th:text="${msg}">Note edited successfully!</h3>
                 <h3 if:each="msg: ${delete_note_status}" th:text="${msg}">Note deleted successfully!</h3>
+                <h3 if:each="msg: ${download_file_status}" th:text="${msg}">File downloaded successfully!</h3>
             </div>
             <div id="contentDiv" style="clear: right;">
                 <nav style="clear: right;">
