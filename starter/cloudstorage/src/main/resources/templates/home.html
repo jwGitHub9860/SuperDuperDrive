@@ -25,6 +25,8 @@
                 <h5 th:each="msg: ${delete_file_status}" th:text="${msg}">File deleted successful!</h5>
                 <h6 if:each="msg: ${duplicate_message}" th:text="${msg}">File has duplicate name!</h6>
                 <h6 if:each="msg: ${empty_message}" th:text="${msg}">File is empty!</h6>
+                <h3 if:each="msg: ${upload_message_status}" th:text="${msg}">File uploaded successfully!</h3>
+                <h3 if:unless="msg: ${upload_message_status}" th:text="${msg}">File upload failed!</h3>
             </div>
             <div id="contentDiv" style="clear: right;">
                 <nav style="clear: right;">

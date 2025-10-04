@@ -60,11 +60,11 @@ public class FileUploadController {
             model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
             
             // Creates Connection between "uploadFile()" Method & code that Displays Status of Uploading File Successfully inside "home.html" file
-            redirectAttributes.addFlashAttribute("upload_message", "File uploaded successfully!");
+            redirectAttributes.addFlashAttribute("upload_message_status", true);
         } catch (Exception e) {
             e.printStackTrace();
             // Creates Connection between "uploadFile()" Method & code that Displays Status of Failing to Upload File inside "home.html" file
-            redirectAttributes.addFlashAttribute("upload_message", "File upload failed!");
+            redirectAttributes.addFlashAttribute("upload_message_status", true);
         }
         
         // Takes User Back to Home Page
