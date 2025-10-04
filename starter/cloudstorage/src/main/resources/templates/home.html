@@ -56,10 +56,11 @@
                                 </div>
                             </div>
                         </form>
-                        <div id="duplicate_file" th:if="${duplicate_message}" class="alert alert-danger">File has duplicate name!</div>
-                        <div id="empty_file" th:if="${empty_message}" class="alert alert-danger">File is empty!</div>
-                        <div id="file_upload_success" th:if="${upload_message_status}" class="alert alert-success">File uploaded successfully!</div>
-                        <div id="file_upload_fail" th:unless="${upload_message_status}" class="alert alert-danger">File upload failed!</div>
+                        <!-- Connects to "@PostMapping" Path for "uploadFile()" Method -->
+                        <div id="duplicate_file" th:if="${param.duplicate_message}" class="alert alert-danger">File has duplicate name!</div>
+                        <div id="empty_file" th:if="${param.empty_message}" class="alert alert-danger">File is empty!</div>
+                        <div id="file_upload_success" th:if="${param.upload_message_status}" class="alert alert-success">File uploaded successfully!</div>
+                        <div id="file_upload_fail" th:unless="${param.upload_message_status}" class="alert alert-danger">File upload failed!</div>
                         <!-- Manages Uploaded Files -->
                         <div class="table-responsive">
                             <table class="table table-striped" id="fileTable">
