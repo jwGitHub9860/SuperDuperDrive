@@ -24,10 +24,6 @@
                 <h3 if:each="msg: ${edit_credential_status}" th:text="{msg}">Credential edited successfully!</h3>
                 <h3 if:each="msg: ${delete_credential_status}" th:text="{msg}">Credential delete successful!</h4>
                 <h3 th:each="msg: ${delete_file_status}" th:text="${msg}">File deleted successful!</h5>
-                <h3 if:each="msg: ${duplicate_message}" th:text="${msg}">File has duplicate name!</h6>
-                <h3 if:each="msg: ${empty_message}" th:text="${msg}">File is empty!</h6>
-                <h3 if:each="msg: ${upload_message_status}" th:text="${msg}">File uploaded successfully!</h3>
-                <h3 if:unless="msg: ${upload_message_status}" th:text="${msg}">File upload failed!</h3>
                 <h3 if:each="msg: ${edit_note_status}" th:text="${msg}">Note edited successfully!</h3>
                 <h3 if:each="msg: ${delete_note_status}" th:text="${msg}">Note deleted successfully!</h3>
                 <h3 if:each="msg: ${download_file_status}" th:text="${msg}">File downloaded successfully!</h3>
@@ -60,6 +56,10 @@
                                 </div>
                             </div>
                         </form>
+                        <h3 if:each="msg: ${duplicate_message}" th:text="${msg}">File has duplicate name!</h6>
+                        <h3 if:each="msg: ${empty_message}" th:text="${msg}">File is empty!</h6>
+                        <h3 if:each="msg: ${upload_message_status}" th:text="${msg}">File uploaded successfully!</h3>
+                        <h3 if:unless="msg: ${upload_message_status}" th:text="${msg}">File upload failed!</h3>
                         <!-- Manages Uploaded Files -->
                         <div class="table-responsive">
                             <table class="table table-striped" id="fileTable">
