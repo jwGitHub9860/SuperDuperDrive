@@ -47,7 +47,7 @@ public class FileUploadController {
                     redirectAttributes.addFlashAttribute("duplicate_message", true);
                 }
                 else if(fileUpload.getSize() <= 0) {
-                    redirectAttributes.addFlashAttribute("empty_message", "File is empty!");
+                    redirectAttributes.addFlashAttribute("empty_message", true);
                 }
             }
 
