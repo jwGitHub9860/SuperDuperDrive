@@ -92,6 +92,6 @@ public class CredentialsController {
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
 
         // Creates Connection between "deleteCredentials()" Method & code that Displays Status of Deleting Credentials Successfully inside "home.html" file
-        redirectAttributes.addFlashAttribute("delete_credential_status", "Credential delete successful!");
+        redirectAttributes.addFlashAttribute("delete_credential_status", true);
     }
 }
