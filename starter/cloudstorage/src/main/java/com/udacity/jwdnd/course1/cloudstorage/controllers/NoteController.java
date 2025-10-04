@@ -90,6 +90,6 @@ public class NoteController {
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
 
         // Creates Connection between "deleteNote()" Method & code that Displays Status of Deleting Note Successfully inside "home.html" file
-        redirectAttributes.addFlashAttribute("delete_note_status", "Note deleted successfully!");
+        redirectAttributes.addFlashAttribute("delete_note_status", true);
     }
 }
