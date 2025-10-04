@@ -22,6 +22,7 @@
                 <h2 if:each="msg: ${displayLoginPage}" th:text="{msg}">Login</h2>
                 <h3 if:each="msg: ${edit_credential_status}" th:text="{msg}">Credential edited successfully!</h3>
                 <h4 if:each="msg: ${delete_credential_status}" th:text="{msg}">Credential delete successful!</h4>
+                <h5 th:each="msg: ${delete_file_status}" th:text="${msg}">File deleted successful!</h5>
             </div>
             <div id="contentDiv" style="clear: right;">
                 <nav style="clear: right;">

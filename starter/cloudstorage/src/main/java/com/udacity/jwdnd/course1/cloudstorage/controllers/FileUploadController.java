@@ -82,6 +82,6 @@ public class FileUploadController {
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
 
         // Creates Connection between "deleteFile()" Method & code that Displays Status of Deleting File Successfully inside "home.html" file
-        redirectAttributes.addFlashAttribute("delete_file_status", "File deleted successful!");
+        redirectAttributes.addFlashAttribute("delete_file_status", true);
     }
 }
