@@ -18,6 +18,7 @@
                 <!-- Displays Messages that Indicate Status of Files, Notes, Credentials, Home Page, and Login Page -->
                 <h1 th:each="msg : ${add_credentials_status}" th:text="${msg}">Credentials added successfully!</h1>
                 <h1 th:unless="${add_credentials_not_duplicate}">Credentials are duplicate!</h1>
+                <h2 if:each="displayLoginPage">Login</h2>
             </div>
             <div id="contentDiv" style="clear: right;">
                 <nav style="clear: right;">
