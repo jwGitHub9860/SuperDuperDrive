@@ -19,6 +19,7 @@
                 <h1 th:each="msg : ${add_credentials_status}" th:text="${msg}">Credentials added successfully!</h1>
                 <h1 th:unless="${add_credentials_not_duplicate}">Credentials are duplicate!</h1>
                 <h2 if:each="displayLoginPage">Login</h2>
+                <h2 if:each="msg: ${displayLoginPage}" th:text="{msg}">Login</h2>
             </div>
             <div id="contentDiv" style="clear: right;">
                 <nav style="clear: right;">
