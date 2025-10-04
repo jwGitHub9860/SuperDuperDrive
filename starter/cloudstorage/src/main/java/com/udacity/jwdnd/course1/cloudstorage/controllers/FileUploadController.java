@@ -44,7 +44,7 @@ public class FileUploadController {
             // Checks if File is Duplicate or Empty
             for(Files fileItem : uploadedFiles) {
                 if(chosenFile.getFilename().equals(fileItem.getFilename())) {
-                    redirectAttributes.addFlashAttribute("duplicate_message", "File has duplicate name!");
+                    redirectAttributes.addFlashAttribute("duplicate_message", true);
                 }
                 else if(fileUpload.getSize() <= 0) {
                     redirectAttributes.addFlashAttribute("empty_message", "File is empty!");

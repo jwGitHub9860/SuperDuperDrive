@@ -23,6 +23,7 @@
                 <h3 if:each="msg: ${edit_credential_status}" th:text="{msg}">Credential edited successfully!</h3>
                 <h4 if:each="msg: ${delete_credential_status}" th:text="{msg}">Credential delete successful!</h4>
                 <h5 th:each="msg: ${delete_file_status}" th:text="${msg}">File deleted successful!</h5>
+                <h6 if:each="msg: ${duplicate_message}" th:text="${msg}">File has duplicate name!</h6>
             </div>
             <div id="contentDiv" style="clear: right;">
                 <nav style="clear: right;">
