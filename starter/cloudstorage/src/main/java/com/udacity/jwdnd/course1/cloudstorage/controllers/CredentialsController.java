@@ -76,7 +76,7 @@ public class CredentialsController {
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
 
         // Creates Connection between "editCredentials()" Method & code that Displays Status of Editing Credentials Successfully inside "home.html" file
-        redirectAttributes.addFlashAttribute("edit_credential_status", "Credential edited successfully!");
+        redirectAttributes.addFlashAttribute("edit_credential_status", true);
 
         // Takes User Back to Home Page
         return "redirect:/home";
