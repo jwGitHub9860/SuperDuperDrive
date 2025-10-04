@@ -56,10 +56,10 @@
                                 </div>
                             </div>
                         </form>
-                        <h3 if:each="msg: ${duplicate_message}" th:text="${msg}">File has duplicate name!</h6>
-                        <h3 if:each="msg: ${empty_message}" th:text="${msg}">File is empty!</h6>
-                        <h3 if:each="msg: ${upload_message_status}" th:text="${msg}">File uploaded successfully!</h3>
-                        <h3 if:unless="msg: ${upload_message_status}" th:text="${msg}">File upload failed!</h3>
+                        <div th:if="${duplicate_message}">File has duplicate name!</div>
+                        <div th:if="${empty_message}">File is empty!</div>
+                        <div th:if="${upload_message_status}">File uploaded successfully!</div>
+                        <div th:unless="${upload_message_status}">File upload failed!</div>
                         <!-- Manages Uploaded Files -->
                         <div class="table-responsive">
                             <table class="table table-striped" id="fileTable">
