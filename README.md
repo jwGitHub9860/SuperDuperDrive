@@ -269,6 +269,8 @@ Singh, Amandeep. “Spring Security in Spring Boot 2.x Using Websecurityconfigur
 
 “Spring Context » 7.0.0-M9.” _MVN REPOSITORY_, mvnrepository.com/artifact/org.springframework/spring-context. Accessed 19 Sep. 2025.
 
+“Spring MVC - Download File Controller.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/springboot/spring-mvc-download-file-controller/. Accessed 5 Oct. 2025.
+
 “Spring Security - Authentication Providers.” _GeeksforGeeks_, GeeksforGeeks, 28 Apr. 2025, www.geeksforgeeks.org/java/spring-security-authentication-providers/. Accessed 7 Sep. 2025.
 
 Stein-Kousathana, Eleftheria. “Spring Security without the WebSecurityConfigurerAdapter.” _Spring Blog_, 21 Feb. 2022, spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter. Accessed 3 Sep. 2025.
