@@ -38,7 +38,7 @@ public class FileDownloadController {
         this.userService = userService;
     }
 
-    @GetMapping("/download/{fileName:.+}")
+    @GetMapping("files/download/{fileId}")
     public String downloadFile(@PathVariable String fileName, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
         fileService.downloadFile(fileName);
 
