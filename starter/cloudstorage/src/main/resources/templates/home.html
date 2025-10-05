@@ -109,7 +109,7 @@
                                     <tr>
                                         <td>
                                             <button type="button" class="btn btn-success">Edit</button>
-                                            <a th:href="@{/notes/delete/{noteId} (noteId = ${note.noteId})}" class="btn btn-danger">Delete</a>
+                                            <a id="delete_note_option" th:href="@{/notes/delete/{noteId} (noteId = ${note.noteId})}" class="btn btn-danger">Delete</a>
                                         </td>
                                         <th scope="row">Example Note Title</th>
                                         <td>Example Note Description </td>
