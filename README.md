@@ -257,9 +257,13 @@ r/javahelp, and _jetrun. “Explain like i’m Five - What Is Serializable?” _
 
 “Servlet Authentication Architecture.” _Servlet Authentication Architecture :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/architecture.html#:~:text=SecurityContextHolder%20%2D%20The%20SecurityContextHolder%20is%20where,Spring%20Security’s%20Filters%20perform%20authentication. Accessed 16 Sep. 2025.
 
+Simpson, Jordan. “Spring @Component Annotation.” _Baeldung_, 11 May 2024, www.baeldung.com/spring-component-annotation. Accessed 5 Oct. 2025.
+
 Singh, Amandeep. “Spring Security in Spring Boot 2.x Using Websecurityconfigureradapter.” _Medium_, Medium, 8 Mar. 2025, lazy-programmer.medium.com/spring-security-in-spring-boot-2-x-using-websecurityconfigureradapter-15b0b5878c0d. Accessed 8 Sep. 2025.
 
 “Spring - @PostMapping and @GetMapping Annotation.” _GeeksforGeeks_, GeeksforGeeks, 4 Jan. 2025, www.geeksforgeeks.org/advance-java/spring-postmapping-and-getmapping-annotation/. Accessed 15 Sep. 2025.
+
+“Spring @Component Annotation with Example.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/springboot/spring-component-annotation-with-example/. Accessed 5 Oct. 2025.
 
 “Spring Boot - File Handling.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/spring-boot-file-handling/. Accessed 11 Sep. 2025.
 
@@ -278,3 +282,5 @@ SudKul. “Nd035-C1-Spring-Boot-Basics-Project-Starter.” _GitHub_, Udacity, Ja
 “Uploading Files.” _Getting Started | Uploading Files_, spring.io/guides/gs/uploading-files. Accessed 11 Sep. 2025.
 
 “Username/Password Authentication.” _Username/Password Authentication :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/passwords/index.html. Accessed 7 Sep. 2025.
+
+Vinotech. “Understanding the @Component Annotation in Spring Boot.” _Medium_, Medium, 25 Oct. 2024, medium.com/@vino7tech/understanding-the-component-annotation-in-spring-boot-f819a3fc4fda. Accessed 5 Oct. 2025.
