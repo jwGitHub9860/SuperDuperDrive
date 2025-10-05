@@ -17,16 +17,19 @@
                 </form>
                 <!-- Displays Messages that Indicate Status of Files, Notes, Credentials, Home Page, and Login Page -->
                 <h1 if:each="displayHomePage" th:text="${msg}">Home</h1>
+                <h1 if:each="displayLoginPage">Login</h2>
+                <h1 if:each="msg: ${displayLoginPage}" th:text="{msg}">Login</h2>
+                
+                <div id="delete_file_msg" th:if="${param.delete_file_status}" class="alert alert-success">File deleted successful!</div>
+                <div id="file_download_msg" th:if="${param.download_file_status}" class="alert alert-success">File downloaded successfully!</div>
+
+                <div id="edit_note_msg" th:if="${param.edit_note_status}" class="alert alert-success">Note edited successfully!</div>
+                <div id="delete_note_msg" th:if="${param.delete_note_status}" class="alert alert-success">Note deleted successfully!</div>
+                
                 <div id="add_credentials_msg" th:if="${param.add_credentials_not_duplicate}" class="alert alert-success">Credentials added successfully!</div>
                 <div id="duplicate_credentials_msg" th:unless="${param.add_credentials_not_duplicate}" class="alert alert-danger">Credentials are duplicate!</div>
                 <div id="edit_credential_msg" th:if="${param.edit_credential_status}" class="alert alert-success">Credential edited successfully!</div>
-                <h1 if:each="displayLoginPage">Login</h2>
-                <h1 if:each="msg: ${displayLoginPage}" th:text="{msg}">Login</h2>
                 <div id="delete_credential_msg" th:if="${param.delete_credential_status}" class="alert alert-success">Credential delete successful!</div>
-                <div id="delete_file_msg" th:if="${param.delete_file_status}" class="alert alert-success">File deleted successful!</div>
-                <div id="edit_note_msg" th:if="${param.edit_note_status}" class="alert alert-success">Note edited successfully!</div>
-                <div id="delete_note_msg" th:if="${param.delete_note_status}" class="alert alert-success">Note deleted successfully!</div>
-                <div id="file_download_msg" th:if="${param.download_file_status}" class="alert alert-success">File downloaded successfully!</div>
             </div>
             <div id="contentDiv" style="clear: right;">
                 <nav style="clear: right;">
