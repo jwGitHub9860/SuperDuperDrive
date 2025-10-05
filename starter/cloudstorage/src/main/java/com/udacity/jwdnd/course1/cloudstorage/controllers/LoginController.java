@@ -5,8 +5,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
+@RequestMapping("/login")
 public class LoginController {
-    @RequestMapping("/login")
+    
+    @GetMapping
     public String getLoginPage(RedirectAttributes redirectAttributes) {
         // Creates Connection between "getLoginPage()" Method & code that Displays Login Page Status inside "home.html" file
         redirectAttributes.addFlashAttribute("displayLoginPage", true);
