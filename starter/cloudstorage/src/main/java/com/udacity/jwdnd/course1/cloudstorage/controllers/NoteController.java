@@ -31,7 +31,7 @@ public class NoteController {
         this.userService = userService;
     }
 
-    @GetMapping("/addNewNote")
+    @PostMapping("/addNewNote")
     public String addNote(@RequestParam("addNote") String createNoteTitle, @RequestParam("addNote") Integer createNoteId, @RequestParam("addNote") String createNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         Notes newNote = new Notes(createNoteTitle, createNoteId, createNoteDescription, users.getUserId());
@@ -63,7 +63,7 @@ public class NoteController {
         return "redirect:/home";
     }
 
-    @GetMapping("/notes/edit/{noteId}")
+    @PostMapping("/notes/edit/{noteId}")
     public String editNote(@RequestParam("chosenNote") String chosenNoteTitle, @RequestParam("chosenNote") Integer chosenNoteId, @RequestParam("chosenNote") String chosenNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         noteService.editNote(chosenNoteTitle, chosenNoteDescription, chosenNoteId);

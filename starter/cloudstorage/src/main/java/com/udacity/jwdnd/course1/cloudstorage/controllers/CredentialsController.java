@@ -7,7 +7,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -33,7 +33,7 @@ public class CredentialsController {
         this.userService = userService;
     }
 
-    @GetMapping("/addNewCredentials")
+    @PostMapping("/addNewCredentials")
     public String addCredentials(@RequestParam("addCredentials") String addCredentialsUrl, @RequestParam("addCredentials") Integer addCredentialsId, @RequestParam("addCredentials") String addCredentialsUsername, @RequestParam("addCredentials") String addCredentialsKey, @RequestParam("addCredentials") String addCredentialsPassword, @RequestParam("addCredentials") String addCredentialsDecryptedPassword, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         Credentials newCredentials = new Credentials(addCredentialsUrl, addCredentialsId, addCredentialsUsername, users.getUserId(), addCredentialsKey, addCredentialsPassword, addCredentialsDecryptedPassword);
@@ -65,7 +65,7 @@ public class CredentialsController {
         return "redirect:/home";
     }
 
-    @GetMapping("/credentials/edit/{credentialsId}")
+    @PostMapping("/credentials/edit/{credentialsId}")
     public String editCredentials(@RequestParam("chosenCredentials") String chosenCredentialsUrl, @RequestParam("chosenCredentials") String chosenCredentialsUsername, @RequestParam("chosenCredentials") String chosenCredentialsKey, @RequestParam("chosenCredentials") String chosenCredentialsPassword, @RequestParam("chosenCredentials") Integer chosenCredentialsId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         credentialsService.editCredentials(chosenCredentialsUrl, chosenCredentialsUsername, chosenCredentialsKey, chosenCredentialsPassword, users.getUserId());
