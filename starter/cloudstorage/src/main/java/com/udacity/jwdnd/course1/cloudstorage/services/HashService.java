@@ -19,9 +19,10 @@ public class HashService {
     public String getHashedValue(String data, String salt) {
         byte[] hashedValue = null;
 
-        int iterCount = 12288;
-        int derivedKeyLength = 256;
-        KeySpec spec = new PBEKeySpec(data.toCharArray(), salt.getBytes(), iterCount, derivedKeyLength * 8);
+        // "PBEKeySpec" -> Encrypts User-Chosen Password with Password-Based Encryption (PBE)
+        // "iterCount" = 5000 -> Number of Times Password is Hashed During Key Derivation Function
+        // "derivedKeyLength" = 128 -> Length of Derived Key
+        KeySpec spec = new PBEKeySpec(data.toCharArray(), salt.getBytes(), 5000, 128);
         try {
             SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
             hashedValue = factory.generateSecret(spec).getEncoded();
