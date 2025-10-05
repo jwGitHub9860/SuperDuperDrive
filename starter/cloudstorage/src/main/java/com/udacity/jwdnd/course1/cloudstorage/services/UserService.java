@@ -3,24 +3,19 @@ package com.udacity.jwdnd.course1.cloudstorage.services;
 import java.security.SecureRandom;
 import java.util.Base64;
 
-import org.springframework.core.io.ByteArrayResource;
 import org.springframework.stereotype.Service;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.udacity.jwdnd.course1.cloudstorage.mappers.UserMapper;
 import com.udacity.jwdnd.course1.cloudstorage.model.Users;
-import com.udacity.jwdnd.course1.cloudstorage.services.HashService;
 
 @Service
 public class UserService {
     private final HashService hashService;
     private final UserMapper userMapper;
-    private final BCryptPasswordEncoder passwordEncoder;
 
-    public UserService(HashService hashService, UserMapper userMapper, BCryptPasswordEncoder passwordEncoder) {
+    public UserService(HashService hashService, UserMapper userMapper) {
         this.hashService = hashService;
         this.userMapper = userMapper;
-        this.passwordEncoder = passwordEncoder;
     }
 
     public boolean isUsernameAvailable(String username) {
