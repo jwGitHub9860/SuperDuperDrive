@@ -27,6 +27,12 @@ public class UserService {
         return userMapper.getUser(username) == null;
     }
 
+    public boolean checkUsernameAndPassword(String username, String password) {
+        String encodedSalt = userMapper.getUser(username).getSalt();
+        String hashedPassword = hashService.getHashedValue(password, encodedSalt);
+        return hashedPassword.equals(userMapper.getUser(username).getPassword());
+    }
+
     public int createUser(Users user) {
         SecureRandom random = new SecureRandom();
         byte[] salt = new byte[16];
