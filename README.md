@@ -209,9 +209,13 @@ heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 O
 
 “How to Add Link to HTML Button?” _GeeksforGeeks_, 12 July 2025, www.geeksforgeeks.org/html/how-to-create-an-html-button-that-acts-like-a-link/. Accessed 4 Oct. 2025.
 
+“How to Create a Reset Button in Form Using HTML ?” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/html/how-to-create-a-reset-button-in-form-using-html/. Accessed 4 Oct. 2025.
+
 “HTML - Href Attribute.” _Tutorialspoint_, www.tutorialspoint.com/html/html_href_attribute.htm. Accessed 29 Sep. 2025.
 
 “HTML - Target Attribute.” _Tutorialspoint_, www.tutorialspoint.com/html/html_target_attribute.htm. Accessed 29 Sep. 2025.
+
+“HTML Clearing the Input Field.” _GeeksforGeeks_, 12 July 2025, www.geeksforgeeks.org/html/html-clearing-the-input-field/. Accessed 4 Oct. 2025.
 
 “Interface Model.” _Spring_, 10 Apr. 2019, docs.spring.io/spring-framework/docs/5.1.6.RELEASE_to_5.2.0.M1/Spring%20Framework%205.2.0.M1/org/springframework/ui/Model.html. Accessed 16 Sep. 2025.
 
