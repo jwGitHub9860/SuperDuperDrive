@@ -72,7 +72,7 @@ public class FileUploadController {
     }
 
     // Connects "Delete" option in "home.html" File to "deleteFile()" Method
-    @RequestMapping("/files/delete/{fileId}")
+    @GetMapping("/files/delete/{fileId}")
     public void deleteFile(@PathVariable String fileName, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         fileService.deleteFile(fileName);
 
