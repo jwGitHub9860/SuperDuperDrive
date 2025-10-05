@@ -17,7 +17,6 @@ import com.udacity.jwdnd.course1.cloudstorage.services.CredentialsService;
 import com.udacity.jwdnd.course1.cloudstorage.services.UserService;
 
 @Controller
-@RequestMapping("/home")
 public class NoteController {
     private final FileService fileService;
     private final NoteService noteService;
@@ -32,7 +31,7 @@ public class NoteController {
         this.userService = userService;
     }
 
-    @GetMapping
+    @GetMapping("/addNewNote")
     public String addNote(@RequestParam("addNote") String createNoteTitle, @RequestParam("addNote") Integer createNoteId, @RequestParam("addNote") String createNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         Notes newNote = new Notes(createNoteTitle, createNoteId, createNoteDescription, users.getUserId());
@@ -64,7 +63,7 @@ public class NoteController {
         return "redirect:/home";
     }
 
-    @GetMapping
+    @GetMapping("/notes/edit/{noteId}")
     public String editNote(@RequestParam("chosenNote") String chosenNoteTitle, @RequestParam("chosenNote") Integer chosenNoteId, @RequestParam("chosenNote") String chosenNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         noteService.editNote(chosenNoteTitle, chosenNoteDescription, chosenNoteId);
@@ -80,7 +79,7 @@ public class NoteController {
         return "redirect:/home";
     }
 
-    @GetMapping
+    @GetMapping("/notes/delete/{noteId}")
     public void deleteNote(@RequestParam String noteTitle, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         noteService.deleteNoteByNoteTitle(noteTitle);
 
