@@ -19,7 +19,6 @@ import com.udacity.jwdnd.course1.cloudstorage.services.CredentialsService;
 import com.udacity.jwdnd.course1.cloudstorage.services.UserService;
 
 @Controller
-@RequestMapping("/home")
 public class CredentialsController {
     private final FileService fileService;
     private final NoteService noteService;
@@ -34,7 +33,7 @@ public class CredentialsController {
         this.userService = userService;
     }
 
-    @GetMapping
+    @GetMapping("/addNewCredentials")
     public String addCredentials(@RequestParam("addCredentials") String addCredentialsUrl, @RequestParam("addCredentials") Integer addCredentialsId, @RequestParam("addCredentials") String addCredentialsUsername, @RequestParam("addCredentials") String addCredentialsKey, @RequestParam("addCredentials") String addCredentialsPassword, @RequestParam("addCredentials") String addCredentialsDecryptedPassword, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         Credentials newCredentials = new Credentials(addCredentialsUrl, addCredentialsId, addCredentialsUsername, users.getUserId(), addCredentialsKey, addCredentialsPassword, addCredentialsDecryptedPassword);
@@ -66,7 +65,7 @@ public class CredentialsController {
         return "redirect:/home";
     }
 
-    @GetMapping
+    @GetMapping("/credentials/edit/{credentialsId}")
     public String editCredentials(@RequestParam("chosenCredentials") String chosenCredentialsUrl, @RequestParam("chosenCredentials") String chosenCredentialsUsername, @RequestParam("chosenCredentials") String chosenCredentialsKey, @RequestParam("chosenCredentials") String chosenCredentialsPassword, @RequestParam("chosenCredentials") Integer chosenCredentialsId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         credentialsService.editCredentials(chosenCredentialsUrl, chosenCredentialsUsername, chosenCredentialsKey, chosenCredentialsPassword, users.getUserId());
@@ -82,7 +81,7 @@ public class CredentialsController {
         return "redirect:/home";
     }
 
-    @GetMapping
+    @GetMapping("/credentials/delete/{credentialsId}")
     public void deleteCredentials(@RequestParam("chosenCredentials") String chosenCredentialName, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         credentialsService.deleteCredentials(chosenCredentialName);
         
