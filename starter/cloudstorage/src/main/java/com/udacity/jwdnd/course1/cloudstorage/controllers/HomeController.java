@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.udacity.jwdnd.course1.cloudstorage.model.Users;
+import com.udacity.jwdnd.course1.cloudstorage.services.EncryptionService;
 import com.udacity.jwdnd.course1.cloudstorage.services.FileService;
 import com.udacity.jwdnd.course1.cloudstorage.services.NoteService;
 import com.udacity.jwdnd.course1.cloudstorage.services.CredentialsService;
@@ -20,12 +21,14 @@ public class HomeController {
     private final NoteService noteService;
     private final CredentialsService credentialsService;
     private final UserService userService;
+    private final EncryptionService encryptionService;
     
-    public HomeController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {
+    public HomeController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService, EncryptionService encryptionService) {
         this.fileService = fileService;
         this.noteService = noteService;
         this.credentialsService = credentialsService;
         this.userService = userService;
+        this.encryptionService = encryptionService;
     }
 
     @GetMapping
@@ -34,6 +37,7 @@ public class HomeController {
         model.addAttribute("files", this.fileService.getAllFilesByUserId(currentUserId.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(currentUserId.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(currentUserId.getUserId()));
+        model.addAttribute("encryptions", encryptionService);
 
         // Creates Connection between "getHomePage()" Method & code that Displays Home Page Status inside "home.html" file
         redirectAttributes.addFlashAttribute("displayHomePage", true);
