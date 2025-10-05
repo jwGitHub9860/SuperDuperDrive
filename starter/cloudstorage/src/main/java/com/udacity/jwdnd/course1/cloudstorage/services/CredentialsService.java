@@ -46,4 +46,8 @@ public class CredentialsService {
     public String encryptCredentials(String usernameCredential, String passwordCredential) {
         return encryptionService.encryptValue(usernameCredential, passwordCredential);
     }
+
+    public String decryptCredentials(String usernameCredential, String passwordCredential) {
+        return encryptionService.decryptValue(usernameCredential, passwordCredential);
+    }
 }
