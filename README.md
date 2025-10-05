@@ -177,6 +177,8 @@ Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructio
 
 “Class AuthenticationService.” _Oracle Entitlements Server for Java API Reference: Class AuthenticationService_, docs.oracle.com/cd/E12890_01/ales/docs32/javadocs/javaapi/com/bea/security/AuthenticationService.html. Accessed 7 Sep. 2025.
 
+“Class PBEKeySpec.” _PBEKeySpec (Java Platform SE 8 )_, 15 July 2025, docs.oracle.com/javase/8/docs/api/javax/crypto/spec/PBEKeySpec.html. Accessed 5 Oct. 2025.
+
 “Class SecureRandom.” _SecureRandom (Java Platform SE 8 )_, 15 July 2025, docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html. Accessed 17 Sep. 2025.
 
 “Class SecureRandomFactoryBean.” _SecureRandomFactoryBean (Spring-Security-Docs 6.5.5 API)_, docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/core/token/SecureRandomFactoryBean.html. Accessed 17 Sep. 2025.
@@ -227,11 +229,17 @@ Kremer, Thomas. “Spring Boot Web Security Application, WebSecurityConfigurerAd
 
 L, Keith. “Controllers.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/358225. Accessed 9 Sep. 2025.
 
+Mark, and Maarten Bodewes. “PBEKeySpec What Do the iterationCount and keyLength Parameters Influence?” Edited by Maarten Bodewes and Community, _Stack Overflow_, 9 Aug. 2018, stackoverflow.com/questions/6126061/pbekeyspec-what-do-the-iterationcount-and-keylength-parameters-influence. Accessed 5 Oct. 2025.
+
+Millington, Sam. “Hashing a Password in Java.” _Baeldung_, 20 Aug. 2025, www.baeldung.com/java-password-hashing. Accessed 17 Sep. 2025.
+
 “MLA Works Cited: Electronic Sources (Web Publications).” _MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University_, owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 29 Aug. 2025.
 
 “MongoDB-Specific Data Manipulation Methods.” _MongoDB-Specific Data Manipulation Methods :: Spring Data MongoDB_, docs.spring.io/spring-data/mongodb/reference/mongodb/repositories/modifying-methods.html. Accessed 19 Sep. 2025.
 
 Obregon, Alexander. “How to Handle File Uploads and Downloads with Spring Boot.” _Medium_, Medium, 17 Apr. 2024, medium.com/@AlexanderObregon/how-to-handle-file-uploads-and-downloads-with-spring-boot-84638463fd6f. Accessed 14 Sep. 2025.
+
+Oza, Sandip. “Secret Key Generation on the Fly with Performance Throttling.” _Medium_, Globant, 25 Mar. 2025, medium.com/globant/secret-key-generation-on-the-fly-with-performance-throttling-b0e521df1dc7. Accessed 5 Oct. 2025.
 
 Ozler, Hakan. “Java @Override Annotation.” _Baeldung_, 7 Apr. 2025, www.baeldung.com/java-override. Accessed 17 Sep. 2025.
 
