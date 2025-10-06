@@ -23,6 +23,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.udacity.jwdnd.course1.cloudstorage.model.Files;
 import com.udacity.jwdnd.course1.cloudstorage.services.FileService;
 
+import jakarta.servlet.http.HttpServletResponse;
+
 @Controller
 public class FileDownloadController {
     private final FileService fileService;
@@ -32,7 +34,7 @@ public class FileDownloadController {
     }
 
     @GetMapping("files/download/{fileId}")
-    public void downloadFile(@PathVariable(value = "fileId") Integer fileId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
+    public void downloadFile(@PathVariable(value = "fileId") Integer fileId, HttpServletResponse response, RedirectAttributes redirectAttributes) throws FileNotFoundException {
         Files chosenDownloadFile = fileService.getFileByFileId(fileId);
 
         // Setting up File Path
