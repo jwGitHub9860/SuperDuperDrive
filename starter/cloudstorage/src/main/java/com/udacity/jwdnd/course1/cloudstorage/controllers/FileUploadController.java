@@ -35,6 +35,7 @@ public class FileUploadController {
     // Connects code with { id="fileUpload" } in "home.html" File to "uploadFile()" Method
     @PostMapping("/fileUpload")
     public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws IOException {
+        boolean addFile = true;
         Users users = userService.getUser(authentication.getName());
         Files chosenFile = new Files(fileUpload.getOriginalFilename(), null, fileUpload.getContentType(), Long.toString(fileUpload.getSize()), fileUpload.getBytes(), users.getUserId());
 
@@ -46,14 +47,18 @@ public class FileUploadController {
             for(Files fileItem : allUploadedFiles) {
                 if(chosenFile.getFilename().equals(fileItem.getFilename())) {
                     redirectAttributes.addFlashAttribute("duplicate_message", true);
+                    addFile = false;
                 }
                 else if(fileUpload.getSize() <= 0) {
                     redirectAttributes.addFlashAttribute("empty_message", true);
+                    addFile = false;
                 }
             }
 
-            fileService.uploadFile(chosenFile);
-            System.out.println("File Upload Successful!");
+            if (addFile) {
+                fileService.uploadFile(chosenFile);
+                System.out.println("File Upload Successful!");
+            }
             
             model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
             model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
