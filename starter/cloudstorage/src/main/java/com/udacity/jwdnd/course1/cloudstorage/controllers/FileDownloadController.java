@@ -46,11 +46,11 @@ public class FileDownloadController {
 
         // Setting up File Path
         String chosenFilePath = System.getProperty("user.dir") + "/Uploads";
-        File file = new File(chosenFilePath);
+        File chosenFile = new File(chosenFilePath);
 
         // Checks if Chosen File Exists
-        if (file.exists()) {
-            InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
+        if (chosenFile.exists()) {
+            InputStreamResource resource = new InputStreamResource(new FileInputStream(chosenFile));
             HttpHeaders headers = new HttpHeaders();
                 
             String contentType = "application/octet-stream";
