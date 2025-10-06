@@ -83,8 +83,8 @@ public class CredentialsController {
     }
 
     @GetMapping("/credentials/delete/{credentialsId}")
-    public void deleteCredentials(@PathVariable("chosenCredentials") String chosenCredentialName, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
-        credentialsService.deleteCredentials(chosenCredentialName);
+    public void deleteCredentials(@PathVariable(value = "chosenCredentialsId") Integer chosenCredentialsId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        credentialsService.deleteCredentials(chosenCredentialsId);
         
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
