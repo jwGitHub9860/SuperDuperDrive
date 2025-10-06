@@ -83,7 +83,7 @@ public class CredentialsController {
     }
 
     @GetMapping("/credentials/delete/{credentialsId}")
-    public void deleteCredentials(@PathVariable(value = "chosenCredentialsId") Integer chosenCredentialsId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+    public void deleteCredentials(@PathVariable(value = "credentialsId") Integer chosenCredentialsId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         credentialsService.deleteCredentials(chosenCredentialsId);
         
         Users users = userService.getUser(authentication.getName());

@@ -80,7 +80,7 @@ public class NoteController {
     }
 
     @GetMapping("/notes/delete/{noteId}")
-    public void deleteNote(@PathVariable(value = "chosenNoteId") Integer chosenNoteId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+    public void deleteNote(@PathVariable(value = "noteId") Integer chosenNoteId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         noteService.deleteNote(chosenNoteId);
 
         Users users = userService.getUser(authentication.getName());
