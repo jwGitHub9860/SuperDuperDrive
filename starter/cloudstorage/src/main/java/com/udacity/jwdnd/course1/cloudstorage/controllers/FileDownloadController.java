@@ -41,7 +41,7 @@ public class FileDownloadController {
     }
 
     @GetMapping("files/download/{fileId}")
-    public String downloadFile(@PathVariable String fileName, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
+    public String downloadFile(@PathVariable(value = "fileId") Integer fileId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
         // Checks if Chosen File Exists
         String chosenFilePath = System.getProperty("user.dir") + "/Uploads";
         String[] filenames = this.getFiles();
