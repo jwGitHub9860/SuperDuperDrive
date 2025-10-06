@@ -56,6 +56,9 @@ public class FileDownloadController {
             String contentType = "application/octet-stream";
             String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
 
+            // Creates Connection between "downloadFile()" Method & code that Displays File Download Status inside "home.html" file
+            redirectAttributes.addFlashAttribute("download_file_status", true);
+        } else {
             redirectAttributes.addFlashAttribute("file_not_exist", true);
         }
         
@@ -63,8 +66,5 @@ public class FileDownloadController {
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
-
-        // Creates Connection between "downloadFile()" Method & code that Displays File Download Status inside "home.html" file
-        redirectAttributes.addFlashAttribute("download_file_status", true);
     }
 }
