@@ -167,6 +167,8 @@ baeldung. “File Upload with Spring MVC.” _Baeldung_, 11 June 2025, www.baeld
 
 baeldung. “Iteration in Thymeleaf.” _Baeldung_, 25 July 2024, www.baeldung.com/thymeleaf-iteration. Accessed 29 Sep. 2025.
 
+baeldung. “Spring @PathVariable Annotation.” _Baeldung_, 8 Jan. 2024, www.baeldung.com/spring-pathvariable. Accessed 23 Sep. 2025.
+
 baeldung. “Spring MVC and the @ModelAttribute Annotation.” _Baeldung_, 27 Feb. 2025, www.baeldung.com/spring-mvc-and-the-modelattribute-annotation. Accessed 16 Sep. 2025.
 
 Bezkoder. “Thymeleaf File Upload with Spring Boot.” _BezKoder_, 26 May 2024, www.bezkoder.com/thymeleaf-file-upload/. Accessed 29 Sep. 2025.
