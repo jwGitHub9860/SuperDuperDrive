@@ -42,7 +42,6 @@ public class FileDownloadController {
         // Checks if Chosen File Exists
         if (chosenFile.exists()) {
             InputStreamResource resource = new InputStreamResource(new FileInputStream(chosenFile));
-            HttpHeaders headers = new HttpHeaders();
             
             // Obtains "chosenFile" Media Type (MIME type) for Content Type of "chosenFile"
             String mimeType = URLConnection.guessContentTypeFromName(chosenFile.getName());
