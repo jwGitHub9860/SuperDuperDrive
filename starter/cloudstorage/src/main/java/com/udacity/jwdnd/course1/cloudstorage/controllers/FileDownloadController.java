@@ -52,6 +52,7 @@ public class FileDownloadController {
                 mimeType = "application/octet-stream";
             }
             
+            response.setContentType(chosenFilePath);
             String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
 
             // Creates Connection between "downloadFile()" Method & code that Displays File Download Status inside "home.html" file
