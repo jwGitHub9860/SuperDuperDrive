@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.nio.file.Files;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.udacity.jwdnd.course1.cloudstorage.model.Files;
 import com.udacity.jwdnd.course1.cloudstorage.services.FileService;
 
 @Controller
@@ -32,7 +32,7 @@ public class FileDownloadController {
 
     @GetMapping("files/download/{fileId}")
     public void downloadFile(@PathVariable(value = "fileId") Integer fileId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
-        File chosenDownloadFile = fileService.getFileByFileId(fileId);
+        Files chosenDownloadFile = fileService.getFileByFileId(fileId);
 
         // Setting up File Path
         String chosenFilePath = System.getProperty("user.dir") + "/Uploads";
