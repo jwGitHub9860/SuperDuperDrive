@@ -42,9 +42,10 @@ public class FileDownloadController {
 
     @GetMapping("files/download/{fileId}")
     public void downloadFile(@PathVariable(value = "fileId") Integer fileId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
+        fileService.getFileByFileId(fileId);
+        
         // Checks if Chosen File Exists
         String chosenFilePath = System.getProperty("user.dir") + "/Uploads";
-        String[] filenames = this.getFiles();
         boolean contains = Arrays.asList(filenames).contains(fileName);
         if (!contains) {
             redirectAttributes.addFlashAttribute("file_not_exist", true);
@@ -59,9 +60,7 @@ public class FileDownloadController {
             
         String contentType = "application/octet-stream";
         String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
-
-        fileService.downloadFile(fileName);
-
+        
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
