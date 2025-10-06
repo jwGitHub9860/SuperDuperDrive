@@ -20,24 +20,14 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.udacity.jwdnd.course1.cloudstorage.model.Users;
 import com.udacity.jwdnd.course1.cloudstorage.services.FileService;
-import com.udacity.jwdnd.course1.cloudstorage.services.NoteService;
-import com.udacity.jwdnd.course1.cloudstorage.services.CredentialsService;
-import com.udacity.jwdnd.course1.cloudstorage.services.UserService;
 
 @Controller
 public class FileDownloadController {
     private final FileService fileService;
-    private final NoteService noteService;
-    private final CredentialsService credentialsService;
-    private final UserService userService;
 
-    public FileDownloadController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {
+    public FileDownloadController(FileService fileService) {
         this.fileService = fileService;
-        this.noteService = noteService;
-        this.credentialsService = credentialsService;
-        this.userService = userService;
     }
 
     @GetMapping("files/download/{fileId}")
@@ -61,10 +51,5 @@ public class FileDownloadController {
         } else {
             redirectAttributes.addFlashAttribute("file_not_exist", true);
         }
-        
-        Users users = userService.getUser(authentication.getName());
-        model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
-        model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
-        model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
     }
 }
