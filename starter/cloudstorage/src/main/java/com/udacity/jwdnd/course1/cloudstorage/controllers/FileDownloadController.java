@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.net.URLConnection;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,8 +43,14 @@ public class FileDownloadController {
         if (chosenFile.exists()) {
             InputStreamResource resource = new InputStreamResource(new FileInputStream(chosenFile));
             HttpHeaders headers = new HttpHeaders();
-                
-            String contentType = "application/octet-stream";
+            
+            // Obtains "chosenFile" Media Type (MIME type) for Content Type of "chosenFile"
+            String mimeType = URLConnection.guessContentTypeFromName(chosenFile.getName());
+
+            if (mimeType == null) {
+                mimeType = "application/octet-stream";
+            }
+            
             String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
 
             // Creates Connection between "downloadFile()" Method & code that Displays File Download Status inside "home.html" file
