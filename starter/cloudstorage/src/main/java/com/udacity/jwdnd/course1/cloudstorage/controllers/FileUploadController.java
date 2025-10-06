@@ -24,7 +24,6 @@ public class FileUploadController {
     private final NoteService noteService;
     private final CredentialsService credentialsService;
     private final UserService userService;
-    private List<Files> uploadedFiles = new ArrayList<Files>();
 
     public FileUploadController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {
         this.fileService = fileService;
@@ -38,11 +37,13 @@ public class FileUploadController {
     public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws IOException {
         Users users = userService.getUser(authentication.getName());
         Files chosenFile = new Files(fileUpload.getOriginalFilename(), null, fileUpload.getContentType(), Long.toString(fileUpload.getSize()), fileUpload.getBytes(), users.getUserId());
+
+        List<Files> allUploadedFiles = this.fileService.getAllFilesByUserId(chosenFile.getUserId());
         
         // Checks if File Uploaded Successfully
         try {
             // Checks if File is Duplicate or Empty
-            for(Files fileItem : uploadedFiles) {
+            for(Files fileItem : allUploadedFiles) {
                 if(chosenFile.getFilename().equals(fileItem.getFilename())) {
                     redirectAttributes.addFlashAttribute("duplicate_message", true);
                 }
@@ -52,7 +53,6 @@ public class FileUploadController {
             }
 
             fileService.uploadFile(chosenFile);
-            uploadedFiles.add(chosenFile);
             System.out.println("File Upload Successful!");
             
             model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
