@@ -19,8 +19,8 @@ public class CredentialsService {
         this.encryptionService = encryptionService;
     }
 
-    public Credentials getCredentialsByCredentialId(Integer credentialId) {
-        return credentialsMapper.getCredentialsByCredentialId(credentialId);
+    public Credentials getCredentialsByCredentialId(Integer credentialsId) {
+        return credentialsMapper.getCredentialsByCredentialId(credentialsId);
     }
 
     public Credentials getCredentialsByCredentialName(String credentialName) {
@@ -31,16 +31,16 @@ public class CredentialsService {
         return credentialsMapper.getAllCredentialsByUserId(userId);
     }
 
-    public int createCredentials(String url, String username, String key, String password, Integer credentialId) {
-        return credentialsMapper.createCredentials(url, username, key, password, credentialId);
+    public int createCredentials(String url, String username, String key, String password, Integer credentialsId) {
+        return credentialsMapper.createCredentials(url, username, key, password, credentialsId);
     }
 
-    public Credentials editCredentials(String url, String username, String key, String password, Integer credentialId) {
-        return credentialsMapper.editCredentials(url, username, key, password, credentialId);
+    public Credentials editCredentials(String url, String username, String key, String password, Integer credentialsId) {
+        return credentialsMapper.editCredentials(url, username, key, password, credentialsId);
     }
 
-    public void deleteCredentials(Integer credentialId) {
-        credentialsMapper.deleteCredentials(credentialId);
+    public void deleteCredentials(Integer credentialsId) {
+        credentialsMapper.deleteCredentials(credentialsId);
     }
 
     public String encryptCredentials(String usernameCredential, String passwordCredential) {

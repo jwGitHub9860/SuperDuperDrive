@@ -8,8 +8,8 @@ import com.udacity.jwdnd.course1.cloudstorage.model.Credentials;
 
 @Mapper
 public interface CredentialsMapper {
-    @Select("SELECT * FROM Credentials WHERE credentialid = #{credentialId}")
-    Credentials getCredentialsByCredentialId(Integer credentialId);
+    @Select("SELECT * FROM Credentials WHERE credentialsId = #{credentialsId}")
+    Credentials getCredentialsByCredentialId(Integer credentialsId);
 
     @Select("SELECT * FROM Credentials WHERE credentialName = #{credentialName}")
     Credentials getCredentialsByCredentialName(String credentialName);
@@ -17,13 +17,13 @@ public interface CredentialsMapper {
     @Select("SELECT * FROM Credentials WHERE userId = #{userId}")
     List<Credentials> getAllCredentialsByUserId(Integer userId);
 
-    @Insert("INSERT INTO Credentials (url, username, key, password, credentialId) VALUES(#{url}, #{username}, #{key}, #{password}, #{credentialId})")
-    @Options(useGeneratedKeys = true, keyProperty = "credentialId")
-    int createCredentials(String url, String username, String key, String password, Integer credentialId);
+    @Insert("INSERT INTO Credentials (url, username, key, password, credentialsId) VALUES(#{url}, #{username}, #{key}, #{password}, #{credentialsId})")
+    @Options(useGeneratedKeys = true, keyProperty = "credentialsId")
+    int createCredentials(String url, String username, String key, String password, Integer credentialsId);
 
-    @Update("UPDATE Credentials SET url = #{url}, username = #{username}, key = #{key}, password = #{password} WHERE credentialId = #{credentialId}")
-    Credentials editCredentials(String url, String username, String key, String password, Integer credentialId);
+    @Update("UPDATE Credentials SET url = #{url}, username = #{username}, key = #{key}, password = #{password} WHERE credentialsId = #{credentialsId}")
+    Credentials editCredentials(String url, String username, String key, String password, Integer credentialsId);
 
-    @Delete("DELETE FROM Credentials WHERE credentialId = #{credentialId}")
-    void deleteCredentials(Integer credentialId);
+    @Delete("DELETE FROM Credentials WHERE credentialsId = #{credentialsId}")
+    void deleteCredentials(Integer credentialsId);
 }
