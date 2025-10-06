@@ -1,7 +1,6 @@
 package com.udacity.jwdnd.course1.cloudstorage.controllers;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.security.core.Authentication;
