@@ -283,6 +283,8 @@ Stein-Kousathana, Eleftheria. “Spring Security without the WebSecurityConfigur
 
 SudKul. “Nd035-C1-Spring-Boot-Basics-Project-Starter.” _GitHub_, Udacity, Jan. 2025, github.com/udacity/nd035-c1-spring-boot-basics-project-starter. Accessed 29 Aug. 2025.
 
+Theobald, Lee, et al. “How to Get a File’s Media Type (MIME Type)?” _Stack Overflow_, 17 May 2013, stackoverflow.com/questions/51438/how-to-get-a-files-media-type-mime-type. Accessed 6 Oct. 2025.
+
 “Udacity Git Commit Message Style Guide.” _Udacity Nanodegree Style Guide_, udacity.github.io/git-styleguide/. Accessed 29 Aug. 2025.
 
 “Upload Multiple Files in Spring Boot Using JPA, Thymeleaf, Multipart.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/upload-multiple-files-in-spring-boot-using-jpa-thymeleaf-multipart/. Accessed 28 Sep. 2025.
