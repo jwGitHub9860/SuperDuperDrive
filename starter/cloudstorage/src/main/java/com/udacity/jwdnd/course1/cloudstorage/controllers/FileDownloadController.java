@@ -4,11 +4,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.nio.file.Files;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
@@ -40,6 +42,24 @@ public class FileDownloadController {
 
     @GetMapping("files/download/{fileId}")
     public String downloadFile(@PathVariable String fileName, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
+        // Checks if Chosen File Exists
+        String chosenFilePath = System.getProperty("user.dir") + "/Uploads";
+        String[] filenames = this.getFiles();
+        boolean contains = Arrays.asList(filenames).contains(fileName);
+        if (!contains) {
+            redirectAttributes.addFlashAttribute("file_not_exist", true);
+        }
+
+        // Setting up File Path
+        String filePath = chosenFilePath + File.separator + fileName;
+
+        File file = new File(filePath);
+        InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
+        HttpHeaders headers = new HttpHeaders();
+            
+        String contentType = "application/octet-stream";
+        String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
+
         fileService.downloadFile(fileName);
 
         Users users = userService.getUser(authentication.getName());
