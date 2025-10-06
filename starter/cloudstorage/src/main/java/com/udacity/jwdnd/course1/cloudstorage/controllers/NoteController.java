@@ -81,7 +81,7 @@ public class NoteController {
 
     @GetMapping("/notes/delete/{noteId}")
     public void deleteNote(@PathVariable(value = "chosenNoteId") Integer chosenNoteId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
-        noteService.deleteNoteByNoteTitle(chosenNoteId);
+        noteService.deleteNote(chosenNoteId);
 
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));

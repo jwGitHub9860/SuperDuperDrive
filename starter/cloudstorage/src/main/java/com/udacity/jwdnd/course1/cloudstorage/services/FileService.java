@@ -35,7 +35,7 @@ public class FileService {
         return fileMapper.downloadFile(fileName);
     }
 
-    public final void deleteFile(String fileName) {
-        fileMapper.deleteFile(fileName);
+    public final void deleteFile(Integer fileId) {
+        fileMapper.deleteFile(fileId);
     }
 }
