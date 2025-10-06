@@ -41,7 +41,7 @@ public class FileDownloadController {
     }
 
     @GetMapping("files/download/{fileId}")
-    public String downloadFile(@PathVariable(value = "fileId") Integer fileId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
+    public void downloadFile(@PathVariable(value = "fileId") Integer fileId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
         // Checks if Chosen File Exists
         String chosenFilePath = System.getProperty("user.dir") + "/Uploads";
         String[] filenames = this.getFiles();
@@ -69,8 +69,5 @@ public class FileDownloadController {
 
         // Creates Connection between "downloadFile()" Method & code that Displays File Download Status inside "home.html" file
         redirectAttributes.addFlashAttribute("download_file_status", true);
-        
-        // Takes User Back to Home Page
-        return "redirect:/home";
     }
 }
