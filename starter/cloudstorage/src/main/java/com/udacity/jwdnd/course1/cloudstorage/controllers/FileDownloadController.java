@@ -32,7 +32,7 @@ public class FileDownloadController {
 
     @GetMapping("files/download/{fileId}")
     public void downloadFile(@PathVariable(value = "fileId") Integer fileId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
-        fileService.getFileByFileId(fileId);
+        File chosenDownloadFile = fileService.getFileByFileId(fileId);
 
         // Setting up File Path
         String chosenFilePath = System.getProperty("user.dir") + "/Uploads";
