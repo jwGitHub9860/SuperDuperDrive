@@ -43,23 +43,21 @@ public class FileDownloadController {
     @GetMapping("files/download/{fileId}")
     public void downloadFile(@PathVariable(value = "fileId") Integer fileId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws FileNotFoundException {
         fileService.getFileByFileId(fileId);
-        
-        // Checks if Chosen File Exists
-        String chosenFilePath = System.getProperty("user.dir") + "/Uploads";
-        boolean contains = Arrays.asList(filenames).contains(fileName);
-        if (!contains) {
-            redirectAttributes.addFlashAttribute("file_not_exist", true);
-        }
 
         // Setting up File Path
-        String filePath = chosenFilePath + File.separator + fileName;
+        String chosenFilePath = System.getProperty("user.dir") + "/Uploads";
+        File file = new File(chosenFilePath);
 
-        File file = new File(filePath);
-        InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
-        HttpHeaders headers = new HttpHeaders();
-            
-        String contentType = "application/octet-stream";
-        String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
+        // Checks if Chosen File Exists
+        if (file.exists()) {
+            InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
+            HttpHeaders headers = new HttpHeaders();
+                
+            String contentType = "application/octet-stream";
+            String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
+
+            redirectAttributes.addFlashAttribute("file_not_exist", true);
+        }
         
         Users users = userService.getUser(authentication.getName());
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
