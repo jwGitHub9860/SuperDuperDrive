@@ -16,11 +16,11 @@
                     <button type="submit" class="btn btn-secondary float-right">Logout</button>
                 </form>
                 <!-- Displays Messages that Indicate Status of Files, Notes, Credentials, Home Page, and Login Page -->
-                <h1 if:each="displayHomePage" th:text="${msg}">Home</h1>
                 <h1 if:each="displayLoginPage">Login</h2>
                 <h1 if:each="msg: ${displayLoginPage}" th:text="{msg}">Login</h2>
                 
-                    <!-- Connects to "@PostMapping" Path for "uploadFile()" Method -->
+                <!-- Connects to "@PostMapping" Path for "uploadFile()" Method -->
+                <div id="file_not_exist" th:if="${param.file_not_exist}" class="alert alert-danger">File does not exist!</div>
                 <div id="duplicate_file_msg" th:if="${param.duplicate_message}" class="alert alert-danger">File has duplicate name!</div>
                 <div id="empty_file_msg" th:if="${param.empty_message}" class="alert alert-danger">File is empty!</div>
                 <div id="file_upload_success_msg" th:if="${param.upload_message_status}" class="alert alert-success">File uploaded successfully!</div>
