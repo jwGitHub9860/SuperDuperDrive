@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CloudStorageApplication",
+            "request": "launch",
+            "mainClass": "com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplication",
+            "projectName": "cloudstorage"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Open home.html",
