@@ -53,7 +53,7 @@ public class FileDownloadController {
             }
             
             response.setContentType(chosenFilePath);
-            String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
+            response.setHeader("Content-Disposition", String.format("attachment; filename=\"" + chosenFile.getName() + "\""));
 
             // Creates Connection between "downloadFile()" Method & code that Displays File Download Status inside "home.html" file
             redirectAttributes.addFlashAttribute("download_file_status", true);
