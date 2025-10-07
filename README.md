@@ -239,6 +239,8 @@ K, Christian. “Please I Need Quick Guide, Please Answer Now.” _Knowledge_, U
 
 Kremer, Thomas. “Spring Boot Web Security Application, WebSecurityConfigurerAdapter Is Deprecated, What Can I Use Instead to Make My Websecurityconfig Class Work?” _Stack Overflow_, 30 Sept. 2023, stackoverflow.com/questions/77161239/spring-boot-web-security-application-websecurityconfigureradapter-is-deprecated. Accessed 3 Sep. 2025.
 
+KUMAR, ANMOL, and DingHao. “Websecurityconfigureradapter Cannot Be Resolved to a Type [Duplicate].” Edited by Dur, _Stack Overflow_, 1 Apr. 1968, stackoverflow.com/questions/77762795/websecurityconfigureradapter-cannot-be-resolved-to-a-type. Accessed 7 Oct. 2025.
+
 L, Keith. “Controllers.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/358225. Accessed 9 Sep. 2025.
 
 Mark, and Maarten Bodewes. “PBEKeySpec What Do the iterationCount and keyLength Parameters Influence?” Edited by Maarten Bodewes and Community, _Stack Overflow_, 9 Aug. 2018, stackoverflow.com/questions/6126061/pbekeyspec-what-do-the-iterationcount-and-keylength-parameters-influence. Accessed 5 Oct. 2025.
