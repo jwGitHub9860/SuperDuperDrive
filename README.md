@@ -223,6 +223,8 @@ heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 O
 
 “Interface Multipartfile.” _MultipartFile (Spring Framework 6.2.11 API)_, docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/multipart/MultipartFile.html#getOriginalFilename(). Accessed 20 Sep. 2025.
 
+“Interface ServletResponse.” _Servletresponse (Java(Tm) EE 7 Specification Apis)_, 1 June 2015, docs.oracle.com/javaee/7/api/javax/servlet/ServletResponse.html. Accessed 6 Oct. 2025.
+
 “Interface UserInfo.” _UserInfo (Oracle Access Manager Extensibility Java API Reference)_, 1 Mar. 2013, docs.oracle.com/cd/E37115_01/apirefs.1112/e27137/oracle/security/am/engines/common/identity/provider/UserInfo.html. Accessed 9 Sep. 2025.
 
 “Java Delete Files.” _W3Schools Online Web Tutorials_, www.w3schools.com/java/java_files_delete.asp. Accessed 11 Sep. 2025.
