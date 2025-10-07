@@ -157,6 +157,8 @@ _None_
 
 abc32112, and dectarin. “How Do I Find the Library Containing Org.Springframework.Stereotype.Service?” Edited by Vertexwahn, _Stack Overflow_, 8 Aug. 2014, stackoverflow.com/questions/25206487/how-do-i-find-the-library-containing-org-springframework-stereotype-service. Accessed 18 Sep. 2025.
 
+“Authentication and Authorization in Spring Boot 3.0 with Spring Security.” _GeeksforGeeks_, GeeksforGeeks, 12 Sept. 2025, www.geeksforgeeks.org/advance-java/authentication-and-authorization-in-spring-boot-3-0-with-spring-security/. Accessed 17 Sep. 2025.
+
 “AuthenticationService.” _HYLAND_, support.hyland.com/r/Alfresco/Alfresco-Content-Services/23.4/Alfresco-Content-Services/Develop/Reference/Java-Foundation-API/AuthenticationService. Accessed 7 Sep. 2025.
 
 B, Zachary. “Testing Delete.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/813835. Accessed 12 Sep. 2025.
@@ -164,6 +166,8 @@ B, Zachary. “Testing Delete.” _Knowledge_, Udacity, 2022, knowledge.udacity.
 baeldung. “Convert Long to String in Java.” _Baeldung_, 4 Oct. 2021, www.baeldung.com/java-long-to-string. Accessed 21 Sep. 2025.
 
 baeldung. “File Upload with Spring MVC.” _Baeldung_, 11 June 2025, www.baeldung.com/spring-file-upload. Accessed 11 Sep. 2025.
+
+baeldung. “Introduction to Java Config for Spring Security.” _Baeldung_, 11 Mar. 2025, www.baeldung.com/java-config-spring-security. Accessed 5 Oct. 2025.
 
 baeldung. “Iteration in Thymeleaf.” _Baeldung_, 25 July 2024, www.baeldung.com/thymeleaf-iteration. Accessed 29 Sep. 2025.
 
@@ -246,6 +250,8 @@ Millington, Sam. “Hashing a Password in Java.” _Baeldung_, 20 Aug. 2025, www
 “MongoDB-Specific Data Manipulation Methods.” _MongoDB-Specific Data Manipulation Methods :: Spring Data MongoDB_, docs.spring.io/spring-data/mongodb/reference/mongodb/repositories/modifying-methods.html. Accessed 19 Sep. 2025.
 
 Obregon, Alexander. “How to Handle File Uploads and Downloads with Spring Boot.” _Medium_, Medium, 17 Apr. 2024, medium.com/@AlexanderObregon/how-to-handle-file-uploads-and-downloads-with-spring-boot-84638463fd6f. Accessed 14 Sep. 2025.
+
+Obregon, Alexander. “Securing Spring Boot Applications with Spring Security — Quick Start Guide.” _Medium_, Medium, 23 Apr. 2024, medium.com/@AlexanderObregon/securing-spring-boot-applications-with-spring-security-1f6da7fde0f0. Accessed 5 Oct. 2025.
 
 Oza, Sandip. “Secret Key Generation on the Fly with Performance Throttling.” _Medium_, Globant, 25 Mar. 2025, medium.com/globant/secret-key-generation-on-the-fly-with-performance-throttling-b0e521df1dc7. Accessed 5 Oct. 2025.
 
