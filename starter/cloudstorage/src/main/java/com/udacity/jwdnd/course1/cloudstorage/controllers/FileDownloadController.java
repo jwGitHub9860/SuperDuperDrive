@@ -1,5 +1,6 @@
 package com.udacity.jwdnd.course1.cloudstorage.controllers;
 
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,7 +22,7 @@ public class FileDownloadController {
     }
 
     @GetMapping("files/download/{fileId}")
-    public void downloadFile(@PathVariable(value = "fileId") Integer fileId, HttpServletResponse response, RedirectAttributes redirectAttributes) throws FileNotFoundException {
+    public void downloadFile(@PathVariable(value = "fileId") Integer fileId, HttpServletRequest request, HttpServletResponse response, RedirectAttributes redirectAttributes) throws FileNotFoundException {
         Files chosenDownloadFile = fileService.getFileByFileId(fileId);
 
         // Setting up File Path
