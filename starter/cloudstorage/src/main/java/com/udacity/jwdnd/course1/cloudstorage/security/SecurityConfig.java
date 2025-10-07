@@ -30,17 +30,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
             .authorizeRequests()
                 .antMatchers("/signup", "/css/**", "/js/**").permitAll()
-                .anyRequest().authenticated()
-            .and()
-                .formLogin()
-                .loginPage("/login")
-                .permitAll()
-            .and()
-                // Redirects to "home" page after confirming user authentication
-                .defaultSuccessUrl("/home", true)
-            .and()
-                .logout()
-                .permitAll();
+                .anyRequest().authenticated();
+
+        // MUST USE "http" NOT ".and()" or Undefined ".defaultSuccessUrl()" Error will Occur
+        http.formLogin(form -> form
+            .loginPage("/login")
+            // Redirects to "home" page after confirming user authentication
+            .defaultSuccessUrl("/home", true)
+        );
+        
+        // MUST USE "http" NOT ".and()" or Undefined ".and()" Error will Occur
+        http.logout().permitAll();
     }
 
     @Override
