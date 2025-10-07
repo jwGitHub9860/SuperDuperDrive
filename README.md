@@ -251,6 +251,8 @@ Oza, Sandip. “Secret Key Generation on the Fly with Performance Throttling.”
 
 Ozler, Hakan. “Java @Override Annotation.” _Baeldung_, 7 Apr. 2025, www.baeldung.com/java-override. Accessed 17 Sep. 2025.
 
+Parith, and Martin Algesten. “How Do I Use getOutputStream() and getWriter() in the Same Servlet Request?” Edited by Martin Algesten, _Stack Overflow_, 1 Dec. 2010, stackoverflow.com/questions/4321979/how-do-i-use-getoutputstream-and-getwriter-in-the-same-servlet-request. Accessed 6 Oct. 2025.
+
 Phate, et al. “What Is Responseentity for and Why Should I Keep It?” _Stack Overflow_, 10 Apr. 2020, stackoverflow.com/questions/61138943/what-is-responseentity-for-and-why-should-i-keep-it. Accessed 19 Sep. 2025.
 
 Pollack, Mark, et al. _Spring Data Mongodb - Reference Documentation_, 12 May 2023, docs.spring.io/spring-data/mongodb/docs/4.0.6/reference/html/. Accessed 19 Sep. 2025.
@@ -263,7 +265,11 @@ r/javahelp, and _jetrun. “Explain like i’m Five - What Is Serializable?” _
 
 “Serving Web Content with Spring MVC.” _Getting Started | Serving Web Content with Spring MVC_, spring.io/guides/gs/serving-web-content. Accessed 29 Sep. 2025.
 
+“Servlet - Output Stream Class.” _GeeksforGeeks_, GeeksforGeeks, 13 Jan. 2022, www.geeksforgeeks.org/java/servlet-output-stream-class/. Accessed 6 Oct. 2025.
+
 “Servlet Authentication Architecture.” _Servlet Authentication Architecture :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/architecture.html#:~:text=SecurityContextHolder%20%2D%20The%20SecurityContextHolder%20is%20where,Spring%20Security’s%20Filters%20perform%20authentication. Accessed 16 Sep. 2025.
+
+Sheppard, Matt, and holmis83. “Easy Way to Write Contents of a Java InputStream to an OutputStream.” Edited by Sled, _Stack Overflow_, 29 Jan. 2016, stackoverflow.com/questions/43157/easy-way-to-write-contents-of-a-java-inputstream-to-an-outputstream. Accessed 6 Oct. 2025.
 
 Simpson, Jordan. “Spring @Component Annotation.” _Baeldung_, 11 May 2024, www.baeldung.com/spring-component-annotation. Accessed 5 Oct. 2025.
 
