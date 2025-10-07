@@ -39,7 +39,7 @@ public class FileDownloadController {
 
         // Setting up File Path
         String chosenFilePath = System.getProperty("user.dir") + "/Uploads";
-        File chosenFile = new File(chosenFilePath + "/Downloads/" + fileService.getFileByFileName(chosenDownloadFile.getFilename()));
+        File chosenFile = new File(chosenFilePath + "/Downloads/" + chosenDownloadFile.getFilename());
 
         // Checks if Chosen File Exists
         if (chosenFile.exists()) {
