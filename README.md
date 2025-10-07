@@ -223,6 +223,8 @@ heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 O
 
 “HTML Clearing the Input Field.” _GeeksforGeeks_, 12 July 2025, www.geeksforgeeks.org/html/html-clearing-the-input-field/. Accessed 4 Oct. 2025.
 
+Iaroslavitz, Eyal. “Spring Boot Security Form Login Redirects: Where Do You Go After Logging In?” _Medium_, Medium, 11 Apr. 2025, eyaliaroslavitz.medium.com/spring-boot-3-x-security-form-login-redirects-where-do-you-go-after-logging-in-dd1718b60144. Accessed 7 Oct. 2025.
+
 “Interface Model.” _Spring_, 10 Apr. 2019, docs.spring.io/spring-framework/docs/5.1.6.RELEASE_to_5.2.0.M1/Spring%20Framework%205.2.0.M1/org/springframework/ui/Model.html. Accessed 16 Sep. 2025.
 
 “Interface Multipartfile.” _MultipartFile (Spring Framework 6.2.11 API)_, docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/multipart/MultipartFile.html#getOriginalFilename(). Accessed 20 Sep. 2025.
@@ -269,6 +271,8 @@ r/javahelp, and _jetrun. “Explain like i’m Five - What Is Serializable?” _
 
 “Random vs Secure Random Numbers in Java.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/random-vs-secure-random-numbers-java/. Accessed 17 Sep. 2025.
 
+Rînea, Andrei, and M C. “Spring Boot Security Redirect after Successful Login - Undefined.” _Stack Overflow_, 25 June 2018, stackoverflow.com/questions/38962099/spring-boot-security-redirect-after-successful-login-undefined. Accessed 7 Oct. 2025.
+
 “Serialization and Deserialization in Java.” _GeeksforGeeks_, GeeksforGeeks, 2 June 2025, www.geeksforgeeks.org/java/serialization-and-deserialization-in-java/. Accessed 30 Sep. 2025.
 
 “Serving Web Content with Spring MVC.” _Getting Started | Serving Web Content with Spring MVC_, spring.io/guides/gs/serving-web-content. Accessed 29 Sep. 2025.
@@ -310,3 +314,5 @@ Theobald, Lee, et al. “How to Get a File’s Media Type (MIME Type)?” _Stack
 “Username/Password Authentication.” _Username/Password Authentication :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/passwords/index.html. Accessed 7 Sep. 2025.
 
 Vinotech. “Understanding the @Component Annotation in Spring Boot.” _Medium_, Medium, 25 Oct. 2024, medium.com/@vino7tech/understanding-the-component-annotation-in-spring-boot-f819a3fc4fda. Accessed 5 Oct. 2025.
+
+Zhang, Xinghua. “Spring Security - Form Login.” _Xing’s Blog_, 5 June 2020, xinghua24.github.io/SpringSecurity/Spring-Security-Form-Login/#:~:text=%22/login%22)-,defaultSuccessUrl%20and%20successForwardUrl,redirect%20page%20when%20login%20fails. Accessed 7 Oct. 2025.
