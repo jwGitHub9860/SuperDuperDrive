@@ -13,7 +13,7 @@
         <div class="container justify-content-center w-25 p-3" style="background-color: #eeeeee; margin-top: 5em;">
             <h1 class="display-5">Login</h1>
             <form action="#" th:action="@{/login}" method="POST">
-                <div id="invalid_credentials_msg" class="alert alert-danger">
+                <div id="invalid_credentials_msg" th:if="${param.error}" class="alert alert-danger">
                     Invalid username or password
                 </div>
                 <div id="log_out_success_msg" class="alert alert-dark">
