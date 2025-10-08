@@ -273,6 +273,8 @@ r/javahelp, and _jetrun. “Explain like i’m Five - What Is Serializable?” _
 
 Rînea, Andrei, and M C. “Spring Boot Security Redirect after Successful Login - Undefined.” _Stack Overflow_, 25 June 2018, stackoverflow.com/questions/38962099/spring-boot-security-redirect-after-successful-login-undefined. Accessed 7 Oct. 2025.
 
+“Securing a Web Application.” _Getting Started | Securing a Web Application_, spring.io/guides/gs/securing-web. Accessed 7 Oct. 2025.
+
 “Serialization and Deserialization in Java.” _GeeksforGeeks_, GeeksforGeeks, 2 June 2025, www.geeksforgeeks.org/java/serialization-and-deserialization-in-java/. Accessed 30 Sep. 2025.
 
 “Serving Web Content with Spring MVC.” _Getting Started | Serving Web Content with Spring MVC_, spring.io/guides/gs/serving-web-content. Accessed 29 Sep. 2025.
