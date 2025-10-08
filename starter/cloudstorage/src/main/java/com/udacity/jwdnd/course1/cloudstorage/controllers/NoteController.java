@@ -80,7 +80,7 @@ public class NoteController {
     }
 
     @GetMapping("/notes/delete/{noteId}")
-    public void deleteNote(@PathVariable(value = "noteId") Integer chosenNoteId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+    public String deleteNote(@PathVariable(value = "noteId") Integer chosenNoteId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         noteService.deleteNote(chosenNoteId);
 
         Users users = userService.getUser(authentication.getName());
@@ -90,5 +90,8 @@ public class NoteController {
 
         // Creates Connection between "deleteNote()" Method & code that Displays Status of Deleting Note Successfully inside "home.html" file
         redirectAttributes.addFlashAttribute("delete_note_status", true);
+
+        // Takes User Back to Home Page
+        return "redirect:/home";
     }
 }

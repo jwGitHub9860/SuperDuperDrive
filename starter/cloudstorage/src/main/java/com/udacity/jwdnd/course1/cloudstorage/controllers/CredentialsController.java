@@ -83,7 +83,7 @@ public class CredentialsController {
     }
 
     @GetMapping("/credentials/delete/{credentialsId}")
-    public void deleteCredentials(@PathVariable(value = "credentialsId") Integer chosenCredentialsId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+    public String deleteCredentials(@PathVariable(value = "credentialsId") Integer chosenCredentialsId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         credentialsService.deleteCredentials(chosenCredentialsId);
         
         Users users = userService.getUser(authentication.getName());
@@ -93,5 +93,8 @@ public class CredentialsController {
 
         // Creates Connection between "deleteCredentials()" Method & code that Displays Status of Deleting Credentials Successfully inside "home.html" file
         redirectAttributes.addFlashAttribute("delete_credential_status", true);
+
+        // Takes User Back to Home Page
+        return "redirect:/home";
     }
 }

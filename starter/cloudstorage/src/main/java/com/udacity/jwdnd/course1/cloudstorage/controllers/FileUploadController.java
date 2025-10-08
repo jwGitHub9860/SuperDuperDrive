@@ -77,7 +77,7 @@ public class FileUploadController {
 
     // Connects "Delete" option in "home.html" File to "deleteFile()" Method
     @GetMapping("/files/delete/{fileId}")
-    public void deleteFile(@PathVariable(value = "fileId") Integer chosenFileId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+    public String deleteFile(@PathVariable(value = "fileId") Integer chosenFileId, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         fileService.deleteFile(chosenFileId);
 
         Users users = userService.getUser(authentication.getName());
@@ -87,5 +87,8 @@ public class FileUploadController {
 
         // Creates Connection between "deleteFile()" Method & code that Displays Status of Deleting File Successfully inside "home.html" file
         redirectAttributes.addFlashAttribute("delete_file_status", true);
+
+        // Takes User Back to Home Page
+        return "redirect:/home";
     }
 }
