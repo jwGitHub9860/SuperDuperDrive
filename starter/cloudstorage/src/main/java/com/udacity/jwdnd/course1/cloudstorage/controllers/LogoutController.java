@@ -17,21 +17,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 @RequestMapping("/logout")
-
-// Detects Custom Beans Automatically & Injects Specified Dependencies into Application
-@Component("myLogoutSuccessHandler")
 public class LogoutController implements LogoutSuccessHandler {
 
     @GetMapping
     public String getLogoutPage() {
         return "logout";
-    }
-
-    @Override
-    public void onLogoutSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
-        HttpSession session = request.getSession();
-        if (session != null) {
-            session.removeAttribute("user");
-        }
     }
 }
