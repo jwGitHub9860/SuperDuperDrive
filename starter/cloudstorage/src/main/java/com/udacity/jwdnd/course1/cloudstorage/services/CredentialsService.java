@@ -2,12 +2,10 @@ package com.udacity.jwdnd.course1.cloudstorage.services;
 
 import java.util.List;
 
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.udacity.jwdnd.course1.cloudstorage.mappers.CredentialsMapper;
 import com.udacity.jwdnd.course1.cloudstorage.model.Credentials;
-import com.udacity.jwdnd.course1.cloudstorage.services.EncryptionService;
 
 @Service
 public class CredentialsService {
