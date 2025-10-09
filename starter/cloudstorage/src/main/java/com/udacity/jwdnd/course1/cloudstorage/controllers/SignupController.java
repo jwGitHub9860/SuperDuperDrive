@@ -8,23 +8,36 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.udacity.jwdnd.course1.cloudstorage.services.UserService;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 @Controller
 @RequestMapping("/signup")
 public class SignupController {
+    private final UserService userService;
+
+    public SignupController(UserService userService) {
+        this.userService = userService;
+    }
     
     @GetMapping
     public String getSignUpPage() {
         return "signup";
     }
 
-    @Bean
-    public UserDetailsService signUp() {
-        UserDetails userDetails = User.withUsername("user")
-                                        .password("password")
-                                        .roles("USER")
-                                        .build();
+    @PostMapping("/credentials/{username}")
+    public String doesUsernameExist(String username, RedirectAttributes redirectAttributes) {
+        if (userService.isUsernameAvailable(username)) {
+            redirectAttributes.addFlashAttribute("signup_error_msg", false);
+        } else {
+            redirectAttributes.addFlashAttribute("signup_error_msg", true);
+        }
 
-        return new InMemoryUserDetailsManager(userDetails);
+        // Takes User Back to Signup Page
+        return "redirect:/signup";
     }
 }
