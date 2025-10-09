@@ -30,7 +30,7 @@ public class SignupController {
     }
 
     @PostMapping("/credentials/{username}")
-    public String doesUsernameExist(String username, RedirectAttributes redirectAttributes) {
+    public String signUpForNewAccount(String username, RedirectAttributes redirectAttributes) {
         if (userService.isUsernameAvailable(username)) {
             redirectAttributes.addFlashAttribute("signup_error_msg", false);
         } else {
