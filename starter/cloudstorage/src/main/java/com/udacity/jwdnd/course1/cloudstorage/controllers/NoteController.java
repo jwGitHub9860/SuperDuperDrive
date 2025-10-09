@@ -32,7 +32,7 @@ public class NoteController {
     }
 
     @PostMapping("/addNewNote")
-    public String addNote(@RequestParam("noteTitle") String createNoteTitle, @RequestParam("addNote") Integer createNoteId, @RequestParam("noteDescription") String createNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+    public String addNote(@RequestParam("noteTitle") String createNoteTitle, @RequestParam("noteId") Integer createNoteId, @RequestParam("noteDescription") String createNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         Notes newNote = new Notes(createNoteTitle, createNoteId, createNoteDescription, users.getUserId());
 
