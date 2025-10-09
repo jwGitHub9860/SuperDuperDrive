@@ -1,9 +1,7 @@
 package com.udacity.jwdnd.course1.cloudstorage.controllers;
 
 import java.security.SecureRandom;
-import java.util.ArrayList;
 import java.util.Base64;
-import java.util.List;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
@@ -14,7 +12,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.udacity.jwdnd.course1.cloudstorage.model.Credentials;
 import com.udacity.jwdnd.course1.cloudstorage.model.Users;
 import com.udacity.jwdnd.course1.cloudstorage.services.EncryptionService;
 import com.udacity.jwdnd.course1.cloudstorage.services.FileService;
@@ -29,7 +26,6 @@ public class CredentialsController {
     private final NoteService noteService;
     private final CredentialsService credentialsService;
     private final UserService userService;
-    private final List<Credentials> allCredentials = new ArrayList<Credentials>();
 
     public CredentialsController(EncryptionService encryptionService, FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {
         this.encryptionService = encryptionService;
@@ -42,7 +38,7 @@ public class CredentialsController {
     @PostMapping("/addNewCredentials")
     public String addCredentials(@RequestParam("addCredentials") String addCredentialsUrl, @RequestParam("addCredentials") Integer addCredentialsId, @RequestParam("addCredentials") String addCredentialsUsername, @RequestParam("addCredentials") String addCredentialsPassword, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
-        
+
         // Encrypts Password Credentials
         SecureRandom random = new SecureRandom();
         byte[] key = new byte[16];
