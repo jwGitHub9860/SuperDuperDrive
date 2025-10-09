@@ -19,10 +19,6 @@ public class CredentialsService {
         return credentialsMapper.getCredentialsByCredentialId(credentialsId);
     }
 
-    public Credentials getCredentialsByCredentialName(String credentialName) {
-        return credentialsMapper.getCredentialsByCredentialName(credentialName);
-    }
-
     public List<Credentials> getAllCredentialsByUserId(Integer userId) {
         return credentialsMapper.getAllCredentialsByUserId(userId);
     }

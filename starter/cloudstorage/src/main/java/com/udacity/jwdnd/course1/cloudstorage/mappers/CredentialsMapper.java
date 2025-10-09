@@ -11,9 +11,6 @@ public interface CredentialsMapper {
     @Select("SELECT * FROM Credentials WHERE credentialsId = #{credentialsId}")
     Credentials getCredentialsByCredentialId(Integer credentialsId);
 
-    @Select("SELECT * FROM Credentials WHERE credentialName = #{credentialName}")
-    Credentials getCredentialsByCredentialName(String credentialName);
-
     @Select("SELECT * FROM Credentials WHERE userId = #{userId}")
     List<Credentials> getAllCredentialsByUserId(Integer userId);
 
