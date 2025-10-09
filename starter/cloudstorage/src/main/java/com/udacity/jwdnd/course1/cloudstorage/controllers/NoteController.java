@@ -32,7 +32,7 @@ public class NoteController {
     }
 
     @PostMapping("/addNewNote")
-    public String addNote(@RequestParam("addNote") String createNoteTitle, @RequestParam("addNote") Integer createNoteId, @RequestParam("addNote") String createNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+    public String addNote(@RequestParam("noteTitle") String createNoteTitle, @RequestParam("addNote") Integer createNoteId, @RequestParam("noteDescription") String createNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         Notes newNote = new Notes(createNoteTitle, createNoteId, createNoteDescription, users.getUserId());
 
@@ -59,7 +59,7 @@ public class NoteController {
     }
 
     @PostMapping("/notes/edit/{noteId}")
-    public String editNote(@RequestParam("chosenNote") String chosenNoteTitle, @RequestParam("chosenNote") Integer chosenNoteId, @RequestParam("chosenNote") String chosenNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+    public String editNote(@RequestParam("noteTitle") String chosenNoteTitle, @RequestParam("noteId") Integer chosenNoteId, @RequestParam("noteDescription") String chosenNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         Users users = userService.getUser(authentication.getName());
         noteService.editNote(chosenNoteTitle, chosenNoteDescription, chosenNoteId);
         
