@@ -50,15 +50,15 @@
                 <!-- Manages Uploading Files -->
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-files" role="tabpanel" aria-labelledby="nav-files-tab">
-                        <!-- "th:action": Links "Upload" Button to "uploadFile()" Method in "FileUploadController.java" -->
-                        <form action="#" th:action="@{/fileUpload}" enctype="multipart/form-data" method="POST">
+                        <!-- "th:action": Connects to "@PostMapping" Path to Link "Upload" Button to "uploadFile()" Method in "FileUploadController.java" -->
+                        <form action="#" th:action="@{/chosenFileUpload}" enctype="multipart/form-data" method="POST">
                             <div class="container">
                                 <div class="row" style="margin: 1em;">
                                     <div class="col-sm-2">
                                         <label for="fileUpload">Upload a New File:</label>
                                     </div>
                                     <div class="col-sm-6">
-                                        <!-- Connects to "@PostMapping" Path for "uploadFile()" Method -->
+                                        <!-- "id": Connects to "@RequestParam" Path for "uploadFile()" Method Input -->
                                         <input type="file" class="form-control-file" id="fileUpload" name="fileUpload">
                                     </div>
                                     <div class="col-sm-4">

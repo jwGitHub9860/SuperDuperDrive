@@ -32,7 +32,7 @@ public class FileUploadController {
     }
 
     // Connects code with { id="fileUpload" } in "home.html" File to "uploadFile()" Method
-    @PostMapping("/fileUpload")
+    @PostMapping("/chosenFileUpload")
     public String uploadFile(@RequestParam("fileUpload") MultipartFile fileUpload, Model model, Authentication authentication, RedirectAttributes redirectAttributes) throws IOException {
         boolean addFile = true;
         Users users = userService.getUser(authentication.getName());
