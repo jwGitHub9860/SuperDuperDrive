@@ -57,23 +57,17 @@ public class CredentialsController {
         Credentials newCredentials = new Credentials(addCredentialsUrl, addCredentialsId, addCredentialsUsername, users.getUserId(), encodedKey, encryptedCredentialsPassword);
 
         // Checks if New Credentials are Duplicate
-        try {
-            for(Credentials credentialsItem : allCredentials) {
-                if (credentialsItem.getUsername() == addCredentialsUsername) {
-                    throw new IllegalArgumentException("Credentials are duplicate!");
-                }
+        for(Credentials credentialsItem : allCredentials) {
+            if (credentialsItem.getUsername() == addCredentialsUsername) {
+                // Creates Connection between "addCredentials()" Method & code that Displays Status of Duplicate Credentials inside "home.html" file
+                redirectAttributes.addFlashAttribute("add_credentials_not_duplicate", false);
             }
-            credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, encodedKey, encryptedCredentialsPassword, users.getUserId());
-            allCredentials.add(newCredentials);
-
-            // Creates Connection between "addCredentials()" Method & code that Displays Status of Adding Credentials Successfully inside "home.html" file
-            redirectAttributes.addFlashAttribute("add_credentials_not_duplicate", true);
-        } catch (Exception e) {
-            e.printStackTrace();
-
-            // Creates Connection between "addCredentials()" Method & code that Displays Status of Duplicate Credentials inside "home.html" file
-            redirectAttributes.addFlashAttribute("add_credentials_not_duplicate", false);
         }
+        credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, encodedKey, encryptedCredentialsPassword, users.getUserId());
+        allCredentials.add(newCredentials);
+
+        // Creates Connection between "addCredentials()" Method & code that Displays Status of Adding Credentials Successfully inside "home.html" file
+        redirectAttributes.addFlashAttribute("add_credentials_not_duplicate", true);
         
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
