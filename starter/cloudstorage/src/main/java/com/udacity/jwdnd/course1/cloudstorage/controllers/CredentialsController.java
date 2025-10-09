@@ -40,15 +40,15 @@ public class CredentialsController {
     }
 
     @PostMapping("/addNewCredentials")
-    public String addCredentials(@RequestParam("addCredentials") String addCredentialsUrl, @RequestParam("addCredentials") Integer addCredentialsId, @RequestParam("addCredentials") String addCredentialsUsername, @RequestParam("addCredentials") String addCredentialsKey, @RequestParam("addCredentials") String addCredentialsPassword, @RequestParam("addCredentials") String addCredentialsDecryptedPassword, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+    public String addCredentials(@RequestParam("addCredentials") String addCredentialsUrl, @RequestParam("addCredentials") Integer addCredentialsId, @RequestParam("addCredentials") String addCredentialsUsername, @RequestParam("addCredentials") String addCredentialsKey, @RequestParam("addCredentials") String addCredentialsPassword, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         // Encrypts Password Credentials
         SecureRandom random = new SecureRandom();
         byte[] salt = new byte[16];
         random.nextBytes(salt);
-        String encryptedCredentialsPassword = encryptionService.encryptValue(addCredentialsDecryptedPassword, addCredentialsKey);
+        String encryptedCredentialsPassword = encryptionService.encryptValue(addCredentialsPassword, addCredentialsKey);
 
         Users users = userService.getUser(authentication.getName());
-        Credentials newCredentials = new Credentials(addCredentialsUrl, addCredentialsId, addCredentialsUsername, users.getUserId(), addCredentialsKey, addCredentialsPassword, addCredentialsDecryptedPassword);
+        Credentials newCredentials = new Credentials(addCredentialsUrl, addCredentialsId, addCredentialsUsername, users.getUserId(), addCredentialsKey, addCredentialsPassword);
 
         // Checks if New Credentials are Duplicate
         try {
