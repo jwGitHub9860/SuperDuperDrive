@@ -309,6 +309,8 @@ Sko, Alex. “Always Use Encoding When Converting Bytes to Java Strings and Vice
 
 “Spring @Component Annotation with Example.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/springboot/spring-component-annotation-with-example/. Accessed 5 Oct. 2025.
 
+“Spring Boot - Annotations.” _GeeksforGeeks_, GeeksforGeeks, 19 Aug. 2025, www.geeksforgeeks.org/springboot/spring-boot-annotations/. Accessed 5 Oct. 2025.
+
 “Spring Boot - File Handling.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/spring-boot-file-handling/. Accessed 11 Sep. 2025.
 
 “Spring Context » 7.0.0-M9.” _MVN REPOSITORY_, mvnrepository.com/artifact/org.springframework/spring-context. Accessed 19 Sep. 2025.
