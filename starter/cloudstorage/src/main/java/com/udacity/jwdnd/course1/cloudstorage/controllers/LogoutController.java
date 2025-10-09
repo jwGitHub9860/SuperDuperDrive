@@ -15,7 +15,7 @@ public class LogoutController {
         // Creates Connection between "getLogoutPage()" Method & code that Displays Logout Page Status inside "login.html" file
         redirectAttributes.addFlashAttribute("log_out_success_msg", true);
 
-        // Take User Back to Logout Page
+        // Takes User Back to Logout Page
         return "redirect:/logout";
     }
 }

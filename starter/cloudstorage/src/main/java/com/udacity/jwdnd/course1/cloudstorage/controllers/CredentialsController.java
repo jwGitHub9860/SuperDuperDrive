@@ -64,7 +64,7 @@ public class CredentialsController {
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
         model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
 
-        // Take User Back to Home Page
+        // Takes User Back to Home Page
         return "redirect:/home";
     }
 
