@@ -175,6 +175,8 @@ baeldung. “Spring @PathVariable Annotation.” _Baeldung_, 8 Jan. 2024, www.ba
 
 baeldung. “Spring MVC and the @ModelAttribute Annotation.” _Baeldung_, 27 Feb. 2025, www.baeldung.com/spring-mvc-and-the-modelattribute-annotation. Accessed 16 Sep. 2025.
 
+baeldung. “Spring Security Custom Logout Handler.” _Baeldung_, 8 Jan. 2024, www.baeldung.com/spring-security-custom-logout-handler. Accessed 7 Oct. 2025.
+
 Bezkoder. “Thymeleaf File Upload with Spring Boot.” _BezKoder_, 26 May 2024, www.bezkoder.com/thymeleaf-file-upload/. Accessed 29 Sep. 2025.
 
 Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructions for Super Duper Drive.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/349430. Accessed 6 Sep. 2025.
@@ -195,6 +197,8 @@ Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructio
 
 Cookies, Dev. “The Scope of Beans in Spring Boot: A Comprehensive Guide.” _Medium_, Medium, 6 Nov. 2024, devcookies.medium.com/the-scope-of-beans-in-spring-boot-a-comprehensive-guide-ca4de7c531f3. Accessed 30 Sep. 2025.
 
+Crusoveanu, Loredana. “Keep Track of Logged in Users With Spring Security.” _Baeldung_, 2 May 2023, www.baeldung.com/spring-security-track-logged-in-users. Accessed 7 Oct. 2025.
+
 D, Dao Anh. “I Can’t Run the Sample Test Case.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/880822. Accessed 12 Sep. 2025.
 
 “Delete a File Using Java.” _GeeksforGeeks_, GeeksforGeeks, 10 Jan. 2025, www.geeksforgeeks.org/java/delete-file-using-java/. Accessed 12 Sep. 2025.
@@ -208,6 +212,8 @@ Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvi
 “Download Spring-Context JAR File with All Dependencies.” _JAR Search and Dependency Download from the Maven Repository_, jar-download.com/artifacts/org.springframework/spring-context/org.apache.commons.net.ftp.FTPClient. Accessed 18 Sep. 2025.
 
 Ghobril, Samir, and m59. “What Is Href="#" and Why Is It Used?” Edited by User247702 and Stephen Ostermiller, _Stack Overflow_, 31 Jan. 2011, stackoverflow.com/questions/4855168/what-is-href-and-why-is-it-used. Accessed 29 Sep. 2025.
+
+“Handling Logouts.” _Handling Logouts :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/logout.html. Accessed 7 Oct. 2025.
 
 heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 Oct. 2016, stackoverflow.com/questions/40303916/model-addattribute-parameters. Accessed 16 Sep. 2025.
 
@@ -300,6 +306,8 @@ Singh, Amandeep. “Spring Security in Spring Boot 2.x Using Websecurityconfigur
 “Spring MVC - Download File Controller.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/springboot/spring-mvc-download-file-controller/. Accessed 5 Oct. 2025.
 
 “Spring Security - Authentication Providers.” _GeeksforGeeks_, GeeksforGeeks, 28 Apr. 2025, www.geeksforgeeks.org/java/spring-security-authentication-providers/. Accessed 7 Sep. 2025.
+
+“Spring Security - Logout.” _GeeksforGeeks_, GeeksforGeeks, 20 May 2024, www.geeksforgeeks.org/advance-java/spring-security-logout/. Accessed 7 Oct. 2025.
 
 Stein-Kousathana, Eleftheria. “Spring Security without the WebSecurityConfigurerAdapter.” _Spring Blog_, 21 Feb. 2022, spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter. Accessed 3 Sep. 2025.
 
