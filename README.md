@@ -207,6 +207,8 @@ D, Dao Anh. “I Can’t Run the Sample Test Case.” _Knowledge_, Udacity, 2022
 
 devs5003. “Spring Security UserDetailsService Using Spring Boot 3.” _JavaTechOnline_, 17 Apr. 2025, javatechonline.com/spring-security-userdetailsservice-using-spring-boot-3/. Accessed 17 Sep. 2025.
 
+“Difference between @RequestBody and @RequestParam.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/advance-java/difference-between-requestbody-and-requestparam/. Accessed 9 Oct. 2025.
+
 Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvider vs UserDetailsService.” _Stack Overflow_, 25 July 2015, stackoverflow.com/questions/31630818/spring-security-custom-authentication-authenticationprovider-vs-userdetailsser. Accessed 7 Sep. 2025.
 
 “Do You Always Need to Separate Services and Controllers?” _Corey Cleary_, www.coreycleary.me/do-you-always-need-to-separate-services-and-controllers. Accessed 13 Sep. 2025.
