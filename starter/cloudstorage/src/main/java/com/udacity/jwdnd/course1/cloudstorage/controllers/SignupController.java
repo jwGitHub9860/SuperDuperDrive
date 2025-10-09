@@ -32,6 +32,7 @@ public class SignupController {
     // Do NOT Need to Specify "@PostMapping" Path because Other Method ONLY DISPLAYS Sign Up Page, NO OTHER FUNCTIONS & there's Only 2 Methods
     @PostMapping
     public String signUpForNewAccount(String username, RedirectAttributes redirectAttributes) {
+        // Checks if "username" Already Exists
         if (userService.isUsernameAvailable(username)) {
             redirectAttributes.addFlashAttribute("signup_error", false);
         } else {
