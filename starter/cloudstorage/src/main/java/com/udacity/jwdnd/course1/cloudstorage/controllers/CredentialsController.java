@@ -1,5 +1,6 @@
 package com.udacity.jwdnd.course1.cloudstorage.controllers;
 
+import java.nio.charset.StandardCharsets;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
@@ -45,10 +46,11 @@ public class CredentialsController {
         SecureRandom random = new SecureRandom();
         byte[] key = new byte[16];
         random.nextBytes(key);
-        String encryptedCredentialsPassword = encryptionService.encryptValue(addCredentialsPassword, key);
+        String keyInStringForm = new String(key, StandardCharsets.UTF_8);
+        String encryptedCredentialsPassword = encryptionService.encryptValue(addCredentialsPassword, keyInStringForm);
 
         Users users = userService.getUser(authentication.getName());
-        Credentials newCredentials = new Credentials(addCredentialsUrl, addCredentialsId, addCredentialsUsername, users.getUserId(), key, addCredentialsPassword);
+        Credentials newCredentials = new Credentials(addCredentialsUrl, addCredentialsId, addCredentialsUsername, users.getUserId(), keyInStringForm, addCredentialsPassword);
 
         // Checks if New Credentials are Duplicate
         try {
@@ -57,7 +59,7 @@ public class CredentialsController {
                     throw new IllegalArgumentException("Credentials are duplicate!");
                 }
             }
-            credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, key, addCredentialsPassword, users.getUserId());
+            credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, keyInStringForm, addCredentialsPassword, users.getUserId());
             allCredentials.add(newCredentials);
 
             // Creates Connection between "addCredentials()" Method & code that Displays Status of Adding Credentials Successfully inside "home.html" file
