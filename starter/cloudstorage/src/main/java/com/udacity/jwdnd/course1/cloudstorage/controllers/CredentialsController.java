@@ -1,5 +1,6 @@
 package com.udacity.jwdnd.course1.cloudstorage.controllers;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,13 +24,15 @@ import com.udacity.jwdnd.course1.cloudstorage.services.UserService;
 
 @Controller
 public class CredentialsController {
+    private final EncryptionService encryptionService;
     private final FileService fileService;
     private final NoteService noteService;
     private final CredentialsService credentialsService;
     private final UserService userService;
     private final List<Credentials> allCredentials = new ArrayList<Credentials>();
 
-    public CredentialsController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {
+    public CredentialsController(EncryptionService encryptionService, FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {
+        this.encryptionService = encryptionService;
         this.fileService = fileService;
         this.noteService = noteService;
         this.credentialsService = credentialsService;
@@ -38,6 +41,12 @@ public class CredentialsController {
 
     @PostMapping("/addNewCredentials")
     public String addCredentials(@RequestParam("addCredentials") String addCredentialsUrl, @RequestParam("addCredentials") Integer addCredentialsId, @RequestParam("addCredentials") String addCredentialsUsername, @RequestParam("addCredentials") String addCredentialsKey, @RequestParam("addCredentials") String addCredentialsPassword, @RequestParam("addCredentials") String addCredentialsDecryptedPassword, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        // Encrypts Password Credentials
+        SecureRandom random = new SecureRandom();
+        byte[] salt = new byte[16];
+        random.nextBytes(salt);
+        String encryptedCredentialsPassword = encryptionService.encryptValue(addCredentialsDecryptedPassword, addCredentialsKey);
+
         Users users = userService.getUser(authentication.getName());
         Credentials newCredentials = new Credentials(addCredentialsUrl, addCredentialsId, addCredentialsUsername, users.getUserId(), addCredentialsKey, addCredentialsPassword, addCredentialsDecryptedPassword);
 
