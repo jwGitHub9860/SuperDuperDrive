@@ -37,23 +37,18 @@ public class NoteController {
         Notes newNote = new Notes(createNoteTitle, createNoteId, createNoteDescription, users.getUserId());
 
         // Checks if New Note is Duplicate
-        try {
-            for(Notes noteItem : allNotes) {
-                if (createNoteTitle == noteItem.getNoteTitle()) {
-                    throw new IllegalArgumentException("Note is duplicate!");
-                }
+        for(Notes noteItem : allNotes) {
+            if (createNoteTitle == noteItem.getNoteTitle()) {
+                // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
+                redirectAttributes.addFlashAttribute("add_note_not_duplicate", false);
             }
-            
-            noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
-            allNotes.add(newNote);
-
-            // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
-            redirectAttributes.addFlashAttribute("add_note_not_duplicate", true);
-        } catch (Exception e) {
-            e.printStackTrace();
-            // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
-            redirectAttributes.addFlashAttribute("add_note_not_duplicate", false);
         }
+            
+        noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
+        allNotes.add(newNote);
+
+        // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
+        redirectAttributes.addFlashAttribute("add_note_not_duplicate", true);
         
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
