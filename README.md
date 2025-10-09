@@ -179,6 +179,8 @@ baeldung. “Spring MVC and the @ModelAttribute Annotation.” _Baeldung_, 27 Fe
 
 baeldung. “Spring Security Custom Logout Handler.” _Baeldung_, 8 Jan. 2024, www.baeldung.com/spring-security-custom-logout-handler. Accessed 7 Oct. 2025.
 
+Barbosa, Miguel. “Auth Controller.” _DEV Community_, 24 Nov. 2023, dev.to/m1guelsb/authentication-and-authorization-with-spring-boot-4m2n#auth-controller. Accessed 7 Oct. 2025.
+
 Bezkoder. “Thymeleaf File Upload with Spring Boot.” _BezKoder_, 26 May 2024, www.bezkoder.com/thymeleaf-file-upload/. Accessed 29 Sep. 2025.
 
 Boon, Isaac Tan. “What Do They Mean by This? I Was Unsure about the Instructions for Super Duper Drive.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/349430. Accessed 6 Sep. 2025.
