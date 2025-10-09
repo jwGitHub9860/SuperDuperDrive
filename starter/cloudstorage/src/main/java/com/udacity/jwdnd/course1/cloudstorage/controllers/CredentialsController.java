@@ -3,6 +3,7 @@ package com.udacity.jwdnd.course1.cloudstorage.controllers;
 import java.nio.charset.StandardCharsets;
 import java.security.SecureRandom;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
 import org.springframework.security.core.Authentication;
@@ -46,11 +47,14 @@ public class CredentialsController {
         SecureRandom random = new SecureRandom();
         byte[] key = new byte[16];
         random.nextBytes(key);
-        String keyInStringForm = new String(key, StandardCharsets.UTF_8);
-        String encryptedCredentialsPassword = encryptionService.encryptValue(addCredentialsPassword, keyInStringForm);
+
+        // Use Encoding when Converting "byte[]" to "String" -> Because Default Encoding will be Used & Can Be DIFFERENT on Different Machines
+        String encodedKey = Base64.getEncoder().encodeToString(key);
+        
+        String encryptedCredentialsPassword = encryptionService.encryptValue(addCredentialsPassword, encodedKey);
 
         Users users = userService.getUser(authentication.getName());
-        Credentials newCredentials = new Credentials(addCredentialsUrl, addCredentialsId, addCredentialsUsername, users.getUserId(), keyInStringForm, encryptedCredentialsPassword);
+        Credentials newCredentials = new Credentials(addCredentialsUrl, addCredentialsId, addCredentialsUsername, users.getUserId(), encodedKey, encryptedCredentialsPassword);
 
         // Checks if New Credentials are Duplicate
         try {
@@ -59,7 +63,7 @@ public class CredentialsController {
                     throw new IllegalArgumentException("Credentials are duplicate!");
                 }
             }
-            credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, keyInStringForm, encryptedCredentialsPassword, users.getUserId());
+            credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, encodedKey, encryptedCredentialsPassword, users.getUserId());
             allCredentials.add(newCredentials);
 
             // Creates Connection between "addCredentials()" Method & code that Displays Status of Adding Credentials Successfully inside "home.html" file
