@@ -32,9 +32,9 @@ public class SignupController {
     @PostMapping("/credentials/{username}")
     public String signUpForNewAccount(String username, RedirectAttributes redirectAttributes) {
         if (userService.isUsernameAvailable(username)) {
-            redirectAttributes.addFlashAttribute("signup_error_msg", false);
+            redirectAttributes.addFlashAttribute("signup_error", false);
         } else {
-            redirectAttributes.addFlashAttribute("signup_error_msg", true);
+            redirectAttributes.addFlashAttribute("signup_error", true);
         }
 
         // Takes User Back to Signup Page
