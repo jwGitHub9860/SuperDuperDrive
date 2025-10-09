@@ -43,8 +43,8 @@ public class CredentialsController {
     public String addCredentials(@RequestParam("addCredentials") String addCredentialsUrl, @RequestParam("addCredentials") Integer addCredentialsId, @RequestParam("addCredentials") String addCredentialsUsername, @RequestParam("addCredentials") String addCredentialsPassword, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
         // Encrypts Password Credentials
         SecureRandom random = new SecureRandom();
-        byte[] salt = new byte[16];
-        random.nextBytes(salt);
+        byte[] key = new byte[16];
+        random.nextBytes(key);
         String encryptedCredentialsPassword = encryptionService.encryptValue(addCredentialsPassword, addCredentialsKey);
 
         Users users = userService.getUser(authentication.getName());
