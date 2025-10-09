@@ -157,6 +157,8 @@ _None_
 
 abc32112, and dectarin. “How Do I Find the Library Containing Org.Springframework.Stereotype.Service?” Edited by Vertexwahn, _Stack Overflow_, 8 Aug. 2014, stackoverflow.com/questions/25206487/how-do-i-find-the-library-containing-org-springframework-stereotype-service. Accessed 18 Sep. 2025.
 
+ante.sabo, and Konstantino Sparakis. “How to Encrypt String in Java.” Edited by Andrii Abramov and Koppor, _Stack Overflow_, 28 Sept. 2017, stackoverflow.com/questions/1205135/how-to-encrypt-string-in-java. Accessed 8 Oct. 2025.
+
 “Authentication and Authorization in Spring Boot 3.0 with Spring Security.” _GeeksforGeeks_, GeeksforGeeks, 12 Sept. 2025, www.geeksforgeeks.org/advance-java/authentication-and-authorization-in-spring-boot-3-0-with-spring-security/. Accessed 17 Sep. 2025.
 
 “AuthenticationService.” _HYLAND_, support.hyland.com/r/Alfresco/Alfresco-Content-Services/23.4/Alfresco-Content-Services/Develop/Reference/Java-Foundation-API/AuthenticationService. Accessed 7 Sep. 2025.
@@ -289,11 +291,15 @@ Rînea, Andrei, and M C. “Spring Boot Security Redirect after Successful Login
 
 “Servlet Authentication Architecture.” _Servlet Authentication Architecture :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/architecture.html#:~:text=SecurityContextHolder%20%2D%20The%20SecurityContextHolder%20is%20where,Spring%20Security’s%20Filters%20perform%20authentication. Accessed 16 Sep. 2025.
 
+Sharifi, Hamid Reza. “Java AES Encryption and Decryption.” _Baeldung_, 22 Mar. 2025, www.baeldung.com/java-aes-encryption-decryption. Accessed 8 Oct. 2025.
+
 Sheppard, Matt, and holmis83. “Easy Way to Write Contents of a Java InputStream to an OutputStream.” Edited by Sled, _Stack Overflow_, 29 Jan. 2016, stackoverflow.com/questions/43157/easy-way-to-write-contents-of-a-java-inputstream-to-an-outputstream. Accessed 6 Oct. 2025.
 
 Simpson, Jordan. “Spring @Component Annotation.” _Baeldung_, 11 May 2024, www.baeldung.com/spring-component-annotation. Accessed 5 Oct. 2025.
 
 Singh, Amandeep. “Spring Security in Spring Boot 2.x Using Websecurityconfigureradapter.” _Medium_, Medium, 8 Mar. 2025, lazy-programmer.medium.com/spring-security-in-spring-boot-2-x-using-websecurityconfigureradapter-15b0b5878c0d. Accessed 8 Sep. 2025.
+
+Sko, Alex. “Always Use Encoding When Converting Bytes to Java Strings and Vice Versa.” _Medium_, Medium, 11 Aug. 2016, medium.com/@alskor/always-use-encoding-when-converting-bytes-to-java-strings-and-vice-versa-e5ac779e17ee. Accessed 8 Oct. 2025.
 
 “Spring - @PostMapping and @GetMapping Annotation.” _GeeksforGeeks_, GeeksforGeeks, 4 Jan. 2025, www.geeksforgeeks.org/advance-java/spring-postmapping-and-getmapping-annotation/. Accessed 15 Sep. 2025.
 
