@@ -40,36 +40,33 @@ public class FileUploadController {
 
         List<Files> allUploadedFiles = this.fileService.getAllFilesByUserId(chosenFile.getUserId());
         
-        // Checks if File Uploaded Successfully
-        try {
-            // Checks if File is Duplicate or Empty
-            for(Files fileItem : allUploadedFiles) {
-                if(chosenFile.getFilename().equals(fileItem.getFilename())) {
-                    redirectAttributes.addFlashAttribute("duplicate_message", true);
-                    addFile = false;
-                }
-                else if(fileUpload.getSize() <= 0) {
-                    redirectAttributes.addFlashAttribute("empty_message", true);
-                    addFile = false;
-                }
+        // Checks if File is Duplicate or Empty
+        for(Files fileItem : allUploadedFiles) {
+            if(chosenFile.getFilename().equals(fileItem.getFilename())) {
+                redirectAttributes.addFlashAttribute("duplicate_message", true);
+                addFile = false;
             }
+            else if(fileUpload.getSize() <= 0) {
+                redirectAttributes.addFlashAttribute("empty_message", true);
+                addFile = false;
+            }
+        }
 
-            if (addFile) {
-                fileService.uploadFile(chosenFile);
-                System.out.println("File Upload Successful!");
-            }
-            
-            model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
-            model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
-            model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
-            
+        // Checks if File Uploaded Successfully
+        if (addFile) {
+            fileService.uploadFile(chosenFile);
+            System.out.println("File Upload Successful!");
+
             // Creates Connection between "uploadFile()" Method & code that Displays Status of Uploading File Successfully inside "home.html" file
             redirectAttributes.addFlashAttribute("upload_message_status", true);
-        } catch (Exception e) {
-            e.printStackTrace();
+        } else {
             // Creates Connection between "uploadFile()" Method & code that Displays Status of Failing to Upload File inside "home.html" file
             redirectAttributes.addFlashAttribute("upload_message_status", true);
         }
+            
+        model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
+        model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
+        model.addAttribute("credentials", this.credentialsService.getAllCredentialsByUserId(users.getUserId()));
         
         // Takes User Back to Home Page
         return "redirect:/home";
