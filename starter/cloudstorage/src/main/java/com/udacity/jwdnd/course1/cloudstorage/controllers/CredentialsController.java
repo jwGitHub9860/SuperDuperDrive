@@ -50,7 +50,7 @@ public class CredentialsController {
         String encryptedCredentialsPassword = encryptionService.encryptValue(addCredentialsPassword, keyInStringForm);
 
         Users users = userService.getUser(authentication.getName());
-        Credentials newCredentials = new Credentials(addCredentialsUrl, addCredentialsId, addCredentialsUsername, users.getUserId(), keyInStringForm, addCredentialsPassword);
+        Credentials newCredentials = new Credentials(addCredentialsUrl, addCredentialsId, addCredentialsUsername, users.getUserId(), keyInStringForm, encryptedCredentialsPassword);
 
         // Checks if New Credentials are Duplicate
         try {
@@ -59,7 +59,7 @@ public class CredentialsController {
                     throw new IllegalArgumentException("Credentials are duplicate!");
                 }
             }
-            credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, keyInStringForm, addCredentialsPassword, users.getUserId());
+            credentialsService.createCredentials(addCredentialsUrl, addCredentialsUsername, keyInStringForm, encryptedCredentialsPassword, users.getUserId());
             allCredentials.add(newCredentials);
 
             // Creates Connection between "addCredentials()" Method & code that Displays Status of Adding Credentials Successfully inside "home.html" file
