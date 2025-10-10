@@ -279,6 +279,8 @@ Phate, et al. “What Is Responseentity for and Why Should I Keep It?” _Stack 
 
 Pollack, Mark, et al. _Spring Data Mongodb - Reference Documentation_, 12 May 2023, docs.spring.io/spring-data/mongodb/docs/4.0.6/reference/html/. Accessed 19 Sep. 2025.
 
+Prachi. “After Downloading the Spring Starter Project , I’m Unable to Launch the Application.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/410697. Accessed 10 Oct. 2025.
+
 r/javahelp, and _jetrun. “Explain like i’m Five - What Is Serializable?” _Reddit_, 2024, www.reddit.com/r/javahelp/comments/1cdo4k2/explain_like_im_five_what_is_serializable/. Accessed 30 Sep. 2025.
 
 “Random vs Secure Random Numbers in Java.” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/java/random-vs-secure-random-numbers-java/. Accessed 17 Sep. 2025.
