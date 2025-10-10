@@ -22,7 +22,6 @@ public class NoteController {
     private final NoteService noteService;
     private final CredentialsService credentialsService;
     private final UserService userService;
-    private final List<Notes> allNotes = new ArrayList<Notes>();
 
     public NoteController(FileService fileService, NoteService noteService, CredentialsService credentialsService, UserService userService) {
         this.fileService = fileService;
@@ -33,22 +32,25 @@ public class NoteController {
 
     @PostMapping("/addNewNote")
     public String addNote(@RequestParam("noteTitle") String createNoteTitle, @RequestParam("noteId") Integer createNoteId, @RequestParam("noteDescription") String createNoteDescription, Model model, Authentication authentication, RedirectAttributes redirectAttributes) {
+        boolean isNoteNotDuplicate = true;
         Users users = userService.getUser(authentication.getName());
-        Notes newNote = new Notes(createNoteTitle, createNoteId, createNoteDescription, users.getUserId());
 
         // Checks if New Note is Duplicate
-        for(Notes noteItem : allNotes) {
+        for(Notes noteItem : noteService.getAllNotesByUserId(users.getUserId())) {
             if (createNoteTitle == noteItem.getNoteTitle()) {
+                isNoteNotDuplicate = false;
+
                 // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
                 redirectAttributes.addFlashAttribute("add_note_not_duplicate", false);
             }
         }
-            
-        noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
-        allNotes.add(newNote);
+        
+        if (isNoteNotDuplicate) {
+            noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
 
-        // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
-        redirectAttributes.addFlashAttribute("add_note_not_duplicate", true);
+            // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
+            redirectAttributes.addFlashAttribute("add_note_not_duplicate", true);
+        }
         
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
         model.addAttribute("notes", this.noteService.getAllNotesByUserId(users.getUserId()));
