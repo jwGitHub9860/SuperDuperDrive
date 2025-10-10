@@ -46,10 +46,15 @@ public class NoteController {
         }
         
         if (isNoteNotDuplicate) {
-            noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
+            int isNoteCreated = noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
 
-            // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
-            redirectAttributes.addFlashAttribute("add_note_success", true);
+            if (isNoteCreated == 1) {
+                // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
+                redirectAttributes.addFlashAttribute("add_note_success", true);
+            } else {
+                // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
+                redirectAttributes.addFlashAttribute("add_note_fail", true);
+            }
         }
         
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
