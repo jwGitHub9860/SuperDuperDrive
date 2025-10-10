@@ -19,7 +19,7 @@ public interface NoteMapper {
 
     @Insert("INSERT INTO Notes (noteTitle, noteDescription, userId) VALUES(#{noteTitle}, #{noteDescription}, #{userId})")
     @Options(useGeneratedKeys = true, keyProperty = "noteId")
-    Notes createNote(String noteTitle, String noteDescription, Integer userId);
+    int createNote(String noteTitle, String noteDescription, Integer userId);
 
     @Update("UPDATE Notes SET noteTitle = #{noteTitle}, noteDescription = #{noteDescription} WHERE noteId = #{noteId}")
     void editNote(String noteTitle, String noteDescription, Integer noteId);

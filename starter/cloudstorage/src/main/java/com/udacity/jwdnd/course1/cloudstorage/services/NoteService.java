@@ -27,7 +27,7 @@ public class NoteService {
         return noteMapper.getAllNotesByUserId(userId);
     }
 
-    public Notes createNote(String noteTitle, String noteDescription, Integer userId) {
+    public int createNote(String noteTitle, String noteDescription, Integer userId) {
         return noteMapper.createNote(noteTitle, noteDescription, userId);
     }
 
