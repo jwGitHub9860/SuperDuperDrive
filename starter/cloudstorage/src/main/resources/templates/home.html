@@ -29,8 +29,9 @@
                 <div id="file_download_msg" th:if="${param.download_file_status}" class="alert alert-success">File downloaded successfully!</div>
 
                 <!-- Displays Messages that Indicate Status Notes -->
-                <div id="add_note_success_msg" th:if="${param.add_note_not_duplicate}" class="alert alert-success">Note added successfully!</div>
-                <div id="duplicate_note_msg" th:unless="${param.add_note_not_duplicate}" class="alert alert-danger">Note is duplicate!</div>
+                <div id="add_note_success_msg" th:if="${param.add_note_success}" class="alert alert-success">Note added successfully!</div>
+                <div id="add_note_fail_msg" th:if="${param.add_note_fail}" class="alert alert-danger">Note addition failed!</div>
+                <div id="duplicate_note_msg" th:if="${param.add_note_duplicate}" class="alert alert-danger">Note is duplicate!</div>
                 <div id="edit_note_msg" th:if="${param.edit_note_status}" class="alert alert-success">Note edited successfully!</div>
                 <div id="delete_note_msg" th:if="${param.delete_note_status}" class="alert alert-success">Note deleted successfully!</div>
 

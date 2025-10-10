@@ -41,7 +41,7 @@ public class NoteController {
                 isNoteNotDuplicate = false;
 
                 // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
-                redirectAttributes.addFlashAttribute("add_note_not_duplicate", false);
+                redirectAttributes.addFlashAttribute("add_note_duplicate", true);
             }
         }
         
@@ -49,7 +49,7 @@ public class NoteController {
             noteService.createNote(createNoteTitle, createNoteDescription, users.getUserId());
 
             // Creates Connection between "addNote()" Method & code that Displays Note Addition Status inside "home.html" file
-            redirectAttributes.addFlashAttribute("add_note_not_duplicate", true);
+            redirectAttributes.addFlashAttribute("add_note_success", true);
         }
         
         model.addAttribute("files", this.fileService.getAllFilesByUserId(users.getUserId()));
