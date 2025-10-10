@@ -235,6 +235,8 @@ heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 O
 
 “HTML Clearing the Input Field.” _GeeksforGeeks_, 12 July 2025, www.geeksforgeeks.org/html/html-clearing-the-input-field/. Accessed 4 Oct. 2025.
 
+i, imad. “Getting a Whitelabel Error When Trying to Launch MvcBasicsApplication. Can Someone Please Assist?” _Knowledge_, Udacity, 2021, knowledge.udacity.com/questions/637419. Accessed 10 Oct. 2025.
+
 Iaroslavitz, Eyal. “Spring Boot Security Form Login Redirects: Where Do You Go After Logging In?” _Medium_, Medium, 11 Apr. 2025, eyaliaroslavitz.medium.com/spring-boot-3-x-security-form-login-redirects-where-do-you-go-after-logging-in-dd1718b60144. Accessed 7 Oct. 2025.
 
 “Interface Model.” _Spring_, 10 Apr. 2019, docs.spring.io/spring-framework/docs/5.1.6.RELEASE_to_5.2.0.M1/Spring%20Framework%205.2.0.M1/org/springframework/ui/Model.html. Accessed 16 Sep. 2025.
