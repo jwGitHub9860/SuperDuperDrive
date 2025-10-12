@@ -28,13 +28,17 @@ public class SecurityConfig {
         return (web) -> web.ignoring().requestMatchers("/ignore1", "/ignore2");
     }
 
-    @Override
+    //@Override
+    // Fix "configure()" Method override Errors
+    @Bean
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         // Injects Custom Authentication Provider into "AuthenticationManagerBuilder" in Spring Security configuration; Allows Username & Password to be Compared
         auth.authenticationProvider(this.authenticationService);
     }
 
-    @Override
+    //@Override
+    // Fix "configure()" Method override Errors
+    @Bean
     protected void configure(HttpSecurity http) throws Exception {
         // allows FREE ACCESS to sign-up page, CSS files, and JavaScript files, any OTHER Request Must Be authenticated (i.e., user must be logged in to access)
         http
