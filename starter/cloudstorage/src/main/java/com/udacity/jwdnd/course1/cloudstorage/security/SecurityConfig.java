@@ -22,6 +22,7 @@ public class SecurityConfig {
         this.authenticationService = authenticationService;
     }
 
+    // Fixes Inability to use "WebSecurityConfigurerAdapter" (Deprecated "WebSecurityConfigurerAdapter" Error)
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
         return (web) -> web.ignoring().requestMatchers("/ignore1", "/ignore2");
