@@ -251,6 +251,8 @@ Iaroslavitz, Eyal. “Spring Boot Security Form Login Redirects: Where Do You Go
 
 “Java Program to Convert Byte Array to String.” _GeeksforGeeks_, 23 July 2025, www.geeksforgeeks.org/java/java-program-to-convert-byte-array-to-string/. Accessed 26 Sep. 2025.
 
+jrbr3land, and Khurram. “How Can I Add Action = ‘/#’ to a Button without Using <form>?</Form>.” Edited by Xander Luciano, _Stack Overflow_, 30 Aug. 2016, stackoverflow.com/questions/39233615/how-can-i-add-action-to-a-button-without-using-form. Accessed 10 Oct. 2025.
+
 K, Christian. “Please I Need Quick Guide, Please Answer Now.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/811826#812044. Accessed 12 Sep. 2025.
 
 Kremer, Thomas. “Spring Boot Web Security Application, WebSecurityConfigurerAdapter Is Deprecated, What Can I Use Instead to Make My Websecurityconfig Class Work?” _Stack Overflow_, 30 Sept. 2023, stackoverflow.com/questions/77161239/spring-boot-web-security-application-websecurityconfigureradapter-is-deprecated. Accessed 3 Sep. 2025.
