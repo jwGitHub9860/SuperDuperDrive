@@ -157,6 +157,8 @@ _None_
 
 abc32112, and dectarin. “How Do I Find the Library Containing Org.Springframework.Stereotype.Service?” Edited by Vertexwahn, _Stack Overflow_, 8 Aug. 2014, stackoverflow.com/questions/25206487/how-do-i-find-the-library-containing-org-springframework-stereotype-service. Accessed 18 Sep. 2025.
 
+Akhil. “Unable to Configure Login Functionality with Spring Security.” _Knowledge_, Udacity, 2021, knowledge.udacity.com/questions/614347. 12 Oct. 2025.
+
 ante.sabo, and Konstantino Sparakis. “How to Encrypt String in Java.” Edited by Andrii Abramov and Koppor, _Stack Overflow_, 28 Sept. 2017, stackoverflow.com/questions/1205135/how-to-encrypt-string-in-java. Accessed 8 Oct. 2025.
 
 “Authentication and Authorization in Spring Boot 3.0 with Spring Security.” _GeeksforGeeks_, GeeksforGeeks, 12 Sept. 2025, www.geeksforgeeks.org/advance-java/authentication-and-authorization-in-spring-boot-3-0-with-spring-security/. Accessed 17 Sep. 2025.
