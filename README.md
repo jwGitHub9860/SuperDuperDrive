@@ -333,6 +333,8 @@ Stein-Kousathana, Eleftheria. “Spring Security without the WebSecurityConfigur
 
 SudKul. “Nd035-C1-Spring-Boot-Basics-Project-Starter.” _GitHub_, Udacity, Jan. 2025, github.com/udacity/nd035-c1-spring-boot-basics-project-starter. Accessed 29 Aug. 2025.
 
+T, Nhut. “WebSecurityConfigurerAdapter Is Deprecated.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/850074. Accessed 6 Sep. 2025.
+
 tasneem. “Why Test Cases Success Only When Application Not Running Although Using @LocalServerPort ??” _Knowledge_, Udacity, 2021, knowledge.udacity.com/questions/711859. Accessed 7 Oct. 2025.
 
 Theobald, Lee, et al. “How to Get a File’s Media Type (MIME Type)?” _Stack Overflow_, 17 May 2013, stackoverflow.com/questions/51438/how-to-get-a-files-media-type-mime-type. Accessed 6 Oct. 2025.
