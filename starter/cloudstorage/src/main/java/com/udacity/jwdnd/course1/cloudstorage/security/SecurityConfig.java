@@ -1,10 +1,11 @@
 package com.udacity.jwdnd.course1.cloudstorage.security;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 
 import com.udacity.jwdnd.course1.cloudstorage.services.AuthenticationService;
 
@@ -14,11 +15,16 @@ import com.udacity.jwdnd.course1.cloudstorage.services.AuthenticationService;
 // finds configuration & applies for global WebSecurity of application; provides Spring MVC integration
 @EnableWebSecurity
 
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class SecurityConfig {
     private final AuthenticationService authenticationService;
 
     public SecurityConfig(AuthenticationService authenticationService) {
         this.authenticationService = authenticationService;
+    }
+
+    @Bean
+    public WebSecurityCustomizer webSecurityCustomizer() {
+        return (web) -> web.ignoring().antMatchers("/ignore1", "/ignore2");
     }
 
     @Override
