@@ -24,7 +24,7 @@ public class SecurityConfig {
 
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
-        return (web) -> web.ignoring().antMatchers("/ignore1", "/ignore2");
+        return (web) -> web.ignoring().requestMatchers("/ignore1", "/ignore2");
     }
 
     @Override
@@ -32,7 +32,7 @@ public class SecurityConfig {
         // allows FREE ACCESS to sign-up page, CSS files, and JavaScript files, any OTHER Request Must Be authenticated (i.e., user must be logged in to access)
         http
             .authorizeRequests()
-                .antMatchers("/signup", "/css/**", "/js/**").permitAll()
+                .requestMatchers("/signup", "/css/**", "/js/**").permitAll()
                 .anyRequest().authenticated();
 
         // MUST USE "http" NOT ".and()" or Undefined ".defaultSuccessUrl()" Error will Occur
