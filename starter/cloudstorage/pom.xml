@@ -127,11 +127,6 @@
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
         </dependency>
-        <!-- Fixes Undefined "org.springframework.boot.test.web.server" import statement in "CloudStorageApplicationTests.java" file -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
-        </dependency>
 	</dependencies>
 
     <build>
