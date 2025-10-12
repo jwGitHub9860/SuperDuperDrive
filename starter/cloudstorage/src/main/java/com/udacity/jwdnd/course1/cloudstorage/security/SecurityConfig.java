@@ -29,6 +29,12 @@ public class SecurityConfig {
     }
 
     @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        // Injects Custom Authentication Provider into "AuthenticationManagerBuilder" in Spring Security configuration; Allows Username & Password to be Compared
+        auth.authenticationProvider(this.authenticationService);
+    }
+
+    @Override
     protected void configure(HttpSecurity http) throws Exception {
         // allows FREE ACCESS to sign-up page, CSS files, and JavaScript files, any OTHER Request Must Be authenticated (i.e., user must be logged in to access)
         http
@@ -45,11 +51,5 @@ public class SecurityConfig {
         
         // MUST USE "http" NOT ".and()" or Undefined ".and()" Error will Occur
         http.logout().permitAll();
-    }
-
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        // Injects Custom Authentication Provider into "AuthenticationManagerBuilder" in Spring Security configuration; Allows Username & Password to be Compared
-        auth.authenticationProvider(this.authenticationService);
     }
 }
