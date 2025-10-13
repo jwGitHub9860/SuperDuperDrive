@@ -279,6 +279,8 @@ Millington, Sam. “Hashing a Password in Java.” _Baeldung_, 20 Aug. 2025, www
 
 “MongoDB-Specific Data Manipulation Methods.” _MongoDB-Specific Data Manipulation Methods :: Spring Data MongoDB_, docs.spring.io/spring-data/mongodb/reference/mongodb/repositories/modifying-methods.html. Accessed 19 Sep. 2025.
 
+NImrod. “@PostMapping in LoginController.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/404295. Accessed 12 Oct. 2025.
+
 Obregon, Alexander. “How to Handle File Uploads and Downloads with Spring Boot.” _Medium_, Medium, 17 Apr. 2024, medium.com/@AlexanderObregon/how-to-handle-file-uploads-and-downloads-with-spring-boot-84638463fd6f. Accessed 14 Sep. 2025.
 
 Obregon, Alexander. “Securing Spring Boot Applications with Spring Security — Quick Start Guide.” _Medium_, Medium, 23 Apr. 2024, medium.com/@AlexanderObregon/securing-spring-boot-applications-with-spring-security-1f6da7fde0f0. Accessed 5 Oct. 2025.
