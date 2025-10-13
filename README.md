@@ -169,7 +169,11 @@ B, Zachary. “Testing Delete.” _Knowledge_, Udacity, 2022, knowledge.udacity.
 
 baeldung. “Convert Long to String in Java.” _Baeldung_, 4 Oct. 2021, www.baeldung.com/java-long-to-string. Accessed 21 Sep. 2025.
 
+baeldung. “Deploy a Spring Boot WAR into a Tomcat Server.” _Baeldung_, www.baeldung.com/spring-boot-war-tomcat-deploy. Accessed 12 Oct. 2025.
+
 baeldung. “File Upload with Spring MVC.” _Baeldung_, 11 June 2025, www.baeldung.com/spring-file-upload. Accessed 11 Sep. 2025.
+
+baeldung. “How to Configure Spring Boot Tomcat.” _Baeldung_, www.baeldung.com/spring-boot-configure-tomcat. Accessed 12 Oct. 2025.
 
 baeldung. “Introduction to Java Config for Spring Security.” _Baeldung_, 11 Mar. 2025, www.baeldung.com/java-config-spring-security. Accessed 5 Oct. 2025.
 
@@ -219,6 +223,8 @@ Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvi
 
 “Download Spring-Context JAR File with All Dependencies.” _JAR Search and Dependency Download from the Maven Repository_, jar-download.com/artifacts/org.springframework/spring-context/org.apache.commons.net.ftp.FTPClient. Accessed 18 Sep. 2025.
 
+E-SetPrimeEpsilon, and atish.s. “Mapping a HTML Button to Call a Method in a Controller Class in Spring MVC.” _Stack Overflow_, 26 June 2020, stackoverflow.com/questions/62594851/mapping-a-html-button-to-call-a-method-in-a-controller-class-in-spring-mvc. Accessed 12 Oct. 2025.
+
 Fredrick-Li. “Web-Storage-Application.” _GitHub_, 2022, github.com/Fredrick-Li/Web-Storage-Application. Accessed 11 Oct. 2025.
 
 Ghobril, Samir, and m59. “What Is Href="#" and Why Is It Used?” Edited by User247702 and Stephen Ostermiller, _Stack Overflow_, 31 Jan. 2011, stackoverflow.com/questions/4855168/what-is-href-and-why-is-it-used. Accessed 29 Sep. 2025.
@@ -231,11 +237,19 @@ heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 O
 
 “How to Add Link to HTML Button?” _GeeksforGeeks_, 12 July 2025, www.geeksforgeeks.org/html/how-to-create-an-html-button-that-acts-like-a-link/. Accessed 4 Oct. 2025.
 
+“How to Create a Form with Custom Buttons in HTML.” _Tutorialspoint_, www.tutorialspoint.com/how-to-create-a-form-with-custom-buttons-in-html. Accessed 10 Oct. 2025.
+
 “How to Create a Reset Button in Form Using HTML ?” _GeeksforGeeks_, GeeksforGeeks, 23 July 2025, www.geeksforgeeks.org/html/how-to-create-a-reset-button-in-form-using-html/. Accessed 4 Oct. 2025.
+
+“How to Use an HTML Button to Call a JavaScript Function?” _Tutorialspoint_, www.tutorialspoint.com/how-to-use-an-html-button-to-call-a-javascript-function. Accessed 10 Oct. 2025.
 
 “HTML - Href Attribute.” _Tutorialspoint_, www.tutorialspoint.com/html/html_href_attribute.htm. Accessed 29 Sep. 2025.
 
 “HTML - Target Attribute.” _Tutorialspoint_, www.tutorialspoint.com/html/html_target_attribute.htm. Accessed 29 Sep. 2025.
+
+“HTML <button> Formaction Attribute</Button>.” _W3Schools.Com_, www.w3schools.com/tags/att_button_formaction.asp. Accessed 10 Oct. 2025.
+
+“HTML <button> Tag</Button>.” _W3schools.Com_, www.w3schools.com/tags/tag_button.asp. Accessed 10 Oct. 2025. 
 
 “HTML Clearing the Input Field.” _GeeksforGeeks_, 12 July 2025, www.geeksforgeeks.org/html/html-clearing-the-input-field/. Accessed 4 Oct. 2025.
 
@@ -356,6 +370,8 @@ T, Nhut. “WebSecurityConfigurerAdapter Is Deprecated.” _Knowledge_, Udacity,
 tasneem. “Why Test Cases Success Only When Application Not Running Although Using @LocalServerPort ??” _Knowledge_, Udacity, 2021, knowledge.udacity.com/questions/711859. Accessed 7 Oct. 2025.
 
 Theobald, Lee, et al. “How to Get a File’s Media Type (MIME Type)?” _Stack Overflow_, 17 May 2013, stackoverflow.com/questions/51438/how-to-get-a-files-media-type-mime-type. Accessed 6 Oct. 2025.
+
+Tornike, and Mebin Joe. “How to Make HTML Button Perform Action in Java?” _Stack Overflow_, 26 Feb. 2019, stackoverflow.com/questions/54881534/how-to-make-html-button-perform-action-in-java. Accessed 10 Oct. 2025.
 
 “Udacity Git Commit Message Style Guide.” _Udacity Nanodegree Style Guide_, udacity.github.io/git-styleguide/. Accessed 29 Aug. 2025.
 
