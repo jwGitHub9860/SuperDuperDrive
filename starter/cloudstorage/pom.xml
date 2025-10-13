@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Allow Project to Launch in Google Chrome (FAILED) -->
-    <pluginRepositories>
+    <!-- <pluginRepositories>
         <pluginRepository>
             <id>repository.spring.release</id>
             <name>Spring GA Repository</name>
             <url>https://repo.spring.io/plugins-release/</url>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories> -->
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -94,6 +94,14 @@
                 </exclusion>
             </exclusions> -->
         </dependency>
+
+        <!-- Allow Project to Launch in Tomcat (FAILED) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
