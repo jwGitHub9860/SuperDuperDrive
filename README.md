@@ -261,6 +261,8 @@ jrbr3land, and Khurram. “How Can I Add Action = ‘/#’ to a Button without U
 
 K, Christian. “Please I Need Quick Guide, Please Answer Now.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/811826#812044. Accessed 12 Sep. 2025.
 
+K, Rajat. “Need Help to Configure Spring Application in Intellij Ide.” _Knowledge_, Udacity, 2021, knowledge.udacity.com/questions/679184. Accessed 12 Oct. 2025.
+
 Kremer, Thomas. “Spring Boot Web Security Application, WebSecurityConfigurerAdapter Is Deprecated, What Can I Use Instead to Make My Websecurityconfig Class Work?” _Stack Overflow_, 30 Sept. 2023, stackoverflow.com/questions/77161239/spring-boot-web-security-application-websecurityconfigureradapter-is-deprecated. Accessed 3 Sep. 2025.
 
 KUMAR, ANMOL, and DingHao. “Websecurityconfigureradapter Cannot Be Resolved to a Type [Duplicate].” Edited by Dur, _Stack Overflow_, 1 Apr. 1968, stackoverflow.com/questions/77762795/websecurityconfigureradapter-cannot-be-resolved-to-a-type. Accessed 7 Oct. 2025.
