@@ -279,6 +279,8 @@ Oza, Sandip. “Secret Key Generation on the Fly with Performance Throttling.”
 
 Ozler, Hakan. “Java @Override Annotation.” _Baeldung_, 7 Apr. 2025, www.baeldung.com/java-override. Accessed 17 Sep. 2025.
 
+P, Siyu. “Get Stuck in the Default Security Sign-in Page after Implementing SecurityConfig, Need Help.” _Knowledge_, Udacity, 2021, knowledge.udacity.com/questions/529979. Accessed 5 Oct. 2025.
+
 Parith, and Martin Algesten. “How Do I Use getOutputStream() and getWriter() in the Same Servlet Request?” Edited by Martin Algesten, _Stack Overflow_, 1 Dec. 2010, stackoverflow.com/questions/4321979/how-do-i-use-getoutputstream-and-getwriter-in-the-same-servlet-request. Accessed 6 Oct. 2025.
 
 Phate, et al. “What Is Responseentity for and Why Should I Keep It?” _Stack Overflow_, 10 Apr. 2020, stackoverflow.com/questions/61138943/what-is-responseentity-for-and-why-should-i-keep-it. Accessed 19 Sep. 2025.
