@@ -219,6 +219,8 @@ Dimitrov, Evgeni. “Spring Security Custom Authentication - AuthenticationProvi
 
 “Download Spring-Context JAR File with All Dependencies.” _JAR Search and Dependency Download from the Maven Repository_, jar-download.com/artifacts/org.springframework/spring-context/org.apache.commons.net.ftp.FTPClient. Accessed 18 Sep. 2025.
 
+Fredrick-Li. “Web-Storage-Application.” _GitHub_, 2022, github.com/Fredrick-Li/Web-Storage-Application. Accessed 11 Oct. 2025.
+
 Ghobril, Samir, and m59. “What Is Href="#" and Why Is It Used?” Edited by User247702 and Stephen Ostermiller, _Stack Overflow_, 31 Jan. 2011, stackoverflow.com/questions/4855168/what-is-href-and-why-is-it-used. Accessed 29 Sep. 2025.
 
 “Handling Logouts.” _Handling Logouts :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/logout.html. Accessed 7 Oct. 2025.
@@ -241,6 +243,8 @@ i, imad. “Getting a Whitelabel Error When Trying to Launch MvcBasicsApplicatio
 
 Iaroslavitz, Eyal. “Spring Boot Security Form Login Redirects: Where Do You Go After Logging In?” _Medium_, Medium, 11 Apr. 2025, eyaliaroslavitz.medium.com/spring-boot-3-x-security-form-login-redirects-where-do-you-go-after-logging-in-dd1718b60144. Accessed 7 Oct. 2025.
 
+imadikani. “MvcBasicsApp.” _GitHub_, github.com/imadikani/MvcBasicsApp. Accessed 10 Oct. 2025.
+
 “Interface Model.” _Spring_, 10 Apr. 2019, docs.spring.io/spring-framework/docs/5.1.6.RELEASE_to_5.2.0.M1/Spring%20Framework%205.2.0.M1/org/springframework/ui/Model.html. Accessed 16 Sep. 2025.
 
 “Interface Multipartfile.” _MultipartFile (Spring Framework 6.2.11 API)_, docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/multipart/MultipartFile.html#getOriginalFilename(). Accessed 20 Sep. 2025.
@@ -260,6 +264,8 @@ K, Christian. “Please I Need Quick Guide, Please Answer Now.” _Knowledge_, U
 Kremer, Thomas. “Spring Boot Web Security Application, WebSecurityConfigurerAdapter Is Deprecated, What Can I Use Instead to Make My Websecurityconfig Class Work?” _Stack Overflow_, 30 Sept. 2023, stackoverflow.com/questions/77161239/spring-boot-web-security-application-websecurityconfigureradapter-is-deprecated. Accessed 3 Sep. 2025.
 
 KUMAR, ANMOL, and DingHao. “Websecurityconfigureradapter Cannot Be Resolved to a Type [Duplicate].” Edited by Dur, _Stack Overflow_, 1 Apr. 1968, stackoverflow.com/questions/77762795/websecurityconfigureradapter-cannot-be-resolved-to-a-type. Accessed 7 Oct. 2025.
+
+L, JIANQIAO. “Testing Issue.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/811036. Accessed 7 Oct. 2025.
 
 L, Keith. “Controllers.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/questions/358225. Accessed 9 Sep. 2025.
 
@@ -336,6 +342,10 @@ Sko, Alex. “Always Use Encoding When Converting Bytes to Java Strings and Vice
 Stein-Kousathana, Eleftheria. “Spring Security without the WebSecurityConfigurerAdapter.” _Spring Blog_, 21 Feb. 2022, spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter. Accessed 3 Sep. 2025.
 
 SudKul. “Nd035-C1-Spring-Boot-Basics-Project-Starter.” _GitHub_, Udacity, Jan. 2025, github.com/udacity/nd035-c1-spring-boot-basics-project-starter. Accessed 29 Aug. 2025.
+
+SudKul. “Nd035-C1-Spring-Boot-Basics-Examples.” GitHub, github.com/udacity/nd035-c1-spring-boot-basics-examples. Accessed 21 Aug. 2025.
+
+Suripeng65. “cloudStorage.” _GitHub_, github.com/Suripeng65/cloudStorage. Accessed 7 Oct. 2025.
 
 T, Nhut. “WebSecurityConfigurerAdapter Is Deprecated.” _Knowledge_, Udacity, 2022, knowledge.udacity.com/questions/850074. Accessed 6 Sep. 2025.
 
