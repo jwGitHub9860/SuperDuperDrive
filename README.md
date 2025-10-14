@@ -279,6 +279,8 @@ K, Christian. “Please I Need Quick Guide, Please Answer Now.” _Knowledge_, U
 
 K, Rajat. “Need Help to Configure Spring Application in Intellij Ide.” _Knowledge_, Udacity, 2021, knowledge.udacity.com/questions/679184. Accessed 12 Oct. 2025.
 
+klockey. “Cloudstorage.” _GitHub_, github.com/klockey/cloudstorage. Accessed 9 Sept. 2025.
+
 Kremer, Thomas. “Spring Boot Web Security Application, WebSecurityConfigurerAdapter Is Deprecated, What Can I Use Instead to Make My Websecurityconfig Class Work?” _Stack Overflow_, 30 Sept. 2023, stackoverflow.com/questions/77161239/spring-boot-web-security-application-websecurityconfigureradapter-is-deprecated. Accessed 3 Sep. 2025.
 
 KUMAR, ANMOL, and DingHao. “Websecurityconfigureradapter Cannot Be Resolved to a Type [Duplicate].” Edited by Dur, _Stack Overflow_, 1 Apr. 1968, stackoverflow.com/questions/77762795/websecurityconfigureradapter-cannot-be-resolved-to-a-type. Accessed 7 Oct. 2025.
