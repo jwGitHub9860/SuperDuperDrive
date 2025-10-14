@@ -229,6 +229,8 @@ Fredrick-Li. “Web-Storage-Application.” _GitHub_, 2022, github.com/Fredrick-
 
 Ghobril, Samir, and m59. “What Is Href="#" and Why Is It Used?” Edited by User247702 and Stephen Ostermiller, _Stack Overflow_, 31 Jan. 2011, stackoverflow.com/questions/4855168/what-is-href-and-why-is-it-used. Accessed 29 Sep. 2025.
 
+“Handling Form Submission.” _Getting Started | Handling Form Submission_, spring.io/guides/gs/handling-form-submission. Accessed 12 Oct. 2025.
+
 “Handling Logouts.” _Handling Logouts :: Spring Security_, docs.spring.io/spring-security/reference/servlet/authentication/logout.html. Accessed 7 Oct. 2025.
 
 heisenberg, et al. “Model.addAttribute() Parameters.” _Stack Overflow_, 28 Oct. 2016, stackoverflow.com/questions/40303916/model-addattribute-parameters. Accessed 16 Sep. 2025.
