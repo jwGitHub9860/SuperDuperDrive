@@ -291,6 +291,8 @@ L, Keith. “Controllers.” _Knowledge_, Udacity, 2020, knowledge.udacity.com/q
 
 Mark, and Maarten Bodewes. “PBEKeySpec What Do the iterationCount and keyLength Parameters Influence?” Edited by Maarten Bodewes and Community, _Stack Overflow_, 9 Aug. 2018, stackoverflow.com/questions/6126061/pbekeyspec-what-do-the-iterationcount-and-keylength-parameters-influence. Accessed 5 Oct. 2025.
 
+McKenzie, Cameron. “Spring Boot File Upload Example.” _TheServerSide_, TheServerSide.com, 2 Feb. 2024, www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/file-upload-Spring-Boot-Ajax-example. Accessed 28 Sep. 2025.
+
 Millington, Sam. “Hashing a Password in Java.” _Baeldung_, 20 Aug. 2025, www.baeldung.com/java-password-hashing. Accessed 17 Sep. 2025.
 
 “MLA Works Cited: Electronic Sources (Web Publications).” _MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University_, owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 29 Aug. 2025.
