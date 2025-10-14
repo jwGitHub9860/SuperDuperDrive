@@ -377,6 +377,8 @@ tasneem. “Why Test Cases Success Only When Application Not Running Although Us
 
 Theobald, Lee, et al. “How to Get a File’s Media Type (MIME Type)?” _Stack Overflow_, 17 May 2013, stackoverflow.com/questions/51438/how-to-get-a-files-media-type-mime-type. Accessed 6 Oct. 2025.
 
+Therrien, Alex. “Java Spring Tutorial: The Only Tutorial You Need to Get Started (VS Code).” _Medium_, Medium, 31 Mar. 2024, medium.com/@alexandre.therrien3/java-spring-tutorial-the-only-tutorial-you-will-need-to-get-started-vs-code-13413e661db5#10fa. Accessed 13 Oct. 2024.
+
 Tornike, and Mebin Joe. “How to Make HTML Button Perform Action in Java?” _Stack Overflow_, 26 Feb. 2019, stackoverflow.com/questions/54881534/how-to-make-html-button-perform-action-in-java. Accessed 10 Oct. 2025.
 
 “Udacity Git Commit Message Style Guide.” _Udacity Nanodegree Style Guide_, udacity.github.io/git-styleguide/. Accessed 29 Aug. 2025.
