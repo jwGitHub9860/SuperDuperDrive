@@ -5,19 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
           "type": "java",
           "name": "Launch Spring Boot App With Tomcat",
           "request": "launch",
           "mainClass": "com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplication",
           "projectName": "cloudstorage",
           "args": ""
-        },
-        {
-            "type": "pwa-chrome",
-            "request": "launch",
-            "name": "Launch Chrome",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
         },
         {
             "type": "java",
