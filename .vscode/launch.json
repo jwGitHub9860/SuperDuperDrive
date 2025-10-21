@@ -13,7 +13,7 @@
           "args": ""
         },
         {
-            "type": "chrome",
+            "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome",
             "url": "http://localhost:8080",
